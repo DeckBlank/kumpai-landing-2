@@ -8,10 +8,10 @@ import {
 } from "./config/enviroments.js";
 
 import express from "express";
+import { rateLimit } from "express-rate-limit";
 import helmet from "helmet";
 import http from "http";
 import morgan from "morgan";
-import { rateLimit } from "express-rate-limit";
 
 export const app = express();
 app.use(express.json());
@@ -34,6 +34,9 @@ app.use(
 app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.sendFile("index.html", { root: path.join(__dirname, "public") });
+});
+app.get("/*", (req, res) => {
+  res.redirect("/");
 });
 
 const httpServer = http.createServer(app);
