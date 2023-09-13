@@ -2,6 +2,7 @@ import * as path from "path";
 
 import {
   APP_ENV,
+  FRONTEND,
   PAIS,
   PORT,
   PROYECTO,
@@ -33,7 +34,11 @@ app.use(
 );
 app.use(express.static("public"));
 app.get("/", (req, res) => {
+  // METHOD TO BIDING FRONTEND URL
   res.sendFile("index.html", { root: path.join(__dirname, "public") });
+});
+app.get("/app", (req, res) => {
+  res.redirect(FRONTEND);
 });
 app.get("/*", (req, res) => {
   res.redirect("/");

@@ -6,4 +6,5 @@ export const {
     PAIS,
     PORT,
     PROYECTO,
+    FRONTEND,
 } = process.env;
