@@ -2,7 +2,7 @@
     "oneSection": [
         {
             "imgSrc": "./asset/Logo 1-14.svg",
-            "p": "Somos una plataforma educativa que busca fomentar espacios seguros en las aulas escolares,para así ayudar a reducir el acoso escolar.",
+            "p": "Somos una plataforma educativa que busca fomentar espacios seguros en las aulas escolares, para así ayudar a reducir el acoso escolar.",
             "button": "Registrate aquí"
         }
     ],
@@ -72,7 +72,7 @@
     "fiveSection":[
         {
             "button": "Registrate aquí",
-            "p"     : "Kumpai es una adaptación de la palabra Quechua “amigo”. Buscamos que todas las aulas del Perú, sean espacios amigables y seguros para aprender y crecer.",
+            "p"     : "Kind significa bondad, y la elegimos para el nombre de esta plataforma educativa porque creemos firmemente que la mejor forma de reducir la violencia en las escuelas es incrementando la bondad.",
             "imgSrc": "./asset/Logo 3.svg"
         }
     ]
