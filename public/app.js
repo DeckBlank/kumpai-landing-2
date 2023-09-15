@@ -20,12 +20,24 @@ fetch('app.json')
         const div = document.createElement('div');
         div.innerHTML = `
             <div>
-                <p>${item.p1}</p>
-                <img src="${item.imgSrc1}" alt="">
+                <div class="bg-blueKumpaiLigth border-box card">
+                    <p>${item.p1}</p>
+                </div>
+                <div>
+                    <img class= "phoneCircle card" src="${item.imgSrc1}" alt="">
+                    <div class="blueCircle">
+                        <span class="litleCircle"></span>
+                    </div>
+                </div>
             </div>
             <div>
-                <img src="${item.imgSrc2}" alt="">
-                <p>${item.p2}</p>
+                <div>
+                    <img class= "desktopCircle" src="${item.imgSrc2}" alt="">
+                    <div class="orangeCircle"></div>
+                </div>
+                <div class="bg-orangeKumpaiLigth border-box">
+                    <p>${item.p2}</p>
+                </div>
             </div>
         `;
         twoSection.appendChild(div);
@@ -44,7 +56,7 @@ fetch('app.json')
             div.innerHTML += `
                 <div class= "boxy ${boxItem.bgColor}">
                     <p class = "boxNumero ${boxItem.tColor}" >${boxItem.n}</p>
-                    <p class = "boxText">${boxItem.p}</p>
+                    <p class="boxText">${boxItem.p}</p>
                 </div>
             `;
         
@@ -85,4 +97,8 @@ fetch('app.json')
             fiveSection.appendChild(div);
         });
 })  
+
+
+
+
 
