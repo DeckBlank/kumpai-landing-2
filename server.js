@@ -9,7 +9,6 @@ import {
 } from "./config/enviroments.js";
 
 import express from "express";
-import { rateLimit } from "express-rate-limit";
 import helmet from "helmet";
 import http from "http";
 import morgan from "morgan";
@@ -25,13 +24,13 @@ app.use(
     crossOriginEmbedderPolicy: APP_ENV === "development" ? false : true,
   })
 );
-app.use(
+/* app.use(
   rateLimit({
     windowMs: 15 * 60 * 1000,
     max: 100,
     message: "Exceso de solicitudes. Por favor, inténtalo de nuevo más tarde.",
   })
-);
+); */
 app.use(express.static("public"));
 app.get("/", (req, res) => {
   // METHOD TO BIDING FRONTEND URL
