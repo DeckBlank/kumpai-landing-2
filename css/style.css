@@ -31,6 +31,10 @@ html {
   background-color: #45B64A;
 }
 
+.bg-blueKumpai {
+  background-color: #00B4C1;
+}
+
 .bg-yellowKumpaiLigth {
   background-color: #FFF0A3;
 }
@@ -41,6 +45,10 @@ html {
 
 .bg-greenKumpaiLigth {
   background-color: #A6D399;
+}
+
+.bg-blueKumpaiLigth {
+  background-color: #95DCDE;
 }
 
 .t-yellowKumpai {
@@ -92,30 +100,41 @@ nav ul .logo {
 
 .oneSection {
   background-image: url("/asset/imgs/portada.png");
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
-  height: 700px;
+  background-attachment: fixed;
+  position: relative;
+  /* min-height:700px; */
+  height: 600px;
 }
 .oneSection .logoSlogan {
   height: 20rem;
   position: relative;
   left: 10%;
   top: 10rem;
+  z-index: 99;
 }
 .oneSection .itemsOne {
-  display: flex;
-  margin: 100px;
-  position: relative;
-  top: 25rem;
+  /* padding:  300px 100px; */
+  position: absolute;
+  top: 0px;
+  background: linear-gradient(to left, rgba(255, 254, 254, 0) 20%, rgba(0, 0, 0, 0.353) 35%, rgba(0, 0, 5, 0.5) 50%);
+  width: 50%;
+  height: 96.5%;
+  margin-top: 20px;
 }
 .oneSection .itemsOne p {
+  padding-top: 300px;
   font-family: DinRoundPro;
   font-size: 20px;
   color: #F9F6F2;
-  max-width: 800px;
+  max-width: 500px;
+  position: relative;
+  left: 22%;
 }
 .oneSection .itemsOne button {
+  margin-top: 40px;
   height: 50px;
   width: 200px;
   border-radius: 10px;
@@ -124,30 +143,80 @@ nav ul .logo {
   font-size: 20px;
   border: none;
   position: relative;
-  left: 15%;
+  left: 22%;
 }
 
 .twoSection {
+  margin: 150px;
   font-size: 24px;
 }
 .twoSection div {
   display: flex;
   flex-direction: column;
   place-content: center;
+  gap: 100px;
 }
 .twoSection div div {
+  width: 110%;
   display: flex;
   flex-direction: row;
-  margin: 80px 100px 25px 100px;
+  gap: 100px;
+  margin: 10px 0 10px 0;
+}
+.twoSection div div .border-box {
+  border-radius: 20px;
+  min-width: 550px;
+  min-height: 400px;
+  /* z-index: 99; */
 }
 .twoSection div div p {
-  margin: 120px;
   max-width: 400px;
+  text-align: center;
+  align-items: center;
   justify-content: center;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.twoSection div div .phoneCircle {
+  z-index: 99;
+  position: absolute;
+}
+.twoSection div div .desktopCircle {
+  z-index: 99;
+  position: absolute;
+  width: 600px;
+}
+.twoSection div div .blueCircle {
+  background-color: #00B4C1;
+  position: relative;
+  top: -150px;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+.twoSection div div .litleCircle {
+  background-image: url("/asset/litleCircles.svg");
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  right: 350px;
+  top: 350px;
+}
+.twoSection div div .orangeCircle {
+  background-color: #FF6700;
+  position: relative;
+  top: 150px;
+  right: 200px;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
 }
 
 .threeSection {
-  background-color: rgb(186, 250, 181);
+  background-color: #95DCDE;
   max-height: 800px;
 }
 .threeSection h2 {
@@ -165,12 +234,15 @@ nav ul .logo {
 .threeSection div .boxy {
   display: flex;
   width: 500px;
+  height: 120px;
   position: relative;
   top: -550px;
-  gap: 50px;
+  /* gap:50px; */
   left: 20%;
   margin: 40px;
-  border-radius: 50% 10px 10px 50%;
+  border-radius: 60px; /* 50px  10px 10px 50px */
+  align-items: center;
+  padding: 10px;
 }
 .threeSection div .boxy .boxNumero {
   font-size: 40px;
@@ -188,6 +260,9 @@ nav ul .logo {
   display: flex;
   place-content: center;
   align-items: center;
+  width: 250px;
+  position: relative;
+  left: 20px;
 }
 
 .fourSection {
@@ -267,4 +342,23 @@ nav ul .logo {
 }
 .fiveSection div .itemsOne .logoSlogan {
   height: 20rem;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 2;
+    scale: 100%;
+  }
+}
+img {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
 }/*# sourceMappingURL=style.css.map */

@@ -28,13 +28,11 @@ $whiteKumpai    : #F9F6F2;
 $yellowKumpai   : #FFD600; 
 $orangeKumpai   : #FF6700; 
 $greenKumpai    :   #45B64A;
-$blueKumpai     : #00B4C1; 
 
 
 $yellowKumpaiLigth   : #FFF0A3; 
 $orangeKumpaiLigth   : #F9AC80; 
 $greenKumpaiLigth    :   #A6D399;
-$blueKumpaiLigth     : #95DCDE; 
 
 
 
@@ -50,9 +48,6 @@ $blueKumpaiLigth     : #95DCDE;
     background-color: $greenKumpai;
 }
 
-.bg-blueKumpai {
-    background-color: $blueKumpai;
-}
 
 .bg-yellowKumpaiLigth{
     background-color:$yellowKumpaiLigth;
@@ -64,10 +59,6 @@ $blueKumpaiLigth     : #95DCDE;
 
 .bg-greenKumpaiLigth{
     background-color:$greenKumpaiLigth;
-}
-
-.bg-blueKumpaiLigth{
-    background-color:$blueKumpaiLigth;
 }
 
 
@@ -138,41 +129,29 @@ nav {
 
 .oneSection{
     background-image: url("/asset/imgs/portada.png");
-    /* background-repeat: no-repeat; */
-    background-position:center;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    /* min-height:700px; */
-    height:600px;
+    height: 700px;
+
     .logoSlogan{
         height: 20rem;
         position: relative;
         left: 10%;
         top: 10rem;
-        z-index: 99;
     }
     .itemsOne {
-        /* padding:  300px 100px; */
-        position:absolute;
-        top:0px;
-        background: linear-gradient(to left, rgba(255, 254, 254, 0) 20%, rgba(0, 0, 0, 0.353) 35%, rgba(0, 0, 5, 0.5) 50%);
-        width: 50%;
-        height: 96.5%;
-        margin-top: 20px;
-        
-
+        display: flex;
+        margin: 100px;
+        position: relative;
+        top: 25rem;
         p{
-            padding-top:  300px;
             font-family: DinRoundPro;
             font-size: 20px;
             color:$whiteKumpai;
-            max-width: 500px;
-            position: relative;
-            left: 22%;
+            max-width: 800px;
         }
         button{
-            margin-top: 40px;
             height: 50px;
             width: 200px;
             border-radius: 10px;
@@ -181,85 +160,32 @@ nav {
             font-size: 20px;
             border: none;
             position: relative;
-            left: 22%;
+            left: 15%;
         }
     }
 }
 
 .twoSection {
-    margin:150px;
     div{
         display: flex;
         flex-direction:column;
         place-content: center;
-        gap:100px;
         div{
-            width: 110%;
             display: flex;
             flex-direction:row;
-            gap: 100px;
-            margin: 10px 0 10px 0;//revisar
-            .border-box{
-                border-radius: 20px;
-                min-width: 550px;
-                min-height: 400px;
-                /* z-index: 99; */
-            }
+            margin: 80px 100px 25px 100px;
             p{
+                margin: 120px;
                 max-width: 400px;
-                text-align: center;
-                align-items: center;
                 justify-content: center;
-                display: flex;
-                justify-content: center;
-                font-weight: bold;
-            }
-            .phoneCircle{
-                z-index: 99;
-                position: absolute;
-            }
-
-            .desktopCircle{
-                z-index: 99;
-                position: absolute;
-                width: 600px;
-            }
-
-            .blueCircle{
-                background-color: $blueKumpai;
-                position: relative;
-                top: -150px;
-                border-radius: 50%;
-                width: 400px;
-                height: 400px;
-            }
-            .litleCircle{
-                background-image: url("/asset/litleCircles.svg");
-                background-position:center;
-                background-size: cover;
-                width: 150px;
-                height: 150px;
-                position: relative;
-                right: 350px;
-                top: 350px;
-            }
-            .orangeCircle{
-                background-color: $orangeKumpai;
-                position: relative;
-                top: 150px;
-                right: 200px;
-                border-radius: 50%;
-                width: 300px;
-                height: 300px;
             }
         }
     }
     font-size: 24px;
-    
 }
 
 .threeSection{
-    background-color: $blueKumpaiLigth;
+    background-color: rgb(186, 250, 181);
     max-height: 800px;
     h2{
         font-family: FestivoLetters;
@@ -278,16 +204,12 @@ nav {
             .boxy{
                 display:flex;
                 width: 500px;
-                height: 120px;
                 position: relative;
                 top:-550px;
-                /* gap:50px; */
+                gap:50px;
                 left: 20%;
                 margin: 40px;
-                border-radius: 60px; /* 50px  10px 10px 50px */
-                align-items: center;
-                padding: 10px;
-                
+                border-radius:  50%  10px 10px 50%;
                 .boxNumero {
                     font-size: 40px;
                     font-weight: bold;
@@ -304,9 +226,6 @@ nav {
                     display: flex;
                     place-content: center;
                     align-items: center;
-                    width: 250px;
-                    position:relative;
-                    left: 20px;
                 }
             }
         }
@@ -389,31 +308,8 @@ nav {
                 font-weight: bold;
             }
             .logoSlogan{
-                height: 20rem;  
+                height: 20rem;
             }
         }
     }
-}
-
-@keyframes show {
-    from {
-        opacity: 0;
-        scale: 25%;
-    }
-
-    to {
-        opacity: 2;
-        scale: 100%;
-    }
-}
-
-img{
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-
-    animation-timeline: --image;
-    animation-name:show;
-
-    animation-range: entry 25% cover 50%;
-    animation-fill-mode:both;
 }
