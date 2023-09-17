@@ -87,7 +87,7 @@ nav ul .btnInit {
   justify-content: end;
   font-weight: bold;
   color: #00B4C1;
-  font-size: 24px;
+  font-size: 25px;
 }
 nav ul .logo {
   background-image: url("/asset/Logo 2-14.svg");
@@ -127,7 +127,7 @@ nav ul .logo {
 .oneSection .itemsOne p {
   padding-top: 300px;
   font-family: DinRoundPro;
-  font-size: 20px;
+  font-size: 16px;
   color: #F9F6F2;
   max-width: 500px;
   position: relative;
@@ -140,7 +140,8 @@ nav ul .logo {
   border-radius: 10px;
   background-color: #FF6700;
   color: #F9F6F2;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
   border: none;
   position: relative;
   left: 22%;
@@ -221,7 +222,7 @@ nav ul .logo {
 }
 .threeSection h2 {
   font-family: FestivoLetters;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
   padding-top: 80px;
@@ -266,7 +267,7 @@ nav ul .logo {
 }
 
 .fourSection {
-  margin-top: 100px;
+  margin-top: -40px;
   margin-bottom: 100px;
   display: flex;
   flex-direction: row;
@@ -285,24 +286,24 @@ nav ul .logo {
 }
 .fourSection div .boxCard {
   border-radius: 20px;
-  margin: 15px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 850px;
+  min-height: 650px;
 }
 .fourSection div .boxCard h2 {
-  font-size: 25px;
+  font-size: 18px;
   display: flex;
   place-content: center;
   margin-top: 100px;
 }
 .fourSection div .boxCard p {
-  font-size: 20px;
+  font-size: 14px;
   display: flex;
   place-content: center;
-  max-width: 250px;
-  margin-top: 50px;
+  max-width: 300px;
+  margin-top: 20px;
 }
 
 .fiveSection {
@@ -322,7 +323,8 @@ nav ul .logo {
   border-radius: 10px;
   background-color: #FF6700;
   color: #F9F6F2;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
   border: none;
   position: relative;
   top: -100px;

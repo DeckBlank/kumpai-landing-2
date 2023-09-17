@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "nodemon ./app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "sass":" sass sass/style.scss public/css/style.css -w"
   },
   "repository": {
     "type": "git",
