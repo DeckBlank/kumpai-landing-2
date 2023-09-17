@@ -255,7 +255,8 @@ nav {
             }
         }
     }
-    font-size: 24px;
+    font-size: 18px;//24px;
+    font-weight: bold;//nuevo
     
 }
 
@@ -301,7 +302,8 @@ nav {
                     background-color: $whiteKumpai;
                 }
                 .boxText{
-                    font-size: 25px;
+                    font-size: 18px;//25px;
+                    font-weight: bold;// nuevo
                     display: flex;
                     place-content: center;
                     align-items: center;

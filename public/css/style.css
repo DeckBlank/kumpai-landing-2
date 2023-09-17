@@ -149,7 +149,8 @@ nav ul .logo {
 
 .twoSection {
   margin: 150px;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: bold;
 }
 .twoSection div {
   display: flex;
@@ -257,7 +258,8 @@ nav ul .logo {
   background-color: #F9F6F2;
 }
 .threeSection div .boxy .boxText {
-  font-size: 25px;
+  font-size: 18px;
+  font-weight: bold;
   display: flex;
   place-content: center;
   align-items: center;
