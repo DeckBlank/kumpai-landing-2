@@ -511,6 +511,7 @@ nav ul .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10%;
 }
 .fiveSection div {
   align-items: center;
@@ -546,6 +547,26 @@ nav ul .logo {
   height: 20rem;
 }
 
+@media (max-width: 900px) {
+  .fiveSection div .itemsOne {
+    gap: 20px;
+    margin-bottom: 50px;
+    flex-direction: row;
+  }
+  .fiveSection div .itemsOne p {
+    font-size: 16px;
+    max-width: 500px;
+  }
+  .fiveSection div .itemsOne .logoSlogan {
+    height: 15rem;
+  }
+}
+@media (max-width: 768px) {
+  .fiveSection div .itemsOne {
+    text-align: center;
+    flex-direction: column;
+  }
+}
 @keyframes show {
   from {
     opacity: 0;
