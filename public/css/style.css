@@ -107,6 +107,14 @@ nav ul .logo {
   position: relative;
   /* min-height:700px; */
   height: 600px;
+  /* @media (max-width: 768px) {
+      background-color: red;
+
+  } 
+  @media (max-width: 576px) {
+      background-color: red;
+
+  }  */
 }
 .oneSection .logoSlogan {
   height: 20rem;
@@ -145,6 +153,30 @@ nav ul .logo {
   border: none;
   position: relative;
   left: 22%;
+}
+@media (max-width: 900px) {
+  .oneSection {
+    height: 500px;
+  }
+  .oneSection .logoSlogan {
+    height: 15rem;
+  }
+  .oneSection .itemsOne {
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(to left, rgba(255, 254, 254, 0) 10%, rgba(0, 0, 0, 0.353) 25%, rgba(0, 0, 5, 0.5) 60%);
+    width: 50%;
+    height: 96.5%;
+    margin-top: 20px;
+  }
+  .oneSection .itemsOne p {
+    padding-top: 250px;
+    font-size: 14px;
+  }
+  .oneSection .itemsOne button {
+    margin-top: 30px;
+    font-size: 16px;
+  }
 }
 
 .twoSection {
@@ -216,31 +248,109 @@ nav ul .logo {
   width: 300px;
   height: 300px;
 }
+@media (max-width: 900px) {
+  .twoSection div {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    gap: 100px;
+  }
+  .twoSection div div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: 10px 0 10px 0;
+  }
+  .twoSection div div .border-box {
+    border-radius: 20px;
+    min-width: 450px;
+    min-height: 300px;
+  }
+  .twoSection div div p {
+    max-width: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .twoSection div div .phoneCircle {
+    z-index: 99;
+    position: absolute;
+  }
+  .twoSection div div .desktopCircle {
+    z-index: 99;
+    position: absolute;
+    width: 600px;
+  }
+  .twoSection div div .blueCircle {
+    background-color: #00B4C1;
+    position: relative;
+    top: -150px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+  }
+  .twoSection div div .litleCircle {
+    background-image: url("/asset/litleCircles.svg");
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    right: 350px;
+    top: 350px;
+  }
+  .twoSection div div .orangeCircle {
+    background-color: #FF6700;
+    position: relative;
+    top: 150px;
+    right: 200px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+}
 
 .threeSection {
+  padding-bottom: 100px;
   background-color: #95DCDE;
   max-height: 800px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas: "cajaCero cajaCero" "cajaTwo cajaOne ";
+}
+.threeSection :nth-child(1) {
+  grid-area: cajaCero;
+}
+.threeSection :nth-child(2) {
+  grid-area: cajaOne;
+}
+.threeSection :nth-child(3) {
+  grid-area: cajaTwo;
 }
 .threeSection h2 {
   font-family: FestivoLetters;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 .threeSection .imgPeople {
-  max-height: 600px;
-  position: relative;
-  left: 90rem;
+  max-height: 500px;
+  margin-left: 100px;
 }
 .threeSection div .boxy {
   display: flex;
   width: 500px;
-  height: 120px;
+  height: 110px;
   position: relative;
-  top: -550px;
+  /* top:-550px; */
   /* gap:50px; */
-  left: 20%;
+  left: 25%;
   margin: 40px;
   border-radius: 60px; /* 50px  10px 10px 50px */
   align-items: center;
@@ -268,6 +378,11 @@ nav ul .logo {
   left: 20px;
 }
 
+@media (max-width: 768px) {
+  .threeSection .imgPeople {
+    /* display: none; */
+  }
+}
 .fourSection {
   margin-top: -40px;
   margin-bottom: 100px;

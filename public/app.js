@@ -46,14 +46,18 @@ fetch('app.json')
         //section three
         const threeSection = document.querySelector('.threeSection');
         data.threeSection.forEach(item => {
-        const div = document.createElement('div');
-        div.innerHTML = `
+        const cajaCero = document.createElement('div');
+        cajaCero.innerHTML =`
                     <h2>${item.h2}</h2>
+        `;    
+        const cajaOne = document.createElement('div');
+        cajaOne.innerHTML = `
+       
                     <img class= "imgPeople" src="${item.imgSrc}" alt="">
         `;
-
+        const cajatwo = document.createElement('div');
         item.itemBox.forEach(boxItem => {
-            div.innerHTML += `
+            cajatwo.innerHTML += `
                 <div class= "boxy ${boxItem.bgColor}">
                     <p class = "boxNumero ${boxItem.tColor}" >${boxItem.n}</p>
                     <p class="boxText">${boxItem.p}</p>
@@ -61,7 +65,9 @@ fetch('app.json')
             `;
         
         });
-        threeSection.appendChild(div);
+        threeSection.appendChild(cajaCero);
+        threeSection.appendChild(cajaOne);
+        threeSection.appendChild(cajatwo);
         });
 
         //section four
