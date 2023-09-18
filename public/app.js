@@ -19,23 +19,23 @@ fetch('app.json')
         data.twoSection.forEach(item => {
         const div = document.createElement('div');
         div.innerHTML = `
-            <div>
-                <div class="bg-blueKumpaiLigth border-box card">
+            <div class="twoBoxs">
+                <div class="sTBoxOne bg-blueKumpaiLigth border-box card">
                     <p>${item.p1}</p>
                 </div>
-                <div>
-                    <img class= "phoneCircle card" src="${item.imgSrc1}" alt="">
+                <div class="sTBoxtwo">
+                    <img class="phoneCircle card" src="${item.imgSrc1}" alt="">
                     <div class="blueCircle">
                         <span class="litleCircle"></span>
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="twoBoxs">
+                <div class="sTBoxOne">
                     <img class= "desktopCircle" src="${item.imgSrc2}" alt="">
                     <div class="orangeCircle"></div>
                 </div>
-                <div class="bg-orangeKumpaiLigth border-box">
+                <div class="sTBoxtwo bg-orangeKumpaiLigth border-box">
                     <p>${item.p2}</p>
                 </div>
             </div>

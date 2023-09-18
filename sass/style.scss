@@ -363,6 +363,15 @@ nav {
             }
         }
     }
+
+    @media (max-width: 768px){
+        div{
+            display: flex;
+            flex-direction:column;
+            place-content: center;
+            gap:100px;
+        }
+    }
 }
 
 .threeSection{
@@ -406,11 +415,9 @@ nav {
                 width: 500px;
                 height: 110px;
                 position: relative;
-                /* top:-550px; */
-                /* gap:50px; */
                 left: 25%;
                 margin: 40px;
-                border-radius: 60px; /* 50px  10px 10px 50px */
+                border-radius: 60px; 
                 align-items: center;
                 padding: 10px;
                 
@@ -440,12 +447,40 @@ nav {
 
 }
 
+@media (max-width: 900px){
+    .threeSection{
+        h2{
+            font-size: 25px;
+        }
+        .imgPeople {
+            max-height: 400px;
+        }
+
+        div{
+            .boxy{
+                width: 350px;
+                height: 120px;
+                position: relative;
+                left: 15%;
+                margin: 30px;
+                
+                .boxNumero {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .threeSection{
-
-        .imgPeople {
-            /* display: none; */
+        .imgPeople{
+            display: none;
         }
+        grid-template-areas:
+        "cajaCero cajaCero"
+        "cajaTwo cajaTwo "
+        ;
     }
 
 } 
