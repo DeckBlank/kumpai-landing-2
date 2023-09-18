@@ -96,7 +96,7 @@ fetch('app.json')
                     <button>${item.button}</button>
                     <div class="itemsOne">
                         <p>${item.p}</p>
-                        <img class="logoSlogan" src="${item.imgSrc}" alt="">
+                        <img class="logoSlogan" src="${item.imgSrc}" alt="Espacio">
                     </div>
         `;
                 
