@@ -245,12 +245,12 @@ nav {
             margin: 10px 0 10px 0;//revisar
             .border-box{
                 border-radius: 20px;
-                min-width: 550px;
+                min-width: 30rem;//550px;
                 min-height: 400px;
                 /* z-index: 99; */
             }
             p{
-                max-width: 400px;
+                max-width: 60%;
                 text-align: center;
                 align-items: center;
                 justify-content: center;
@@ -317,12 +317,11 @@ nav {
                 margin: 10px 0 10px 0;//revisar
                 .border-box{
                     border-radius: 20px;
-                    min-width: 450px;
+                    /* min-width: 450px; */
                     min-height: 300px;
     
                 }
                 p{
-                    max-width: 400px;
                     text-align: center;
                     align-items: center;
                     justify-content: center;
@@ -338,7 +337,7 @@ nav {
                 .desktopCircle{
                     z-index: 99;
                     position: absolute;
-                    width: 70%;
+                    width: 50%;
                 }
     
                 .blueCircle{
@@ -385,6 +384,9 @@ nav {
                 justify-content: center;
                 display: flex;
                 flex-direction: column;
+                .desktopCircle{
+                    width: 70%;
+                }
             }
         }
     }
@@ -428,7 +430,7 @@ nav {
         div{
             .boxy{
                 display:flex;
-                width: 500px;
+                width: 70%;
                 height: 110px;
                 position: relative;
                 left: 25%;
@@ -443,8 +445,8 @@ nav {
                     display: flex;
                     place-content: center;
                     align-items: center;
-                    width: 100px;
-                    height: 100px;
+                    width: 10rem;
+                    height: 10rem;
                     border-radius: 50%;
                     background-color: $whiteKumpai;
                 }
@@ -474,14 +476,14 @@ nav {
 
         div{
             .boxy{
-                width: 350px;
+                width: 70%;
                 height: 120px;
                 position: relative;
                 left: 15%;
                 margin: 30px;
                 
                 .boxNumero {
-                    font-size: 35px;
+                    font-size: 30px;
                 }
             }
         }
@@ -500,6 +502,15 @@ nav {
         "cajaCero cajaCero"
         "cajaTwo cajaTwo "
         ;
+        div{
+            .boxy{
+                border-radius: 50px; 
+                .boxNumero{
+                    width: 8rem;
+                    height: 8rem;
+                }
+            }
+        }
     }
 
 } 
