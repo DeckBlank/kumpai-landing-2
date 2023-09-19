@@ -224,7 +224,8 @@ nav {
 }  */
 
 .twoSection {
-    margin:18%;
+    /* margin:18%; */
+    padding: 10%;
     div{
         display: flex;
         flex-direction:column;
@@ -233,6 +234,8 @@ nav {
         div{
             width: 100%;
             display: flex;
+            align-items: center;
+            place-content: center;
             flex-direction:row;
             gap: 100px;
             margin: 10px 0 10px 0;//revisar
@@ -293,8 +296,10 @@ nav {
     }
     font-size: 18px;//24px;
     font-weight: bold;//nuevo
-    
-    @media (max-width: 900px) {
+}
+
+@media (max-width: 900px) {
+    .twoSection{
         div{
             display: flex;
             flex-direction:column;
@@ -310,7 +315,7 @@ nav {
                     border-radius: 20px;
                     min-width: 450px;
                     min-height: 300px;
-
+    
                 }
                 p{
                     max-width: 400px;
@@ -329,7 +334,7 @@ nav {
                 .desktopCircle{
                     z-index: 99;
                     position: absolute;
-                    width: 600px;
+                    width: 70%;
                 }
     
                 .blueCircle{
@@ -362,8 +367,11 @@ nav {
             }
         }
     }
+}
 
-    @media (max-width: 768px){
+@media (max-width: 768px){
+    .twoSection{
+
         div{
             display: flex;
             flex-direction:column;
