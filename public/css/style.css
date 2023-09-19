@@ -100,21 +100,13 @@ nav ul .logo {
 
 .oneSection {
   background-image: url("/asset/imgs/portada.png");
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  /* min-height:700px; */
-  height: 600px;
-  /* @media (max-width: 768px) {
-      background-color: red;
-
-  } 
-  @media (max-width: 576px) {
-      background-color: red;
-
-  }  */
+  min-height: 700px;
+  /* max-height:700px; */
 }
 .oneSection .logoSlogan {
   height: 20rem;
@@ -154,23 +146,24 @@ nav ul .logo {
   position: relative;
   left: 22%;
 }
+
 @media (max-width: 900px) {
   .oneSection {
-    height: 500px;
+    min-height: 500px;
   }
   .oneSection .logoSlogan {
     height: 15rem;
   }
   .oneSection .itemsOne {
-    position: absolute;
-    top: 0px;
+    /* position:absolute;
+    top:0px;
     background: linear-gradient(to left, rgba(255, 254, 254, 0) 10%, rgba(0, 0, 0, 0.353) 25%, rgba(0, 0, 5, 0.5) 60%);
     width: 50%;
     height: 96.5%;
-    margin-top: 20px;
+    margin-top: 20px; */
   }
   .oneSection .itemsOne p {
-    padding-top: 250px;
+    padding-top: 200px;
     font-size: 14px;
   }
   .oneSection .itemsOne button {
@@ -178,9 +171,16 @@ nav ul .logo {
     font-size: 16px;
   }
 }
+/* @media (max-width: 768px) {
+    background-color: red;
 
+} 
+@media (max-width: 576px) {
+    background-color: red;
+
+}  */
 .twoSection {
-  margin: 150px;
+  margin: 18%;
   font-size: 18px;
   font-weight: bold;
 }
@@ -191,7 +191,7 @@ nav ul .logo {
   gap: 100px;
 }
 .twoSection div div {
-  width: 110%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 100px;
@@ -219,7 +219,7 @@ nav ul .logo {
 .twoSection div div .desktopCircle {
   z-index: 99;
   position: absolute;
-  width: 600px;
+  width: 35%;
 }
 .twoSection div div .blueCircle {
   background-color: #00B4C1;
@@ -319,6 +319,11 @@ nav ul .logo {
     flex-direction: column;
     place-content: center;
     gap: 100px;
+  }
+  .twoSection div div {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 
