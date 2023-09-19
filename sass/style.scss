@@ -529,10 +529,10 @@ nav {
         ;
         div{
             .boxy{
-                border-radius: 50px; 
+                border-radius: 60px; 
                 .boxNumero{
-                    width: 8rem;
-                    height: 8rem;
+                    width: 10rem;
+                    height: 10rem;
                 }
             }
         }
@@ -543,6 +543,20 @@ nav {
 @media (max-width: 576px) {
     .threeSection{
         align-items: center;
+        :nth-child(3){
+            position: relative;
+            right: 10%;
+        }
+        div {
+            .boxy{
+                width: 80%;
+                height: 100px;
+                .boxNumero{
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+        }
     }
 }
 

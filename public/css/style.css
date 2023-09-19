@@ -440,16 +440,28 @@ nav ul .logo {
     display: none;
   }
   .threeSection div .boxy {
-    border-radius: 50px;
+    border-radius: 60px;
   }
   .threeSection div .boxy .boxNumero {
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 @media (max-width: 576px) {
   .threeSection {
     align-items: center;
+  }
+  .threeSection :nth-child(3) {
+    position: relative;
+    right: 10%;
+  }
+  .threeSection div .boxy {
+    width: 80%;
+    height: 100px;
+  }
+  .threeSection div .boxy .boxNumero {
+    width: 6rem;
+    height: 6rem;
   }
 }
 .fourSection {
