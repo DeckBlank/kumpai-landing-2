@@ -111,12 +111,13 @@ nav ul .logo {
   background-attachment: fixed;
   position: relative;
   min-height: 700px;
-  /* max-height:700px; */
+  display: flex;
+  flex-direction: column;
 }
 .oneSection .logoSlogan {
   height: 20rem;
   position: relative;
-  left: 10%;
+  left: 11%;
   top: 10rem;
   z-index: 99;
 }
@@ -130,7 +131,7 @@ nav ul .logo {
   margin-top: 20px;
 }
 .oneSection .itemsOne p {
-  padding-top: 300px;
+  padding-top: 350px;
   font-family: DinRoundPro;
   font-size: 16px;
   color: #F9F6F2;
@@ -139,7 +140,7 @@ nav ul .logo {
   left: 22%;
 }
 .oneSection .itemsOne button {
-  margin-top: 40px;
+  margin-top: 50px;
   height: 50px;
   width: 200px;
   border-radius: 10px;
@@ -168,7 +169,7 @@ nav ul .logo {
     margin-top: 20px; */
   }
   .oneSection .itemsOne p {
-    padding-top: 200px;
+    padding-top: 60%;
     font-size: 14px;
   }
   .oneSection .itemsOne button {
@@ -179,6 +180,15 @@ nav ul .logo {
 @media (max-width: 768px) {
   .oneSection {
     max-height: 400px;
+    gap: 20%;
+  }
+  .oneSection .itemsOne p {
+    padding-top: 80%;
+  }
+}
+@media (max-width: 610px) {
+  .oneSection .itemsOne p {
+    padding-top: 30rem;
   }
 }
 /*  
