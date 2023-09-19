@@ -214,10 +214,14 @@ nav {
     }
 }
 
-/* @media (max-width: 768px) {
-    background-color: red;
+@media (max-width: 768px) {
+    .oneSection{
+        max-height: 400px;
+    }
 
-} 
+}
+
+/*  
 @media (max-width: 576px) {
     background-color: red;
 
@@ -486,7 +490,10 @@ nav {
 
 @media (max-width: 768px) {
     .threeSection{
-        .imgPeople{
+        /* .imgPeople{
+            display: none;
+        } */
+        :nth-child(2){
             display: none;
         }
         grid-template-areas:

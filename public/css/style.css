@@ -171,10 +171,12 @@ nav ul .logo {
     font-size: 16px;
   }
 }
-/* @media (max-width: 768px) {
-    background-color: red;
-
-} 
+@media (max-width: 768px) {
+  .oneSection {
+    max-height: 400px;
+  }
+}
+/*  
 @media (max-width: 576px) {
     background-color: red;
 
@@ -412,9 +414,12 @@ nav ul .logo {
 }
 @media (max-width: 768px) {
   .threeSection {
+    /* .imgPeople{
+        display: none;
+    } */
     grid-template-areas: "cajaCero cajaCero" "cajaTwo cajaTwo ";
   }
-  .threeSection .imgPeople {
+  .threeSection :nth-child(2) {
     display: none;
   }
 }
