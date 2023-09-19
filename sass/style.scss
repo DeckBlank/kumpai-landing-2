@@ -560,6 +560,26 @@ nav {
     }
 }
 
+@media (max-width: 400px) {
+    .threeSection{
+/*         align-items: center;
+        :nth-child(3){
+            position: relative;
+            right: 10%;
+        } */
+        div {
+            .boxy{
+                width: 80%;
+                height: 80px;
+                .boxNumero{
+                    width: 6.5rem;
+                    height: 6rem;
+                }
+            }
+        }
+    }
+}
+
 .fourSection{
     margin-top: -40px;
     margin-bottom: 100px;

@@ -464,6 +464,23 @@ nav ul .logo {
     height: 6rem;
   }
 }
+@media (max-width: 400px) {
+  .threeSection {
+    /*         align-items: center;
+            :nth-child(3){
+                position: relative;
+                right: 10%;
+            } */
+  }
+  .threeSection div .boxy {
+    width: 80%;
+    height: 80px;
+  }
+  .threeSection div .boxy .boxNumero {
+    width: 6.5rem;
+    height: 6rem;
+  }
+}
 .fourSection {
   margin-top: -40px;
   margin-bottom: 100px;
