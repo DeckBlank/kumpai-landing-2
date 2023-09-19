@@ -465,15 +465,7 @@ nav ul .logo {
   }
 }
 @media (max-width: 400px) {
-  .threeSection {
-    /*         align-items: center;
-            :nth-child(3){
-                position: relative;
-                right: 10%;
-            } */
-  }
   .threeSection div .boxy {
-    width: 80%;
     height: 80px;
   }
   .threeSection div .boxy .boxNumero {
@@ -570,6 +562,21 @@ nav ul .logo {
   }
   .fourSection div .boxCard p {
     font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .fourSection div {
+    /*             .imgCrad{
+                    max-width: 150px;
+                } */
+  }
+  .fourSection div .boxCard {
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120%;
   }
 }
 .fiveSection {

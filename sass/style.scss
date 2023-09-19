@@ -562,14 +562,8 @@ nav {
 
 @media (max-width: 400px) {
     .threeSection{
-/*         align-items: center;
-        :nth-child(3){
-            position: relative;
-            right: 10%;
-        } */
         div {
             .boxy{
-                width: 80%;
                 height: 80px;
                 .boxNumero{
                     width: 6.5rem;
@@ -693,6 +687,26 @@ nav {
         }
     }
 }
+
+
+@media (max-width:400px) {
+    .fourSection{
+        div{
+/*             .imgCrad{
+                max-width: 150px;
+            } */
+            .boxCard{
+                border-radius: 20px;
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 120%;
+            }
+        }
+    }
+}
+
 
 
 .fiveSection{
