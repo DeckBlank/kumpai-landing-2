@@ -12,7 +12,6 @@ import express from "express";
 import helmet from "helmet";
 import http from "http";
 import morgan from "morgan";
-import { sendMail } from "./mail.js";
 
 export const app = express();
 app.use(express.json());
@@ -61,12 +60,12 @@ export default httpServer;
 
 
 
-sendMail({
+/* sendMail({
   email: "disenador.uxui@mablovers.com",
   subject: "Hello",
   text: "Hello world",
   html: `
         
   `,
-})
+}) */
 
