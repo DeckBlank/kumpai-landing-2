@@ -107,13 +107,13 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 999;
+    align-items: center;
     
     ul {
 
         display: flex;
         justify-content: space-between;
         width: 100%;
-        align-items: center;
 
 
         .btnInit{
@@ -139,7 +139,7 @@ nav {
         }
 
         .logo{
-            background-image: url("/asset/LogoKind-01.svg");
+            background-image: url("/asset/LogoKind-00.svg");
             background-repeat: no-repeat;
             width: 50%;
             display: flex;
