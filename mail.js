@@ -1,6 +1,6 @@
 import {
-    MAILING_API_KEY_EMAIL,
-    MAILING_EMAIL_SIGNIN,
+  MAILING_API_KEY_EMAIL,
+  MAILING_EMAIL_SIGNIN,
 } from "./config/enviroments.js";
   
   import { MailService } from "@sendgrid/mail";

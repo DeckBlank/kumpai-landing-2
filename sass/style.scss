@@ -113,6 +113,7 @@ nav {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        align-items: center;
 
 
         .btnInit{
@@ -120,10 +121,23 @@ nav {
             display: flex;
             align-items: center;
             justify-content: end;
+            place-content: center;
             font-weight: bold;
             color:#00B4C1;
             font-size: 25px;
+            background-color: #FF6700;
+            border-radius: 15px;
+            width: 180px;
+            height: 45px;
+            &:hover{
+                background-color: $blueKumpai;
+            }
         }
+
+        .btnInit a {
+            color: $whiteKumpai;  
+        }
+
         .logo{
             background-image: url("/asset/LogoKind-01.svg");
             background-repeat: no-repeat;

@@ -9,6 +9,7 @@ fetch('app.json')
             <img class="logoSlogan" src="${item.imgSrc}" alt="">
             <div class="itemsOne">
                 <p>${item.p}</p>
+                <button>${item.button}</button>
             </div>
         `;
         oneSection.appendChild(div);
