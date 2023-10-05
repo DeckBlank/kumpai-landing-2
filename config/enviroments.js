@@ -7,4 +7,6 @@ export const {
     PORT,
     PROYECTO,
     FRONTEND,
+    MAILING_API_KEY_EMAIL,
+    MAILING_EMAIL_SIGNIN,
 } = process.env;
