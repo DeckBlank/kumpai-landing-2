@@ -116,8 +116,8 @@ nav ul .logo {
   }
 }
 .oneSection {
-  background-image: url("/asset/imgs/portada.png");
-  /* background-image: url("/asset/imgs/portada-02.jpg"); */
+  /* background-image: url("/asset/imgs/portada.png"); */
+  background-image: url("/asset/imgs/newPortada01.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -169,17 +169,17 @@ nav ul .logo {
 @media (max-width: 900px) {
   .oneSection {
     min-height: 500px;
+    /*         .itemsOne{
+                position:absolute;
+                top:0px;
+                background: linear-gradient(to left, rgba(255, 254, 254, 0) 10%, rgba(0, 0, 0, 0.353) 25%, rgba(0, 0, 5, 0.5) 60%);
+                width: 50%;
+                height: 96.5%;
+                margin-top: 20px;
+            } */
   }
   .oneSection .logoSlogan {
     height: 15rem;
-  }
-  .oneSection .itemsOne {
-    /* position:absolute;
-    top:0px;
-    background: linear-gradient(to left, rgba(255, 254, 254, 0) 10%, rgba(0, 0, 0, 0.353) 25%, rgba(0, 0, 5, 0.5) 60%);
-    width: 50%;
-    height: 96.5%;
-    margin-top: 20px; */
   }
   .oneSection .itemsOne p {
     padding-top: 60%;
