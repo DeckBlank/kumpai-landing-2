@@ -116,7 +116,8 @@ nav ul .logo {
   }
 }
 .oneSection {
-  background-image: url("/asset/imgs/portada.png");
+  /*  background-image: url("/asset/imgs/portada.png"); */
+  background-image: url("/asset/imgs/portada-01.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -400,6 +401,7 @@ nav ul .logo {
   padding-top: 50px;
 }
 .threeSection .imgPeople {
+  width: 80rem;
   max-height: 500px;
   margin-left: 100px;
 }
@@ -678,10 +680,10 @@ nav ul .logo {
     scale: 100%;
   }
 }
-img {
-  view-timeline-name: --image;
+.efects {
+  view-timeline-name: --efects;
   view-timeline-axis: block;
-  animation-timeline: --image;
+  animation-timeline: --efects;
   animation-name: show;
   animation-range: entry 25% cover 50%;
   animation-fill-mode: both;

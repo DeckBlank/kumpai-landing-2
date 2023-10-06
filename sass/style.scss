@@ -162,7 +162,8 @@ nav {
 }
 
 .oneSection{
-    background-image: url("/asset/imgs/portada.png");
+   /*  background-image: url("/asset/imgs/portada.png"); */
+    background-image: url("/asset/imgs/portada-01.jpg");
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
@@ -474,6 +475,7 @@ nav {
         
     }
     .imgPeople {
+        width: 80rem;
         max-height: 500px;
         margin-left: 100px;
     }
@@ -823,11 +825,11 @@ nav {
     }
 }
 
-img{
-    view-timeline-name: --image;
+.efects{ //img
+    view-timeline-name: --efects;//image
     view-timeline-axis: block;
 
-    animation-timeline: --image;
+    animation-timeline: --efects;//image
     animation-name:show;
 
     animation-range: entry 25% cover 50%;
