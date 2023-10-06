@@ -23,6 +23,7 @@ html {
     font-size: 62.5%;
 }
 
+
 // variables
 $whiteKumpai    : #F9F6F2;
 $yellowKumpai   : #FFD600; 
@@ -83,6 +84,11 @@ $blueKumpaiLigth     : #95DCDE;
     color:$greenKumpai;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+}
 
 @mixin center {
     display: grid;
@@ -165,7 +171,7 @@ nav {
     /* background-image: url("/asset/imgs/portada.png"); */
     background-image: url("/asset/imgs/new-portada.webp");
     background-repeat: no-repeat;
-    background-position:center;
+    /* background-position:center; */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -184,8 +190,8 @@ nav {
         position:absolute;
         top:0px;
         background: linear-gradient(to left, rgba(255, 254, 254, 0) 20%, rgba(0, 0, 0, 0.353) 35%, rgba(0, 0, 5, 0.5) 50%);
-        width: 50%;
-        height: 96.5%;
+        width: 70%;
+        height: 97%;
         margin-top: 20px;
         
         p{
@@ -195,7 +201,7 @@ nav {
             color:$whiteKumpai;
             max-width: 500px;
             position: relative;
-            left: 22%;
+            left: 15%;
         }
         button{
             margin-top: 50px;
