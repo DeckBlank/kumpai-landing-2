@@ -382,6 +382,8 @@ nav ul .logo {
   }
 }
 .threeSection {
+  /* background-image: url("/asset/imgs/new-portada.webp"); */
+  background-image: url("asset/imgs/portada.png");
   padding-bottom: 100px;
   background-color: #95DCDE;
   max-height: 800px;
@@ -407,9 +409,9 @@ nav ul .logo {
   padding-top: 50px;
 }
 .threeSection .imgPeople {
-  width: 80rem;
+  width: 100%;
   max-height: 500px;
-  margin-left: 100px;
+  position: relative;
 }
 .threeSection div .boxy {
   display: flex;
