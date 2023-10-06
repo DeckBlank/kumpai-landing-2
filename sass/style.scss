@@ -457,13 +457,15 @@ nav {
     background-color: $blueKumpaiLigth;
     max-height: 800px;
     display: grid;
+    gap: 30px;
+    align-items: center;
 
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 20% 80%;
 
     grid-template-areas:
     "cajaCero cajaCero"
-    "cajaTwo cajaOne "
+    "cajaOne cajaTwo"
     ;
     :nth-child(1){
         grid-area: cajaCero;
@@ -484,18 +486,19 @@ nav {
         
     }
     .imgPeople {
-        width: 100%;//80rem;
+        width: 90%;//80rem;
         max-height: 500px;
         position: relative;
-        //right: 100px;
+        border-radius: 20px;
+        left: 100px;
     }
         div{
             .boxy{
                 display:flex;
-                width: 70%;
+                width: 80%;
                 height: 110px;
                 position: relative;
-                left: 25%;
+                /* left: 25%; */
                 margin: 40px;
                 border-radius: 60px; 
                 align-items: center;
@@ -554,9 +557,6 @@ nav {
 
 @media (max-width: 768px) {
     .threeSection{
-        /* .imgPeople{
-            display: none;
-        } */
         :nth-child(2){
             display: none;
         }
@@ -843,5 +843,16 @@ nav {
     animation-name:show;
 
     animation-range: entry 25% cover 50%;
+    animation-fill-mode:both;
+}
+
+.efectsBoxy{ //img
+    view-timeline-name: --efects;//image
+    view-timeline-axis: block;
+
+    animation-timeline: --efects;//image
+    animation-name:show;
+
+    animation-range: entry 25% cover 30%;
     animation-fill-mode:both;
 }

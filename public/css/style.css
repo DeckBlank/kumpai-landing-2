@@ -386,9 +386,11 @@ nav ul .logo {
   background-color: #95DCDE;
   max-height: 800px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  gap: 30px;
+  align-items: center;
+  grid-template-columns: 60% 40%;
   grid-template-rows: 20% 80%;
-  grid-template-areas: "cajaCero cajaCero" "cajaTwo cajaOne ";
+  grid-template-areas: "cajaCero cajaCero" "cajaOne cajaTwo";
 }
 .threeSection :nth-child(1) {
   grid-area: cajaCero;
@@ -407,16 +409,18 @@ nav ul .logo {
   padding-top: 50px;
 }
 .threeSection .imgPeople {
-  width: 100%;
+  width: 90%;
   max-height: 500px;
   position: relative;
+  border-radius: 20px;
+  left: 100px;
 }
 .threeSection div .boxy {
   display: flex;
-  width: 70%;
+  width: 80%;
   height: 110px;
   position: relative;
-  left: 25%;
+  /* left: 25%; */
   margin: 40px;
   border-radius: 60px;
   align-items: center;
@@ -464,9 +468,6 @@ nav ul .logo {
 }
 @media (max-width: 768px) {
   .threeSection {
-    /* .imgPeople{
-        display: none;
-    } */
     grid-template-areas: "cajaCero cajaCero" "cajaTwo cajaTwo ";
   }
   .threeSection :nth-child(2) {
@@ -692,6 +693,15 @@ nav ul .logo {
   animation-timeline: --efects;
   animation-name: show;
   animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+.efectsBoxy {
+  view-timeline-name: --efects;
+  view-timeline-axis: block;
+  animation-timeline: --efects;
+  animation-name: show;
+  animation-range: entry 25% cover 30%;
   animation-fill-mode: both;
 }
 

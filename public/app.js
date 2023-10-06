@@ -57,7 +57,7 @@ fetch('app.json')
         const cajatwo = document.createElement('div');
         item.itemBox.forEach(boxItem => {
             cajatwo.innerHTML += `
-                <div class= "boxy ${boxItem.bgColor} efects">
+                <div class= "boxy ${boxItem.bgColor} efectsBoxy">
                     <p class = "boxNumero ${boxItem.tColor}" >${boxItem.n}</p>
                     <p class="boxText">${boxItem.p}</p>
                 </div>
