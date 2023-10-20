@@ -62,7 +62,7 @@
         },
         {
             "imgSvg"    : "./asset/socioemocional.svg",
-            "h2"        : "Convivencia en el aula",
+            "h2"        : "Habilidades socioemocionales",
             "p"         : "Material pedagógico para fortalecer las habilidades socioemocionales",
             "imgPhone"  : "./asset/imgs/imgePhone3.png",
             "bgColor"   : "bg-greenKumpaiLigth"
