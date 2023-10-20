@@ -63,7 +63,7 @@
         {
             "imgSvg"    : "./asset/socioemocional.svg",
             "h2"        : "Herramientas psicopedagógicas",
-            "p"         : "Material pedagógico para fortalecer las habilidades socioemocionales",
+            "p"         : "Material psicopedagógico para fortalecer las habilidades socioemocionales",
             "imgPhone"  : "./asset/imgs/imgePhone3.png",
             "bgColor"   : "bg-greenKumpaiLigth"
         }
