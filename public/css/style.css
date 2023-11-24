@@ -206,6 +206,9 @@ nav ul .logo {
   }
 }
 @media (max-width: 610px) {
+  .oneSection {
+    min-height: 700px;
+  }
   .oneSection .itemsOne {
     position: absolute;
     top: 0px;
