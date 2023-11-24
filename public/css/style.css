@@ -674,6 +674,7 @@ nav ul .logo {
   }
   .fiveSection div .itemsOne p {
     max-width: 300px;
+    padding-top: 20px;
   }
 }
 @keyframes show {
