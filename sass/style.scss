@@ -185,6 +185,7 @@ nav {
         left: 11%;
         top: 10rem;
         z-index: 99;
+        margin-top: 50px;
     }
     .itemsOne {
         /* padding:  300px 100px; */
@@ -255,12 +256,12 @@ nav {
         gap:20%;
         .logoSlogan{
             height: 10rem;
-            top: 30rem;
+            top: 20rem;
         }
         .itemsOne{
             
             p{
-                padding-top:  80%;
+                padding-top:  70%;
             }
         }
     }
@@ -467,7 +468,7 @@ nav {
     gap: 30px;
     align-items: center;
 
-    grid-template-columns: 55% 40%;
+   /*  grid-template-columns: 55% 40%; */
     grid-template-rows: 20% 80%;
 
     grid-template-areas:
@@ -502,7 +503,7 @@ nav {
         div{
             .boxy{
                 display:flex;
-                width: 80%;
+                /* width: 80%; */
                 height: 110px;
                 position: relative;
                 /* left: 25%; */
@@ -531,6 +532,7 @@ nav {
                     width: 250px;
                     position:relative;
                     left: 20px;
+                    margin: 0 25px 0 0;
                 }
             }
         }
@@ -556,6 +558,9 @@ nav {
                 
                 .boxNumero {
                     font-size: 30px;
+                       /*  width: 8rem; */
+                        height: 8rem;
+                    
                 }
             }
         }

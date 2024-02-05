@@ -13,24 +13,24 @@
             "p1": "El acoso escolar en Perú sigue presente en las aulas. De enero a mayo 2023 se han reportado 2022 casos en la palataforma del MINEDU (La República, junio 2023)",
             "imgSrc1": "./asset/imgs/celphone-circle.png",
             "imgSrc2": "./asset/imgs/desktop-circle.png",
-            "p2": "Las habilidades socioemocioanles son importantes para gestionar los estados afectivos, establecer vinculos positivos y  desarrollar la capacidad de adaptarse al entorno.(MINEDU 2023)"
+            "p2": "Las habilidades socioemocioanles son importantes para gestionar los estados afectivos, establecer vinculos positivos y  desarrollar la capacidad de adaptarse al entorno (MINEDU 2023)."
         }
     ],
 
     "threeSection": [
 
         {
-            "h2":"NUESTRAS ÁREAS DE TRABAJO",
+            "h2":"NUESTRAS FUNCIONES DE TRABAJO",
             "itemBox":[
                 {
                     "n":"1",
-                    "p":"Medición de convivencia escolar",
+                    "p":"Medición de convivencia en el aula (cuestionarios)",
                     "tColor" : "t-yellowKumpai",
                     "bgColor" : "bg-yellowKumpai"
                 },
                 {
                     "n":"2",
-                    "p":"Retroalimentación y comunicación",
+                    "p":"Retroalimentación y talentos",
                     "tColor" : "t-orangeKumpai",
                     "bgColor" : "bg-orangeKumpai"
                 },

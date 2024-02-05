@@ -139,6 +139,7 @@ nav ul .logo {
   left: 11%;
   top: 10rem;
   z-index: 99;
+  margin-top: 50px;
 }
 .oneSection .itemsOne {
   /* padding:  300px 100px; */
@@ -203,10 +204,10 @@ nav ul .logo {
   }
   .oneSection .logoSlogan {
     height: 10rem;
-    top: 30rem;
+    top: 20rem;
   }
   .oneSection .itemsOne p {
-    padding-top: 80%;
+    padding-top: 70%;
   }
 }
 @media (max-width: 610px) {
@@ -395,7 +396,7 @@ nav ul .logo {
   display: grid;
   gap: 30px;
   align-items: center;
-  grid-template-columns: 55% 40%;
+  /*  grid-template-columns: 55% 40%; */
   grid-template-rows: 20% 80%;
   grid-template-areas: "cajaCero cajaCero" "cajaOne cajaTwo";
 }
@@ -424,7 +425,7 @@ nav ul .logo {
 }
 .threeSection div .boxy {
   display: flex;
-  width: 80%;
+  /* width: 80%; */
   height: 110px;
   position: relative;
   /* left: 25%; */
@@ -453,6 +454,7 @@ nav ul .logo {
   width: 250px;
   position: relative;
   left: 20px;
+  margin: 0 25px 0 0;
 }
 
 @media (max-width: 900px) {
@@ -471,6 +473,8 @@ nav ul .logo {
   }
   .threeSection div .boxy .boxNumero {
     font-size: 30px;
+    /*  width: 8rem; */
+    height: 8rem;
   }
 }
 @media (max-width: 768px) {
