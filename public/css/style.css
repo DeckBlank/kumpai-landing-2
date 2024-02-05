@@ -72,7 +72,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 60px;
+  height: 70px;
   background-color: #F9F6F2;
   padding-left: 5%;
   padding-right: 5%;
@@ -564,6 +564,7 @@ nav ul .logo {
   display: flex;
   place-content: center;
   margin-top: 100px;
+  text-align: center;
 }
 .fourSection div .boxCard p {
   font-size: 14px;
@@ -653,10 +654,11 @@ nav ul .logo {
   align-items: center;
   gap: 80px;
   margin-bottom: 50px;
+  margin-top: 50px;
   flex-direction: row;
 }
 .fiveSection div .itemsOne p {
-  font-size: 20px;
+  font-size: 18px;
   max-width: 700px;
   color: #F9F6F2;
   font-weight: bold;
