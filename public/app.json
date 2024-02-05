@@ -49,7 +49,7 @@
         {
             "imgSvg"    : "./asset/convivencia.svg",
             "h2"        : "Convivencia en el aula",
-            "p"         : "Cuestionarios que  ayudan a entender  y medir cómo se sienten los estudiantes en el aula",
+            "p"         : "Cuestionarios validados que  ayudan a entender  y medir cómo se sienten los estudiantes en el aula",
             "imgPhone"  : "./asset/imgs/imgePhone1.png",
             "bgColor"   : "bg-yellowKumpaiLigth"
         },
