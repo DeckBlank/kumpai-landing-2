@@ -63,7 +63,7 @@
         {
             "imgSvg"    : "./asset/socioemocional.svg",
             "h2"        : "Herramientas psicopedagógicas",
-            "p"         : "Material psicopedagógico para fortalecer las habilidades socioemocionales",
+            "p"         : "Material psicopedagógico para fortalecer las habilidades socioemocionales y para manejar, reducir y prevenir el bullying en las escuelas. ",
             "imgPhone"  : "./asset/imgs/imgePhone3.png",
             "bgColor"   : "bg-greenKumpaiLigth"
         }
