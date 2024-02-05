@@ -279,7 +279,7 @@ nav ul .logo {
 .twoSection div div .desktopCircle {
   z-index: 99;
   position: absolute;
-  width: 35%;
+  width: 50%;
 }
 .twoSection div div .blueCircle {
   background-color: #00B4C1;
