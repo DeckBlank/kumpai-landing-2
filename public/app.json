@@ -56,7 +56,7 @@
         {
             "imgSvg"    : "./asset/retroaliemntacion.svg",
             "h2"        : "Retroalimentación",
-            "p"         : "Espacio que fomenta la retroalimentación, comunicación asertiva y la redacción",
+            "p"         : "Espacio que fomenta la retroalimentación, comunicación asertiva y la redacción entre estudiantes y entre estudiantes y tutores. ",
             "imgPhone"  : "./asset/imgs/imgePhone2.png",
             "bgColor"   : "bg-orangeKumpaiLigth"
         },
