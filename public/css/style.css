@@ -276,11 +276,24 @@ nav ul .logo {
 @media (max-width: 530px) {
   .oneSection .itemsOne h2 {
     left: 12%;
+    width: 80%;
     padding-top: 60%;
   }
   .oneSection .itemsOne p {
     padding-top: 8%;
-    width: 400px;
+    width: 80%;
+    left: 12%;
+  }
+}
+@media (max-width: 400px) {
+  .oneSection .itemsOne h2 {
+    left: 12%;
+    width: 80%;
+    padding-top: 60%;
+  }
+  .oneSection .itemsOne p {
+    padding-top: 8%;
+    width: 80%;
     left: 12%;
   }
 }
@@ -565,6 +578,28 @@ nav ul .logo {
   }
 }
 @media (max-width: 400px) {
+  .threeSection {
+    max-width: 400px;
+  }
+  .threeSection h2 {
+    max-width: 300px;
+  }
+  .threeSection div .boxy {
+    height: 80px;
+    width: 300px;
+  }
+  .threeSection div .boxy .boxNumero {
+    width: 6.5rem;
+    height: 6rem;
+  }
+}
+@media (max-width: 350px) {
+  .threeSection {
+    max-width: 350px;
+  }
+  .threeSection h2 {
+    max-width: 300px;
+  }
   .threeSection div .boxy {
     height: 80px;
   }
