@@ -339,6 +339,7 @@ nav ul .logo {
   .twoSection div div .phoneCircle {
     z-index: 99;
     position: absolute;
+    height: 500px;
   }
   .twoSection div div .desktopCircle {
     z-index: 99;
