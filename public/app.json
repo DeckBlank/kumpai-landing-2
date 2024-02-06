@@ -2,7 +2,8 @@
     "oneSection": [
         {
             "imgSrc": "./asset/LogoKind-04.svg",
-            "p": "Somos una plataforma educativa que busca fomentar espacios seguros en las aulas escolares, para así ayudar a reducir el acoso escolar.",
+            "h2": "¡CREEMOS EN UNA SANA CONVIVENCIA ESCOLAR!.",
+            "p": "Con KIND medimos cómo se sienten los estudiantes en el aula para poder prevenir y combatir al acoso escolar a través de múltiples recursos tecnológicos como encuestas, espacios de retroalimentación, juego de talentos y otros recursos psicopedagógicos.",
             "button": "Registrate aquí"
         }
     ],
@@ -20,7 +21,7 @@
     "threeSection": [
 
         {
-            "h2":"NUESTRAS FUNCIONES DE TRABAJO",
+            "h2":"FUNCIONES",
             "itemBox":[
                 {
                     "n":"1",

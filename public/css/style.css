@@ -150,8 +150,17 @@ nav ul .logo {
   height: 97%;
   margin-top: 20px;
 }
-.oneSection .itemsOne p {
+.oneSection .itemsOne h2 {
   padding-top: 350px;
+  font-family: DinRoundPro;
+  font-size: 16px;
+  color: #F9F6F2;
+  max-width: 500px;
+  position: relative;
+  left: 15%;
+}
+.oneSection .itemsOne p {
+  padding-top: 10%;
   font-family: DinRoundPro;
   font-size: 16px;
   color: #F9F6F2;
@@ -189,7 +198,7 @@ nav ul .logo {
     height: 15rem;
   }
   .oneSection .itemsOne p {
-    padding-top: 60%;
+    padding-top: 5%;
     font-size: 14px;
   }
   .oneSection .itemsOne button {
@@ -416,6 +425,7 @@ nav ul .logo {
   font-weight: bold;
   text-align: center;
   padding-top: 50px;
+  color: #F9F6F2;
 }
 .threeSection .imgPeople {
   width: 90%;

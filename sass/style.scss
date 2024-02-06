@@ -195,9 +195,19 @@ nav {
         width: 70%;
         height: 97%;
         margin-top: 20px;
+
+        h2{
+            padding-top:  350px;
+            font-family: DinRoundPro;
+            font-size: 16px;
+            color:$whiteKumpai;
+            max-width: 500px;
+            position: relative;
+            left: 15%;
+        }
         
         p{
-            padding-top:  350px;
+            padding-top:  10%;
             font-family: DinRoundPro;
             font-size: 16px;
             color:$whiteKumpai;
@@ -239,7 +249,7 @@ nav {
 
         .itemsOne {
             p{
-                padding-top:  60%;
+                padding-top:  5%;
                 font-size: 14px;//16px;
             }
             button{
@@ -492,6 +502,7 @@ nav {
         font-weight: bold;
         text-align: center;
         padding-top: 50px ;
+        color: #F9F6F2;
         
     }
     .imgPeople {

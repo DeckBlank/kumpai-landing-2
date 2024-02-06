@@ -8,6 +8,7 @@ fetch('app.json')
         div.innerHTML = `
             <img class="logoSlogan" src="${item.imgSrc}" alt="">
             <div class="itemsOne">
+                <h2>${item.h2}</h2>
                 <p>${item.p}</p>
             </div>
         `;
