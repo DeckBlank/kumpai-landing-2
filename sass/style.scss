@@ -21,6 +21,14 @@
 
 html {
     font-size: 62.5%;
+    h1{
+        font-family: FestivoLetters;
+        font-size: 60px;
+    }
+    h2{
+        font-family: FestivoLetters;
+    }
+
 }
 
 
@@ -29,7 +37,8 @@ $whiteKumpai    : #F9F6F2;
 $yellowKumpai   : #FFD600; 
 $orangeKumpai   : #FF6700; 
 $greenKumpai    :   #45B64A;
-$blueKumpai     : #00B4C1; 
+$blueKumpai     : #27C5CD;//#00B4C1;
+$grayKumpai     :#5F5D5C; 
 
 
 $yellowKumpaiLigth   : #FFF0A3; 
@@ -37,7 +46,13 @@ $orangeKumpaiLigth   : #F9AC80;
 $greenKumpaiLigth    :   #A6D399;
 $blueKumpaiLigth     : #95DCDE; 
 
+.bg-white{
+    background-color: white;
+}
 
+.bg-whiteKumpai{
+    background-color: $whiteKumpai;
+}
 
 .bg-yellowKumpai{
     background-color: $yellowKumpai;
@@ -72,6 +87,12 @@ $blueKumpaiLigth     : #95DCDE;
 }
 
 
+/* Color texts */
+
+.t-blueKumpai{
+    color:$blueKumpai;
+}
+
 .t-yellowKumpai{
     color:$yellowKumpai;
 }
@@ -84,23 +105,38 @@ $blueKumpaiLigth     : #95DCDE;
     color:$greenKumpai;
 }
 
+/* Text size */
+.t-18{
+    font-size: 18px;
+}
+
+
+/* center rigth left */
+.t-center{
+    text-align: center;
+}
+
+@mixin t-h2($font-size,$color){
+    text-align: center;
+    font-size: $font-size;
+    color:$color;
+}
+
+.t-48{
+    @include  t-h2(48px, $blueKumpai)
+}
+
+.t-rigth {
+    text-align: right;
+}
 body{
     display: flex;
     flex-direction: column;
-    //max-width: 1600px;
+    background-color: $whiteKumpai;
 }
 
-@mixin center {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
 
-@mixin centerFlex{
-    display: flex;
-    align-items: center;
-}
+
 
 nav {
     display: flex;
@@ -114,12 +150,27 @@ nav {
     position: fixed;
     z-index: 999;
     align-items: center;
+    font-size: 18px;//25px;
+    box-shadow: 0 10px 10px -5px #00000040;
+    
     
     ul {
 
         display: flex;
         justify-content: space-between;
         width: 100%;
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $grayKumpai;
+            a:hover{
+                color:$blueKumpaiLigth;
+                font-weight: bold;
+                /* text-decoration: underline;
+                text-decoration-skip-ink: none; */
+            }
+        }
 
 
         .btnInit{
@@ -130,7 +181,7 @@ nav {
             place-content: center;
             font-weight: bold;
             color:#00B4C1;
-            font-size: 25px;
+            font-size: 18px;//25px;
             background-color: #FF6700;
             border-radius: 15px;
             width: 180px;
@@ -147,7 +198,7 @@ nav {
         .logo{
             background-image: url("/asset/LogoKind-00.svg");
             background-repeat: no-repeat;
-            width: 50%;
+            width: 20%;//50%;
             display: flex;
             align-items: center;
             justify-content: start;
@@ -180,7 +231,7 @@ nav {
     display: flex;
     flex-direction: column;
     .logoSlogan{
-        height: 20rem;
+        height: 15rem;
         position: relative;
         left: 11%;
         top: 10rem;
@@ -196,18 +247,18 @@ nav {
         height: 97%;
         margin-top: 20px;
 
-        h2{
-            padding-top:  40%;
-            font-family: DinRoundPro;
-            font-size: 16px;
+        h1{
+            padding-top:  30%;
+            /* font-family: DinRoundPro; */
+            /* font-size: 16px; */
             color:$whiteKumpai;
-            max-width: 500px;
+            max-width: 600px;
             position: relative;
             left: 15%;
         }
         
         p{
-            padding-top:  5%;
+            padding-top:  2%;
             font-family: DinRoundPro;
             font-size: 16px;
             color:$whiteKumpai;
@@ -226,7 +277,7 @@ nav {
             font-weight: bold;
             border: none;
             position: relative;
-            left: 22%;
+            left:60%; //22%;
         }
     }
 }
@@ -389,29 +440,30 @@ nav {
         display: flex;
         flex-direction:column;
         place-content: center;
-        gap:100px;
+        gap:50px;
         div{
             width: 100%;
             display: flex;
             align-items: center;
             place-content: center;
             flex-direction:row;
-            gap: 100px;
+            //gap: 100px;
             margin: 10px 0 10px 0;//revisar
             .border-box{
                 border-radius: 20px;
                 min-width: 30rem;//550px;
                 min-height: 400px;
+                box-shadow: 0 10px 10px -5px #00000040;
                 /* z-index: 99; */
             }
             p{
                 max-width: 60%;
-                text-align: center;
+                text-align: left;
                 align-items: center;
                 justify-content: center;
                 display: flex;
                 justify-content: center;
-                font-weight: bold;
+                /* font-weight: bold; */
             }
             .phoneCircle{
                 z-index: 99;
@@ -424,15 +476,15 @@ nav {
                 width: 50%;
             }
 
-            .blueCircle{
+            /* .blueCircle{
                 background-color: $blueKumpai;
                 position: relative;
                 top: -150px;
                 border-radius: 50%;
                 width: 400px;
                 height: 400px;
-            }
-            .litleCircle{
+            } */
+            /* .litleCircle{
                 background-image: url("/asset/litleCircles.svg");
                 background-position:center;
                 background-size: cover;
@@ -450,7 +502,7 @@ nav {
                 border-radius: 50%;
                 width: 300px;
                 height: 300px;
-            }
+            } */
         }
     }
     font-size: 18px;//24px;
@@ -548,7 +600,14 @@ nav {
     }
 }
 
+
 .threeSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fourSection{
     padding-bottom: 100px; 
     background-color: $blueKumpaiLigth;
     max-height: 800px;
@@ -568,6 +627,7 @@ nav {
     }
     :nth-child(2){
         grid-area: cajaOne;
+        display: flex;
     }
     :nth-child(3){
         grid-area: cajaTwo;
@@ -592,12 +652,13 @@ nav {
         div{
             .boxy{
                 display:flex;
-                /* width: 80%; */
-                height: 110px;
+                flex-direction: row;
+                width: 570px;
+                height: 350px;
                 position: relative;
                 /* left: 25%; */
                 margin: 40px;
-                border-radius: 60px; 
+                border-radius: 24px; 
                 align-items: center;
                 padding: 10px;
                 
@@ -629,7 +690,7 @@ nav {
 }
 
 @media (max-width: 900px){
-    .threeSection{
+    .fourSection{
         h2{
             font-size: 25px;
         }
@@ -657,7 +718,7 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .threeSection{
+    .fourSection{
         :nth-child(2){
             display: none;
         }
@@ -679,7 +740,7 @@ nav {
 } 
 
 @media (max-width: 576px) {
-    .threeSection{
+    .fourSection{
         align-items: center;
         :nth-child(3){
             position: relative;
@@ -699,7 +760,7 @@ nav {
 }
 
 @media (max-width: 400px) {
-    .threeSection{
+    .fourSection{
         max-width: 400px;
        
         div {
@@ -716,7 +777,7 @@ nav {
 }
 
 @media (max-width: 350px) {
-    .threeSection{
+    .fourSection{
         max-width: 350px;
         h2{
             max-width: 300px;
@@ -733,7 +794,7 @@ nav {
     }
 }
 
-.fourSection{
+.fiveSection{
     margin-top: -40px;
     margin-bottom: 100px;
     margin-left: 80px;
@@ -801,7 +862,7 @@ nav {
 }
 
 @media (max-width:900px) {
-    .fourSection{
+    .fiveSection{
         div{
             .imgCrad{
                 max-width: 150px;
@@ -823,7 +884,7 @@ nav {
 }
 
 @media (max-width:768px) {
-    .fourSection{
+    .fiveSection{
 
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -850,7 +911,7 @@ nav {
 
 
 @media (max-width:400px) {
-    .fourSection{
+    .fiveSection{
         div{
 /*             .imgCrad{
                 max-width: 150px;
@@ -869,51 +930,45 @@ nav {
 
 
 
-.fiveSection{
-    background-color: $orangeKumpai;
+.tenSection{
+    background-color: $blueKumpaiLigth;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 10%;
-    div{
+    .itemsOne{
+        display: grid;
+        grid-template-areas:
+        "uno dos"
+        "tres tres";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
         align-items: center;
-        display: flex;
-        flex-direction: column;
-        button{
-            height: 50px;
-            width: 200px;
-            border-radius: 10px;
-            background-color: $orangeKumpai;
-            color: $whiteKumpai;
-            font-size: 18px;//20px;
-            font-weight: bold;
-            border: none;
-            position: relative;
-            top:-100px;
-
+        /* gap: 80px; */
+        margin-bottom: 50px;
+        margin-top: 50px;
+        /* flex-direction: column; */
+        .uno{
+            grid-area:  uno;
         }
-        .itemsOne{
-            display: flex;
-            align-items: center;
-            gap: 80px;
-            margin-bottom: 50px;
-            margin-top: 50px;
-            flex-direction: row;
-            p{
-                font-size: 18px;
-                max-width: 700px;
-                color:$whiteKumpai;
-                font-weight: bold;
-            }
-            .logoSlogan{
-                height: 20rem;  
-            }
+        .dos{
+            grid-area:  dos;
+        }
+        .tres{
+            grid-area:  tres;
+        }
+        p{
+            font-size: 18px;
+            color: $orangeKumpai;
+        }
+        .logoSlogan{
+            height: 20rem;  
         }
     }
 }
 
 @media (max-width:900px) {
-    .fiveSection{
+    .tenSection{
         div{
             .itemsOne{
                 gap: 20px;
@@ -932,7 +987,7 @@ nav {
 }
 
 @media (max-width:768px){
-    .fiveSection{
+    .tenSection{
         
         div{
             .itemsOne{

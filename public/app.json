@@ -2,79 +2,124 @@
     "oneSection": [
         {
             "imgSrc": "./asset/LogoKind-04.svg",
-            "h2": "¡CREEMOS EN UNA SANA CONVIVENCIA ESCOLAR!.",
+            "h1": "¡CREEMOS EN UNA SANA CONVIVENCIA ESCOLAR!.",
             "p": "Con KIND medimos cómo se sienten los estudiantes en el aula para poder prevenir y combatir al acoso escolar a través de múltiples recursos tecnológicos como encuestas, espacios de retroalimentación, juego de talentos y otros recursos psicopedagógicos.",
-            "button": "Registrate aquí"
+            "button": "Contáctanos"
         }
     ],
 
 
     "twoSection": [
         {
-            "p1": "El acoso escolar en Perú sigue presente en las aulas. De enero a mayo 2023 se han reportado 2022 casos en la palataforma del MINEDU (La República, junio 2023)",
-            "imgSrc1": "./asset/imgs/celphone-circle.png",
-            "imgSrc2": "./asset/imgs/desktop-circle.png",
-            "p2": "Las habilidades socioemocionales son importantes para gestionar los estados afectivos, establecer vinculos positivos y  desarrollar la capacidad de adaptarse al entorno (MINEDU 2023)."
+            "title":"¿Qué es KIND Education?",
+            "icon1":"./asset/icons/icon1.png",
+            "p1": "La plataforma KIND cuenta con cuestionarios validados que permiten entender cómo se sienten los estudiantes en sus aulas en tiempo real. A través de nuestro sistema de levantamiento de datos, arrojamos información cualitativa y cuantitativa que nos ayuda a entender cómo está la convivencia en el aula y así poder prevenir y evitar posibles casos de violencia escolar.",
+            "imgSrc1": "./asset/imgs/1-one.png",
+            "imgSrc2": "./asset/imgs/2-two.png",
+            "icon2":"./asset/icons/icon2.png",
+            "p2": "Nuestro instrumento ha sido validado tanto por el análisis del piloto como por el criterio de jueves. Es confiable a partir del análisis estadístico y además está basado en el modelo de la teoría sustentada.",
+            "icon3":"./asset/icons/icon3.png",
+            "p3":"Nuestros resultados son arrojados a través de gráficos interactivos y de semáforos que nos acompañan a entender, de forma simple y dinámica, qué aulas están en mayor riesgo y qué aulas están fomentando la mejor convivencia en sus entornos. Se generan reportes que resumen nuestros 8 factores principales de intervención.",
+            "imgSrc3":"./asset/imgs/3-trhee.png",
+            "imgSrc4":"./asset/imgs/4-fourt.png",
+            "icon4":"./asset/icons/icon4.png",
+            "p4":"Una vez que los tutores y directores reciben esta valiosa información, KIND los acompaña en la creación de planes pedagógicos de intervención potentes a través de recursos digitales con herramientas que fomentan el desarrollo de habilidades socioemocionales y de prevención de la violencia escolar, así como planes personalizados para cada institución."
         }
     ],
 
     "threeSection": [
+        {
+            "h2":"RESPONSIVE",
+            "img":"./asset/imgs/5-five.png"
+        }
+    ],
+
+    "fourSection": [
 
         {
             "h2":"FUNCIONES",
             "itemBox":[
                 {
                     "n":"1",
-                    "p":"Medición de convivencia en el aula (cuestionarios)",
+                    "t":"Medición de Convivencia en el aula",
+                    "p":"Son cuestionarios que  ayudan a entender  y medir cómo se sienten los estudiantes en el aula",
                     "tColor" : "t-yellowKumpai",
-                    "bgColor" : "bg-yellowKumpai"
+                    "bgColor" : "bg-yellowKumpaiLigth"
                 },
                 {
                     "n":"2",
-                    "p":"Retroalimentación y talentos",
+                    "t":"Retroalimentación y talentos",
+                    "p":"Espacio que fomenta la retroalimentación, comunicación asertiva y la redacción",
                     "tColor" : "t-orangeKumpai",
-                    "bgColor" : "bg-orangeKumpai"
+                    "bgColor" : "bg-orangeKumpaiLigth"
                 },
                 {
                     "n":"3",
-                    "p":"Herramientas psicopedagógicas",
+                    "t":"Herramientas psicopedagógicas",
+                    "p":"Material pedagógico para fortalecer las habilidades socioemocionales",
                     "tColor" : "t-greenKumpai",
-                    "bgColor" : "bg-greenKumpai"
+                    "bgColor" : "bg-greenKumpaiLigth"
                 }
-            ],
-            "imgSrc":"./asset/imgs/fotoThreeSeccion.jpg"
-        }
-    ],
-
-    "fourSection":[
-        {
-            "imgSvg"    : "./asset/convivencia.svg",
-            "h2"        : "Convivencia en el aula",
-            "p"         : "Cuestionarios validados que  ayudan a entender  y medir cómo se sienten los estudiantes en el aula",
-            "imgPhone"  : "./asset/imgs/imgePhone1.png",
-            "bgColor"   : "bg-yellowKumpaiLigth"
-        },
-        {
-            "imgSvg"    : "./asset/retroaliemntacion.svg",
-            "h2"        : "Retroalimentación",
-            "p"         : "Espacio que fomenta la retroalimentación, comunicación asertiva y la redacción entre estudiantes y entre estudiantes y tutores. ",
-            "imgPhone"  : "./asset/imgs/imgePhone2.png",
-            "bgColor"   : "bg-orangeKumpaiLigth"
-        },
-        {
-            "imgSvg"    : "./asset/socioemocional.svg",
-            "h2"        : "Herramientas psicopedagógicas",
-            "p"         : "Material psicopedagógico para fortalecer las habilidades socioemocionales y para manejar, reducir y prevenir el bullying en las escuelas. ",
-            "imgPhone"  : "./asset/imgs/imgePhone3.png",
-            "bgColor"   : "bg-greenKumpaiLigth"
+            ]
         }
     ],
 
     "fiveSection":[
         {
-            "button": "Registrate aquí",
-            "p"     : "Kind significa bondad, y la elegimos para el nombre de esta plataforma educativa porque creemos firmemente que la mejor forma de reducir la violencia en las escuelas es incrementando la bondad.",
-            "imgSrc": "./asset/LogoKind-05.svg"
+            "h2":"OBJETIVOS",
+            "itemBox":[
+                {
+                    "img"    : "./asset/icons/icon8.png",
+                    "p"         : "Fomentar un ambiente de sana convivencia escolar",
+                    "imgPhone"  : "./asset/imgs/imgePhone1.png"
+                },
+                {
+                    "img"    : "./asset/icons/icon9.png",
+                    "p"         : "Detectar y prevenir posibles casos de violencia escolar.",
+                    "imgPhone"  : "./asset/imgs/imgePhone1.png"
+                },
+                {
+                    "img"    : "./asset/icons/icon10.png",
+                    "p"         : "Aprender estrategias para tratar casos de violencia escolar.",
+                    "imgPhone"  : "./asset/imgs/imgePhone1.png"
+                },
+                {
+                    "img"    : "./asset/icons/icon11.png",
+                    "p"         : "Brindar retroalimentación respetuosa y amable.",
+                    "imgPhone"  : "./asset/imgs/imgePhone1.png"
+                },
+                {
+                    "img"    : "./asset/icons/icon12.png",
+                    "p"         : "Conocer nuestros talentos y los de nuestros compañeros.",
+                    "imgPhone"  : "./asset/imgs/imgePhone1.png"
+                },
+                {
+                    "img"    : "./asset/icons/icon13.png",
+                    "p"         : "Lograr que los estudiantes se sientan escuchados, respetados y valorados en las escuelas.",
+                    "imgPhone"  : "./asset/imgs/imgePhone1.png"
+                }
+
+            ]
+        }
+    ],
+
+
+
+    "nineSection": [
+        {
+            "title":"NOTICIAS",
+            "n1": "El acoso escolar en Perú sigue presente en las aulas. De enero a mayo 2023 se han reportado 2022 casos en la palataforma del MINEDU (La República, junio 2023)",
+            "n2": "Las habilidades socioemocionales son importantes para gestionar los estados afectivos, establecer vinculos positivos y  desarrollar la capacidad de adaptarse al entorno (MINEDU 2023)."
+        }
+    ],
+
+    "tenSection":[
+        {
+            "p"     : "Copyrigth © KIND 2024 Todos los derechos reservados <br/> ASOCIACION CIVIL EDUCACION CON PROPOSITO <br/>  RUC 20606294850",
+            "imgSrc": "./asset/LogoKind-05.svg",
+            "fbSvg"    : "./asset/redes/facebook.svg",
+            "twSvg"    : "./asset/redes/twitter.svg",
+            "intSvg"    : "./asset/redes/instagram.svg"
         }
     ]
 }

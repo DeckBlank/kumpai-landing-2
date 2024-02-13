@@ -18,6 +18,21 @@
 html {
   font-size: 62.5%;
 }
+html h1 {
+  font-family: FestivoLetters;
+  font-size: 60px;
+}
+html h2 {
+  font-family: FestivoLetters;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-whiteKumpai {
+  background-color: #F9F6F2;
+}
 
 .bg-yellowKumpai {
   background-color: #FFD600;
@@ -32,7 +47,7 @@ html {
 }
 
 .bg-blueKumpai {
-  background-color: #00B4C1;
+  background-color: #27C5CD;
 }
 
 .bg-yellowKumpaiLigth {
@@ -51,6 +66,11 @@ html {
   background-color: #95DCDE;
 }
 
+/* Color texts */
+.t-blueKumpai {
+  color: #27C5CD;
+}
+
 .t-yellowKumpai {
   color: #FFD600;
 }
@@ -63,9 +83,30 @@ html {
   color: #45B64A;
 }
 
+/* Text size */
+.t-18 {
+  font-size: 18px;
+}
+
+/* center rigth left */
+.t-center {
+  text-align: center;
+}
+
+.t-48 {
+  text-align: center;
+  font-size: 48px;
+  color: #27C5CD;
+}
+
+.t-rigth {
+  text-align: right;
+}
+
 body {
   display: flex;
   flex-direction: column;
+  background-color: #F9F6F2;
 }
 
 nav {
@@ -80,11 +121,25 @@ nav {
   position: fixed;
   z-index: 999;
   align-items: center;
+  font-size: 18px;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2509803922);
 }
 nav ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5F5D5C;
+}
+nav ul li a:hover {
+  color: #95DCDE;
+  font-weight: bold;
+  /* text-decoration: underline;
+  text-decoration-skip-ink: none; */
 }
 nav ul .btnInit {
   width: 50%;
@@ -94,14 +149,14 @@ nav ul .btnInit {
   place-content: center;
   font-weight: bold;
   color: #00B4C1;
-  font-size: 25px;
+  font-size: 18px;
   background-color: #FF6700;
   border-radius: 15px;
   width: 180px;
   height: 45px;
 }
 nav ul .btnInit:hover {
-  background-color: #00B4C1;
+  background-color: #27C5CD;
 }
 nav ul .btnInit a {
   color: #F9F6F2;
@@ -109,7 +164,7 @@ nav ul .btnInit a {
 nav ul .logo {
   background-image: url("/asset/LogoKind-00.svg");
   background-repeat: no-repeat;
-  width: 50%;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -134,7 +189,7 @@ nav ul .logo {
   flex-direction: column;
 }
 .oneSection .logoSlogan {
-  height: 20rem;
+  height: 15rem;
   position: relative;
   left: 11%;
   top: 10rem;
@@ -150,17 +205,17 @@ nav ul .logo {
   height: 97%;
   margin-top: 20px;
 }
-.oneSection .itemsOne h2 {
-  padding-top: 40%;
-  font-family: DinRoundPro;
-  font-size: 16px;
+.oneSection .itemsOne h1 {
+  padding-top: 30%;
+  /* font-family: DinRoundPro; */
+  /* font-size: 16px; */
   color: #F9F6F2;
-  max-width: 500px;
+  max-width: 600px;
   position: relative;
   left: 15%;
 }
 .oneSection .itemsOne p {
-  padding-top: 5%;
+  padding-top: 2%;
   font-family: DinRoundPro;
   font-size: 16px;
   color: #F9F6F2;
@@ -179,7 +234,7 @@ nav ul .logo {
   font-weight: bold;
   border: none;
   position: relative;
-  left: 22%;
+  left: 60%;
 }
 
 @media (max-width: 1170px) {
@@ -312,7 +367,7 @@ nav ul .logo {
   display: flex;
   flex-direction: column;
   place-content: center;
-  gap: 100px;
+  gap: 50px;
 }
 .twoSection div div {
   width: 100%;
@@ -320,23 +375,50 @@ nav ul .logo {
   align-items: center;
   place-content: center;
   flex-direction: row;
-  gap: 100px;
   margin: 10px 0 10px 0;
+  /* .blueCircle{
+      background-color: $blueKumpai;
+      position: relative;
+      top: -150px;
+      border-radius: 50%;
+      width: 400px;
+      height: 400px;
+  } */
+  /* .litleCircle{
+      background-image: url("/asset/litleCircles.svg");
+      background-position:center;
+      background-size: cover;
+      width: 150px;
+      height: 150px;
+      position: relative;
+      right: 350px;
+      top: 350px;
+  }
+  .orangeCircle{
+      background-color: $orangeKumpai;
+      position: relative;
+      top: 150px;
+      right: 200px;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+  } */
 }
 .twoSection div div .border-box {
   border-radius: 20px;
   min-width: 30rem;
   min-height: 400px;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2509803922);
   /* z-index: 99; */
 }
 .twoSection div div p {
   max-width: 60%;
-  text-align: center;
+  text-align: left;
   align-items: center;
   justify-content: center;
   display: flex;
   justify-content: center;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .twoSection div div .phoneCircle {
   z-index: 99;
@@ -346,33 +428,6 @@ nav ul .logo {
   z-index: 99;
   position: absolute;
   width: 50%;
-}
-.twoSection div div .blueCircle {
-  background-color: #00B4C1;
-  position: relative;
-  top: -150px;
-  border-radius: 50%;
-  width: 400px;
-  height: 400px;
-}
-.twoSection div div .litleCircle {
-  background-image: url("/asset/litleCircles.svg");
-  background-position: center;
-  background-size: cover;
-  width: 150px;
-  height: 150px;
-  position: relative;
-  right: 350px;
-  top: 350px;
-}
-.twoSection div div .orangeCircle {
-  background-color: #FF6700;
-  position: relative;
-  top: 150px;
-  right: 200px;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
 }
 
 @media (max-width: 900px) {
@@ -413,7 +468,7 @@ nav ul .logo {
     width: 50%;
   }
   .twoSection div div .blueCircle {
-    background-color: #00B4C1;
+    background-color: #27C5CD;
     position: relative;
     top: -150px;
     border-radius: 50%;
@@ -457,6 +512,13 @@ nav ul .logo {
   }
 }
 .threeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fourSection {
   padding-bottom: 100px;
   background-color: #95DCDE;
   max-height: 800px;
@@ -467,16 +529,17 @@ nav ul .logo {
   grid-template-rows: 20% 80%;
   grid-template-areas: "cajaCero cajaCero" "cajaOne cajaTwo";
 }
-.threeSection :nth-child(1) {
+.fourSection :nth-child(1) {
   grid-area: cajaCero;
 }
-.threeSection :nth-child(2) {
+.fourSection :nth-child(2) {
   grid-area: cajaOne;
+  display: flex;
 }
-.threeSection :nth-child(3) {
+.fourSection :nth-child(3) {
   grid-area: cajaTwo;
 }
-.threeSection h2 {
+.fourSection h2 {
   font-family: FestivoLetters;
   font-size: 30px;
   font-weight: bold;
@@ -484,25 +547,26 @@ nav ul .logo {
   padding-top: 50px;
   color: #F9F6F2;
 }
-.threeSection .imgPeople {
+.fourSection .imgPeople {
   width: 90%;
   max-height: 500px;
   position: relative;
   border-radius: 20px;
   left: 100px;
 }
-.threeSection div .boxy {
+.fourSection div .boxy {
   display: flex;
-  /* width: 80%; */
-  height: 110px;
+  flex-direction: row;
+  width: 570px;
+  height: 350px;
   position: relative;
   /* left: 25%; */
   margin: 40px;
-  border-radius: 60px;
+  border-radius: 24px;
   align-items: center;
   padding: 10px;
 }
-.threeSection div .boxy .boxNumero {
+.fourSection div .boxy .boxNumero {
   font-size: 40px;
   font-weight: bold;
   display: flex;
@@ -513,7 +577,7 @@ nav ul .logo {
   border-radius: 50%;
   background-color: #F9F6F2;
 }
-.threeSection div .boxy .boxText {
+.fourSection div .boxy .boxText {
   font-size: 18px;
   font-weight: bold;
   display: flex;
@@ -526,86 +590,86 @@ nav ul .logo {
 }
 
 @media (max-width: 900px) {
-  .threeSection h2 {
+  .fourSection h2 {
     font-size: 25px;
   }
-  .threeSection .imgPeople {
+  .fourSection .imgPeople {
     max-height: 400px;
   }
-  .threeSection div .boxy {
+  .fourSection div .boxy {
     width: 70%;
     height: 120px;
     position: relative;
     left: 15%;
     margin: 30px;
   }
-  .threeSection div .boxy .boxNumero {
+  .fourSection div .boxy .boxNumero {
     font-size: 30px;
     /*  width: 8rem; */
     height: 8rem;
   }
 }
 @media (max-width: 768px) {
-  .threeSection {
+  .fourSection {
     grid-template-areas: "cajaCero cajaCero" "cajaTwo cajaTwo ";
   }
-  .threeSection :nth-child(2) {
+  .fourSection :nth-child(2) {
     display: none;
   }
-  .threeSection div .boxy {
+  .fourSection div .boxy {
     border-radius: 60px;
   }
-  .threeSection div .boxy .boxNumero {
+  .fourSection div .boxy .boxNumero {
     width: 10rem;
     height: 10rem;
   }
 }
 @media (max-width: 576px) {
-  .threeSection {
+  .fourSection {
     align-items: center;
   }
-  .threeSection :nth-child(3) {
+  .fourSection :nth-child(3) {
     position: relative;
     right: 10%;
   }
-  .threeSection div .boxy {
+  .fourSection div .boxy {
     width: 80%;
     height: 100px;
   }
-  .threeSection div .boxy .boxNumero {
+  .fourSection div .boxy .boxNumero {
     width: 6rem;
     height: 6rem;
   }
 }
 @media (max-width: 400px) {
-  .threeSection {
+  .fourSection {
     max-width: 400px;
   }
-  .threeSection div .boxy {
+  .fourSection div .boxy {
     height: 80px;
     width: 300px;
   }
-  .threeSection div .boxy .boxNumero {
+  .fourSection div .boxy .boxNumero {
     width: 6.5rem;
     height: 6rem;
   }
 }
 @media (max-width: 350px) {
-  .threeSection {
+  .fourSection {
     max-width: 350px;
   }
-  .threeSection h2 {
+  .fourSection h2 {
     max-width: 300px;
   }
-  .threeSection div .boxy {
+  .fourSection div .boxy {
     height: 80px;
   }
-  .threeSection div .boxy .boxNumero {
+  .fourSection div .boxy .boxNumero {
     width: 6.5rem;
     height: 6rem;
   }
 }
-.fourSection {
+.fiveSection {
   margin-top: -40px;
   margin-bottom: 100px;
   margin-left: 80px;
@@ -617,28 +681,28 @@ nav ul .logo {
   grid-template-rows: 1fr;
   grid-template-areas: "oneCard twoCard trheeCard";
 }
-.fourSection :nth-child(1) {
+.fiveSection :nth-child(1) {
   grid-area: oneCard;
 }
-.fourSection :nth-child(2) {
+.fiveSection :nth-child(2) {
   grid-area: twoCard;
 }
-.fourSection :nth-child(3) {
+.fiveSection :nth-child(3) {
   grid-area: trheeCard;
 }
-.fourSection div {
+.fiveSection div {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.fourSection div .imgCrad {
+.fiveSection div .imgCrad {
   width: 50%;
   min-width: 150px;
   position: relative;
   top: 100px;
 }
-.fourSection div .boxCard {
+.fiveSection div .boxCard {
   border-radius: 20px;
   margin: 10px;
   display: flex;
@@ -646,64 +710,64 @@ nav ul .logo {
   align-items: center;
   max-width: 350px;
 }
-.fourSection div .boxCard h2 {
+.fiveSection div .boxCard h2 {
   font-size: 18px;
   display: flex;
   place-content: center;
   margin-top: 100px;
   text-align: center;
 }
-.fourSection div .boxCard p {
+.fiveSection div .boxCard p {
   font-size: 14px;
   display: flex;
   place-content: center;
   max-width: 60%;
   margin-top: 20px;
 }
-.fourSection div .boxCard .imgPhone {
+.fiveSection div .boxCard .imgPhone {
   width: 100%;
 }
 
 @media (max-width: 900px) {
-  .fourSection div .imgCrad {
+  .fiveSection div .imgCrad {
     max-width: 150px;
   }
-  .fourSection div .boxCard {
+  .fiveSection div .boxCard {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .fourSection div .boxCard h2 {
+  .fiveSection div .boxCard h2 {
     font-size: 16px;
   }
-  .fourSection div .boxCard p {
+  .fiveSection div .boxCard p {
     font-size: 12px;
   }
 }
 @media (max-width: 768px) {
-  .fourSection {
+  .fiveSection {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "oneCard" "twoCard" "trheeCard";
   }
-  .fourSection div .imgCrad {
+  .fiveSection div .imgCrad {
     max-width: 150px;
   }
-  .fourSection div .boxCard h2 {
+  .fiveSection div .boxCard h2 {
     font-size: 16px;
   }
-  .fourSection div .boxCard p {
+  .fiveSection div .boxCard p {
     font-size: 12px;
   }
 }
 @media (max-width: 400px) {
-  .fourSection div {
+  .fiveSection div {
     /*             .imgCrad{
                     max-width: 150px;
                 } */
   }
-  .fourSection div .boxCard {
+  .fiveSection div .boxCard {
     border-radius: 20px;
     margin: 10px;
     display: flex;
@@ -712,68 +776,61 @@ nav ul .logo {
     width: 120%;
   }
 }
-.fiveSection {
-  background-color: #FF6700;
+.tenSection {
+  background-color: #95DCDE;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 10%;
 }
-.fiveSection div {
+.tenSection .itemsOne {
+  display: grid;
+  grid-template-areas: "uno dos" "tres tres";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.fiveSection div button {
-  height: 50px;
-  width: 200px;
-  border-radius: 10px;
-  background-color: #FF6700;
-  color: #F9F6F2;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  position: relative;
-  top: -100px;
-}
-.fiveSection div .itemsOne {
-  display: flex;
-  align-items: center;
-  gap: 80px;
+  /* gap: 80px; */
   margin-bottom: 50px;
   margin-top: 50px;
-  flex-direction: row;
+  /* flex-direction: column; */
 }
-.fiveSection div .itemsOne p {
+.tenSection .itemsOne .uno {
+  grid-area: uno;
+}
+.tenSection .itemsOne .dos {
+  grid-area: dos;
+}
+.tenSection .itemsOne .tres {
+  grid-area: tres;
+}
+.tenSection .itemsOne p {
   font-size: 18px;
-  max-width: 700px;
-  color: #F9F6F2;
-  font-weight: bold;
+  color: #FF6700;
 }
-.fiveSection div .itemsOne .logoSlogan {
+.tenSection .itemsOne .logoSlogan {
   height: 20rem;
 }
 
 @media (max-width: 900px) {
-  .fiveSection div .itemsOne {
+  .tenSection div .itemsOne {
     gap: 20px;
     margin-bottom: 50px;
     flex-direction: row;
   }
-  .fiveSection div .itemsOne p {
+  .tenSection div .itemsOne p {
     font-size: 16px;
     max-width: 500px;
   }
-  .fiveSection div .itemsOne .logoSlogan {
+  .tenSection div .itemsOne .logoSlogan {
     height: 15rem;
   }
 }
 @media (max-width: 768px) {
-  .fiveSection div .itemsOne {
+  .tenSection div .itemsOne {
     text-align: center;
     flex-direction: column;
   }
-  .fiveSection div .itemsOne p {
+  .tenSection div .itemsOne p {
     max-width: 300px;
     padding-top: 20px;
   }
