@@ -20,30 +20,30 @@ fetch('app.json')
         data.twoSection.forEach(item => {
         const div = document.createElement('div');
         div.innerHTML = `
-        <h2 class="t-blueKumpai t-48 t-center">${item.title}</h2>
+        <h2 class="t-bluekind t-48 t-center">${item.title}</h2>
             <div class="twoBoxs  efects">
                 <div class="sTBoxOne bg-white border-box card">
-                    <img  src="${item.icon1}" alt="">
+                    <img  src="${item.icon1}" alt=""/>
                     <p>${item.p1}</p>
                 </div>
                 <div class="sTBoxtwo">
-                    <img class="phoneCircle card" src="${item.imgSrc1}" alt="">
+                    <img class="phoneCircle card" src="${item.imgSrc1}" alt=""/>
 
                 </div>
             </div>
             <div class="twoBoxs efects">
                 <div class="sTBoxOne">
-                    <img class= "desktopCircle" src="${item.imgSrc2}" alt="">
+                    <img class= "desktopCircle" src="${item.imgSrc2}" alt=""/>
                     <div class="orangeCircle"></div>
                 </div>
                 <div class="sTBoxtwo bg-white border-box">
-                    <img  src="${item.icon2}" alt="">
+                    <img  src="${item.icon2}" alt=""/>
                     <p>${item.p2}</p>
                 </div>
             </div>
             <div class="twoBoxs  efects">
                 <div class="sTBoxOne bg-white border-box card">
-                    <img  src="${item.icon3}" alt="">
+                    <img  src="${item.icon3}" alt=""/>
                     <p>${item.p3}</p>
                 </div>
                 <div class="sTBoxtwo">
@@ -52,7 +52,7 @@ fetch('app.json')
             </div>
             <div class="twoBoxs efects">
                 <div class="sTBoxOne">
-                    <img class= "desktopCircle" src="${item.imgSrc4}" alt="">
+                    <img class= "desktopCircle" src="${item.imgSrc4}" alt=""/>
 
                 </div>
                 <div class="sTBoxtwo bg-white border-box">
@@ -68,7 +68,7 @@ fetch('app.json')
         const threeSection = document.querySelector('.threeSection');
         data.threeSection.forEach(item => {
             threeSection.innerHTML += `
-                    <h2 class="efects t-48">${item.h2}</h2>
+                    <h2 class="t-48">${item.h2}</h2>
                     <img  src="${item.img}" alt=""/>
             `;
         });
@@ -78,14 +78,16 @@ fetch('app.json')
         data.fourSection.forEach(item => {
         const cajaCero = document.createElement('div');
         cajaCero.innerHTML =`
-                    <h2 class="efects">${item.h2}</h2>
+                <h2 class="t-48">${item.h2}</h2>
         `;    
         const cajaOne = document.createElement('div');
+        cajaOne.classList.add('cajaDes');
         item.itemBox.forEach(boxItem => {
             cajaOne.innerHTML += `
                 <div class= "boxy ${boxItem.bgColor} efectsBoxy">
-                    <p class = "boxNumero ${boxItem.tColor}" >${boxItem.t}</p>
-                    <p class="boxText">${boxItem.p}</p>
+                    <img  src="${boxItem.icon}" alt=""/>
+                    <p class = "boxTitle" >${boxItem.t}</p>
+                    <p class="boxText t-18">${boxItem.p}</p>
                 </div>
             `;
         
@@ -96,16 +98,19 @@ fetch('app.json')
 
         //section five objetivos
         const fiveSection = document.querySelector('.fiveSection');
+        fiveSection.classList.add('flex-col');
         data.fiveSection.forEach(item => {
         const cajaCero = document.createElement('div');
         cajaCero.innerHTML = `
-                    <h2 class="efects t-48">${item.h2}</h2>
+                    <h2 class="t-48">${item.h2}</h2>
         `;
         const cajaOne = document.createElement('div');
+        cajaOne.classList.add('box-five');
+        cajaOne.classList.add('flex-col');
         item.itemBox.forEach(boxItem => {
             cajaOne.innerHTML += `
-                <div class= " efectsBoxy">
-                <img  src="${boxItem.img}" alt=""/>
+                <div class= "efectsBoxy boxCard">
+                    <img  src="${boxItem.img}" alt=""/>
                     <p>${boxItem.p}</p>
                 </div>
             `;
@@ -115,6 +120,29 @@ fetch('app.json')
         fiveSection.appendChild(cajaOne)
         });
         
+         //section six servicios
+        const sixSection = document.querySelector('.sixSection');
+        data.sixSection.forEach(item => {
+        const cajaCero = document.createElement('div');
+        cajaCero.classList.add('flex-col');
+        cajaCero.innerHTML =`
+                <h2 class=" t-48">${item.h2}</h2>
+        `;    
+        const cajaOne = document.createElement('div');
+        cajaOne.classList.add('flex-row');
+        item.itemBox.forEach(boxItem => {
+            cajaOne.innerHTML += `
+                <div class= "box-services efectsBoxy ${boxItem.bgColor}">
+                    <p class="boxText t-18">${boxItem.p}</p>
+                </div>
+            `;
+        
+        });
+        sixSection.appendChild(cajaCero);
+        sixSection.appendChild(cajaOne);
+        });
+
+
         //section eleven
         const tenSection = document.querySelector('.tenSection');
         data.tenSection.forEach(item => {

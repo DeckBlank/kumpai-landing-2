@@ -33,87 +33,88 @@ html {
 
 
 // variables
-$whiteKumpai    : #F9F6F2;
-$yellowKumpai   : #FFD600; 
-$orangeKumpai   : #FF6700; 
-$greenKumpai    :   #45B64A;
-$blueKumpai     : #27C5CD;//#00B4C1;
-$grayKumpai     :#5F5D5C; 
+$whitekind    : #F9F6F2;
+$yellowkind   : #FFD600; 
+$orangekind   : #FF6700; 
+$greenkind    :   #45B64A;
+$bluekind     : #27C5CD;//#00B4C1;
+$graykind     :#5F5D5C; 
+$blackkind    : #000000;
 
 
-$yellowKumpaiLigth   : #FFF0A3; 
-$orangeKumpaiLigth   : #F9AC80; 
-$greenKumpaiLigth    :   #A6D399;
-$blueKumpaiLigth     : #95DCDE; 
+$yellowkindLigth   : #FFF0A3; 
+$orangekindLigth   : #F9AC80; 
+$greenkindLigth    :   #A6D399;
+$bluekindLigth     : #95DCDE; 
 
 .bg-white{
     background-color: white;
 }
 
-.bg-whiteKumpai{
-    background-color: $whiteKumpai;
+.bg-whitekind{
+    background-color: $whitekind;
 }
 
-.bg-yellowKumpai{
-    background-color: $yellowKumpai;
+.bg-yellowkind{
+    background-color: $yellowkind;
 }
 
-.bg-orangeKumpai {
-    background-color: $orangeKumpai;
+.bg-orangekind {
+    background-color: $orangekind;
 }
 
-.bg-greenKumpai {
-    background-color: $greenKumpai;
+.bg-greenkind {
+    background-color: $greenkind;
 }
 
-.bg-blueKumpai {
-    background-color: $blueKumpai;
+.bg-bluekind {
+    background-color: $bluekind;
 }
 
-.bg-yellowKumpaiLigth{
-    background-color:$yellowKumpaiLigth;
+.bg-yellowkindLigth{
+    background-color:$yellowkindLigth;
 }
 
-.bg-orangeKumpaiLigth{
-    background-color:$orangeKumpaiLigth;
+.bg-orangekindLigth{
+    background-color:$orangekindLigth;
 }
 
-.bg-greenKumpaiLigth{
-    background-color:$greenKumpaiLigth;
+.bg-greenkindLigth{
+    background-color:$greenkindLigth;
 }
 
-.bg-blueKumpaiLigth{
-    background-color:$blueKumpaiLigth;
+.bg-bluekindLigth{
+    background-color:$bluekindLigth;
 }
+
 
 
 /* Color texts */
 
-.t-blueKumpai{
-    color:$blueKumpai;
+.t-bluekind{
+    color:$bluekind;
 }
 
-.t-yellowKumpai{
-    color:$yellowKumpai;
+.t-yellowkind{
+    color:$yellowkind;
 }
 
-.t-orangeKumpai{
-    color:$orangeKumpai;
+.t-orangekind{
+    color:$orangekind;
 }
 
-.t-greenKumpai{
-    color:$greenKumpai;
+.t-greenkind{
+    color:$greenkind;
 }
 
 /* Text size */
-.t-18{
-    font-size: 18px;
+@mixin t-p($font-size, $color){
+    text-align: left;
+    font-size: $font-size;
+    color:$color;
 }
-
-
-/* center rigth left */
-.t-center{
-    text-align: center;
+.t-18{
+    @include t-p(18px,$blackkind )
 }
 
 @mixin t-h2($font-size,$color){
@@ -123,16 +124,42 @@ $blueKumpaiLigth     : #95DCDE;
 }
 
 .t-48{
-    @include  t-h2(48px, $blueKumpai)
+    @include  t-h2(48px, $bluekind)
 }
+
+/* center rigth left */
+.t-center{
+    text-align: center;
+}
+
+
 
 .t-rigth {
     text-align: right;
 }
+
+/* mixin-flex */
+@mixin flex-di($flex, $flexDirection){
+    display: $flex;
+    flex-direction: $flexDirection;
+}
+
+.flex-col{
+    justify-content: center;
+    @include flex-di(flex,column)
+}
+
+.flex-row{
+    justify-content: center;
+    @include flex-di(flex,row)
+}
+
+.flex-rox
+
 body{
     display: flex;
     flex-direction: column;
-    background-color: $whiteKumpai;
+    background-color: $whitekind;
 }
 
 
@@ -143,7 +170,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     height: 70px;
-    background-color: $whiteKumpai;
+    background-color: $whitekind;
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
@@ -163,9 +190,9 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
-            color: $grayKumpai;
+            color: $graykind;
             a:hover{
-                color:$blueKumpaiLigth;
+                color:$bluekindLigth;
                 font-weight: bold;
                 /* text-decoration: underline;
                 text-decoration-skip-ink: none; */
@@ -187,12 +214,12 @@ nav {
             width: 180px;
             height: 45px;
             &:hover{
-                background-color: $blueKumpai;
+                background-color: $bluekind;
             }
         }
 
         .btnInit a {
-            color: $whiteKumpai;  
+            color: $whitekind;  
         }
 
         .logo{
@@ -251,7 +278,7 @@ nav {
             padding-top:  30%;
             /* font-family: DinRoundPro; */
             /* font-size: 16px; */
-            color:$whiteKumpai;
+            color:$whitekind;
             max-width: 600px;
             position: relative;
             left: 15%;
@@ -261,7 +288,7 @@ nav {
             padding-top:  2%;
             font-family: DinRoundPro;
             font-size: 16px;
-            color:$whiteKumpai;
+            color:$whitekind;
             max-width: 600px;
             position: relative;
             left: 15%;
@@ -271,8 +298,8 @@ nav {
             height: 50px;
             width: 200px;
             border-radius: 10px;
-            background-color: $orangeKumpai;
-            color: $whiteKumpai;
+            background-color: $orangekind;
+            color: $whitekind;
             font-size: 18px;
             font-weight: bold;
             border: none;
@@ -477,7 +504,7 @@ nav {
             }
 
             /* .blueCircle{
-                background-color: $blueKumpai;
+                background-color: $bluekind;
                 position: relative;
                 top: -150px;
                 border-radius: 50%;
@@ -495,7 +522,7 @@ nav {
                 top: 350px;
             }
             .orangeCircle{
-                background-color: $orangeKumpai;
+                background-color: $orangekind;
                 position: relative;
                 top: 150px;
                 right: 200px;
@@ -549,7 +576,7 @@ nav {
                 }
     
                 .blueCircle{
-                    background-color: $blueKumpai;
+                    background-color: $bluekind;
                     position: relative;
                     top: -150px;
                     border-radius: 50%;
@@ -567,7 +594,7 @@ nav {
                     top: 350px;
                 }
                 .orangeCircle{
-                    background-color: $orangeKumpai;
+                    background-color: $orangekind;
                     position: relative;
                     top: 150px;
                     right: 200px;
@@ -609,7 +636,6 @@ nav {
 }
 .fourSection{
     padding-bottom: 100px; 
-    background-color: $blueKumpaiLigth;
     max-height: 800px;
     display: grid;
     gap: 30px;
@@ -634,13 +660,8 @@ nav {
     }
 
     h2{
-        font-family: FestivoLetters;
-        font-size: 30px;
-        font-weight: bold;
         text-align: center;
         padding-top: 50px ;
-        color: #F9F6F2;
-        
     }
     .imgPeople {
         width: 90%;//80rem;
@@ -662,21 +683,18 @@ nav {
                 align-items: center;
                 padding: 10px;
                 
-                .boxNumero {
-                    font-size: 40px;
+                .boxTitle{
+                    font-size: 18px;
                     font-weight: bold;
                     display: flex;
                     place-content: center;
                     align-items: center;
                     width: 10rem;
                     height: 10rem;
-                    border-radius: 50%;
-                    background-color: $whiteKumpai;
+                    
                 }
                 .boxText{
-                    font-size: 18px;//25px;
-                    font-weight: bold;// nuevo
-                    display: flex;
+                display: flex;
                     place-content: center;
                     align-items: center;
                     width: 250px;
@@ -795,35 +813,39 @@ nav {
 }
 
 .fiveSection{
-    margin-top: -40px;
+    margin-top: 40px;
     margin-bottom: 100px;
     margin-left: 80px;
     margin-right: 80px;
     gap:20px;
-    
     place-content: center;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "oneCard twoCard trheeCard"
-    ;
 
-    :nth-child(1){
-        grid-area: oneCard;
-    };
-    :nth-child(2) {
-        grid-area: twoCard;
-    };
-    :nth-child(3) {
-        grid-area: trheeCard;
-    };
+    .box-five{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "oneCard twoCard trheeCard"
+        ;
 
-    div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        :nth-child(1){
+            grid-area: oneCard;
+        };
+        :nth-child(2) {
+            grid-area: twoCard;
+        };
+        :nth-child(3) {
+            grid-area: trheeCard;
+        };
+       /*  :nth-child(4) {
+            grid-area: fourCard;
+        };
+        :nth-child(5) {
+            grid-area: fiveCard;
+        };
+        :nth-child(6) {
+            grid-area: sixCard;
+        }; */
         .imgCrad{
             width: 50%;
             min-width: 150px;
@@ -835,16 +857,11 @@ nav {
             border-radius: 20px;
             margin: 10px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
+            justify-content: center;
             max-width: 350px;
-            h2{
-                font-size: 18px;
-                display: flex;
-                place-content: center;
-                margin-top: 100px;
-                text-align: center;
-            }
+            gap: 20px;
             p{
                 font-size: 14px;
                 display: flex;
@@ -852,9 +869,6 @@ nav {
                 max-width: 60%;
                 margin-top: 20px;
 
-            }
-            .imgPhone{
-                width: 100%;
             }
         }
     }
@@ -928,10 +942,23 @@ nav {
     }
 }
 
+.sixSection{
+    .flex-row{
+        .box-services{
+            height: 255px;
+            width: 250px;
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+    }
+}
 
 
 .tenSection{
-    background-color: $blueKumpaiLigth;
+    background-color: $bluekindLigth;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -959,7 +986,7 @@ nav {
         }
         p{
             font-size: 18px;
-            color: $orangeKumpai;
+            color: $orangekind;
         }
         .logoSlogan{
             height: 20rem;  
@@ -1036,3 +1063,69 @@ nav {
     animation-range: entry 25% cover 30%;
     animation-fill-mode:both;
 }
+
+//swiper
+
+
+.swiper {
+    padding-bottom: 60px !important;
+    height: 250px;
+    .swiper-wrapper {
+      align-items: center;
+    }
+    .swiper-slide {
+      border-radius: 5px;
+      height: 180px !important;
+      background-color: #000;
+      border: 1px solid #fff;
+      transition: 0.2s;
+      &.active {
+        height: 230px !important;
+      }
+    }
+    .prev,
+    .next {
+      cursor: pointer;
+      z-index: 100;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.65;
+      transition: 0.2s;
+      &:hover {
+        opacity: 1;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+      svg path {
+        fill: #fff;
+      }
+    }
+    .prev {
+      left: 25px;
+    }
+    .next {
+      right: 25px;
+    }
+    .pagination {
+      margin-left: 8px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      z-index: 100;
+      span {
+        font-size: 0;
+        opacity: 1;
+        margin: 0px 6px !important;
+        border: 1px solid #fff;
+        &.swiper-pagination-bullet-active {
+          background-color: transparent;
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+    

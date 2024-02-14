@@ -30,67 +30,64 @@ html h2 {
   background-color: white;
 }
 
-.bg-whiteKumpai {
+.bg-whitekind {
   background-color: #F9F6F2;
 }
 
-.bg-yellowKumpai {
+.bg-yellowkind {
   background-color: #FFD600;
 }
 
-.bg-orangeKumpai {
+.bg-orangekind {
   background-color: #FF6700;
 }
 
-.bg-greenKumpai {
+.bg-greenkind {
   background-color: #45B64A;
 }
 
-.bg-blueKumpai {
+.bg-bluekind {
   background-color: #27C5CD;
 }
 
-.bg-yellowKumpaiLigth {
+.bg-yellowkindLigth {
   background-color: #FFF0A3;
 }
 
-.bg-orangeKumpaiLigth {
+.bg-orangekindLigth {
   background-color: #F9AC80;
 }
 
-.bg-greenKumpaiLigth {
+.bg-greenkindLigth {
   background-color: #A6D399;
 }
 
-.bg-blueKumpaiLigth {
+.bg-bluekindLigth {
   background-color: #95DCDE;
 }
 
 /* Color texts */
-.t-blueKumpai {
+.t-bluekind {
   color: #27C5CD;
 }
 
-.t-yellowKumpai {
+.t-yellowkind {
   color: #FFD600;
 }
 
-.t-orangeKumpai {
+.t-orangekind {
   color: #FF6700;
 }
 
-.t-greenKumpai {
+.t-greenkind {
   color: #45B64A;
 }
 
 /* Text size */
 .t-18 {
+  text-align: left;
   font-size: 18px;
-}
-
-/* center rigth left */
-.t-center {
-  text-align: center;
+  color: #000000;
 }
 
 .t-48 {
@@ -99,11 +96,29 @@ html h2 {
   color: #27C5CD;
 }
 
+/* center rigth left */
+.t-center {
+  text-align: center;
+}
+
 .t-rigth {
   text-align: right;
 }
 
-body {
+/* mixin-flex */
+.flex-col {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-rox body {
   display: flex;
   flex-direction: column;
   background-color: #F9F6F2;
@@ -377,7 +392,7 @@ nav ul .logo {
   flex-direction: row;
   margin: 10px 0 10px 0;
   /* .blueCircle{
-      background-color: $blueKumpai;
+      background-color: $bluekind;
       position: relative;
       top: -150px;
       border-radius: 50%;
@@ -395,7 +410,7 @@ nav ul .logo {
       top: 350px;
   }
   .orangeCircle{
-      background-color: $orangeKumpai;
+      background-color: $orangekind;
       position: relative;
       top: 150px;
       right: 200px;
@@ -520,7 +535,6 @@ nav ul .logo {
 
 .fourSection {
   padding-bottom: 100px;
-  background-color: #95DCDE;
   max-height: 800px;
   display: grid;
   gap: 30px;
@@ -540,12 +554,8 @@ nav ul .logo {
   grid-area: cajaTwo;
 }
 .fourSection h2 {
-  font-family: FestivoLetters;
-  font-size: 30px;
-  font-weight: bold;
   text-align: center;
   padding-top: 50px;
-  color: #F9F6F2;
 }
 .fourSection .imgPeople {
   width: 90%;
@@ -566,20 +576,16 @@ nav ul .logo {
   align-items: center;
   padding: 10px;
 }
-.fourSection div .boxy .boxNumero {
-  font-size: 40px;
+.fourSection div .boxy .boxTitle {
+  font-size: 18px;
   font-weight: bold;
   display: flex;
   place-content: center;
   align-items: center;
   width: 10rem;
   height: 10rem;
-  border-radius: 50%;
-  background-color: #F9F6F2;
 }
 .fourSection div .boxy .boxText {
-  font-size: 18px;
-  font-weight: bold;
   display: flex;
   place-content: center;
   align-items: center;
@@ -670,62 +676,59 @@ nav ul .logo {
   }
 }
 .fiveSection {
-  margin-top: -40px;
+  margin-top: 40px;
   margin-bottom: 100px;
   margin-left: 80px;
   margin-right: 80px;
   gap: 20px;
   place-content: center;
+}
+.fiveSection .box-five {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 1fr;
   grid-template-areas: "oneCard twoCard trheeCard";
+  /*  :nth-child(4) {
+       grid-area: fourCard;
+   };
+   :nth-child(5) {
+       grid-area: fiveCard;
+   };
+   :nth-child(6) {
+       grid-area: sixCard;
+   }; */
 }
-.fiveSection :nth-child(1) {
+.fiveSection .box-five :nth-child(1) {
   grid-area: oneCard;
 }
-.fiveSection :nth-child(2) {
+.fiveSection .box-five :nth-child(2) {
   grid-area: twoCard;
 }
-.fiveSection :nth-child(3) {
+.fiveSection .box-five :nth-child(3) {
   grid-area: trheeCard;
 }
-.fiveSection div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.fiveSection div .imgCrad {
+.fiveSection .box-five .imgCrad {
   width: 50%;
   min-width: 150px;
   position: relative;
   top: 100px;
 }
-.fiveSection div .boxCard {
+.fiveSection .box-five .boxCard {
   border-radius: 20px;
   margin: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   max-width: 350px;
+  gap: 20px;
 }
-.fiveSection div .boxCard h2 {
-  font-size: 18px;
-  display: flex;
-  place-content: center;
-  margin-top: 100px;
-  text-align: center;
-}
-.fiveSection div .boxCard p {
+.fiveSection .box-five .boxCard p {
   font-size: 14px;
   display: flex;
   place-content: center;
   max-width: 60%;
   margin-top: 20px;
-}
-.fiveSection div .boxCard .imgPhone {
-  width: 100%;
 }
 
 @media (max-width: 900px) {
@@ -776,6 +779,16 @@ nav ul .logo {
     width: 120%;
   }
 }
+.sixSection .flex-row .box-services {
+  height: 255px;
+  width: 250px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
 .tenSection {
   background-color: #95DCDE;
   display: flex;
@@ -861,6 +874,71 @@ nav ul .logo {
   animation-name: show;
   animation-range: entry 25% cover 30%;
   animation-fill-mode: both;
+}
+
+.swiper {
+  padding-bottom: 60px !important;
+  height: 250px;
+}
+.swiper .swiper-wrapper {
+  align-items: center;
+}
+.swiper .swiper-slide {
+  border-radius: 5px;
+  height: 180px !important;
+  background-color: #000;
+  border: 1px solid #fff;
+  transition: 0.2s;
+}
+.swiper .swiper-slide.active {
+  height: 230px !important;
+}
+.swiper .prev,
+.swiper .next {
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.65;
+  transition: 0.2s;
+}
+.swiper .prev:hover,
+.swiper .next:hover {
+  opacity: 1;
+}
+.swiper .prev svg,
+.swiper .next svg {
+  width: 20px;
+  height: 20px;
+}
+.swiper .prev svg path,
+.swiper .next svg path {
+  fill: #fff;
+}
+.swiper .prev {
+  left: 25px;
+}
+.swiper .next {
+  right: 25px;
+}
+.swiper .pagination {
+  margin-left: 8px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  z-index: 100;
+}
+.swiper .pagination span {
+  font-size: 0;
+  opacity: 1;
+  margin: 0px 6px !important;
+  border: 1px solid #fff;
+}
+.swiper .pagination span.swiper-pagination-bullet-active {
+  background-color: transparent;
+  transform: scale(1.5);
 }
 
 /*# sourceMappingURL=style.css.map */

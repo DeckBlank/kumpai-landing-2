@@ -40,25 +40,22 @@
             "h2":"FUNCIONES",
             "itemBox":[
                 {
-                    "n":"1",
+                    "icon":"./asset/icons/icon5.png",
                     "t":"Medición de Convivencia en el aula",
                     "p":"Son cuestionarios que  ayudan a entender  y medir cómo se sienten los estudiantes en el aula",
-                    "tColor" : "t-yellowKumpai",
-                    "bgColor" : "bg-yellowKumpaiLigth"
+                    "bgColor" : "bg-yellowkindLigth"
                 },
                 {
-                    "n":"2",
+                    "icon":"./asset/icons/icon6.png",
                     "t":"Retroalimentación y talentos",
                     "p":"Espacio que fomenta la retroalimentación, comunicación asertiva y la redacción",
-                    "tColor" : "t-orangeKumpai",
-                    "bgColor" : "bg-orangeKumpaiLigth"
+                    "bgColor" : "bg-orangekindLigth"
                 },
                 {
-                    "n":"3",
+                    "icon":"./asset/icons/icon7.png",
                     "t":"Herramientas psicopedagógicas",
                     "p":"Material pedagógico para fortalecer las habilidades socioemocionales",
-                    "tColor" : "t-greenKumpai",
-                    "bgColor" : "bg-greenKumpaiLigth"
+                    "bgColor" : "bg-greenkindLigth"
                 }
             ]
         }
@@ -70,46 +67,113 @@
             "itemBox":[
                 {
                     "img"    : "./asset/icons/icon8.png",
-                    "p"         : "Fomentar un ambiente de sana convivencia escolar",
-                    "imgPhone"  : "./asset/imgs/imgePhone1.png"
+                    "p"         : "Fomentar un ambiente de sana convivencia escolar"
                 },
                 {
                     "img"    : "./asset/icons/icon9.png",
-                    "p"         : "Detectar y prevenir posibles casos de violencia escolar.",
-                    "imgPhone"  : "./asset/imgs/imgePhone1.png"
+                    "p"         : "Detectar y prevenir posibles casos de violencia escolar."
                 },
                 {
                     "img"    : "./asset/icons/icon10.png",
-                    "p"         : "Aprender estrategias para tratar casos de violencia escolar.",
-                    "imgPhone"  : "./asset/imgs/imgePhone1.png"
+                    "p"         : "Aprender estrategias para tratar casos de violencia escolar."
                 },
                 {
                     "img"    : "./asset/icons/icon11.png",
-                    "p"         : "Brindar retroalimentación respetuosa y amable.",
-                    "imgPhone"  : "./asset/imgs/imgePhone1.png"
+                    "p"         : "Brindar retroalimentación respetuosa y amable."
                 },
                 {
                     "img"    : "./asset/icons/icon12.png",
-                    "p"         : "Conocer nuestros talentos y los de nuestros compañeros.",
-                    "imgPhone"  : "./asset/imgs/imgePhone1.png"
+                    "p"         : "Conocer nuestros talentos y los de nuestros compañeros."
                 },
                 {
                     "img"    : "./asset/icons/icon13.png",
-                    "p"         : "Lograr que los estudiantes se sientan escuchados, respetados y valorados en las escuelas.",
-                    "imgPhone"  : "./asset/imgs/imgePhone1.png"
+                    "p"         : "Lograr que los estudiantes se sientan escuchados, respetados y valorados en las escuelas."
                 }
 
             ]
         }
     ],
 
+    "sixSection": [
+        {
+            "h2":"SERVICIOS ADICIONALES",
+            "itemBox" : [
+                {
+                    "p"    :    "Diseño del plan de intervención pedagogico para fomentar la buena convivencia escolar",
+                    "bgColor" : "bg-yellowkindLigth"
+                },
+                {                    
+                    "p"    :    "Implementación de talleres de habilidades emocionales y de prevención de la violencia",
+                    "bgColor" : "bg-bluekindLigth"
+                },
+                {
+                    "p"    :    "Capacitación  docente en talleres  de habilidades socioemocionales y deprevención de la violencia",
+                    "bgColor" : "bg-orangekindLigth"
+                },
+                {
+                    "p"    :    "Creación de recursos digitales pedagógicos para docentes y para estudiantes",
+                    "bgColor" : "bg-greenkindLigth"
+                },
+                {
+                    "p"     :    "Creación de programas para padres de familia.",
+                    "bgColor" : "bg-yellowkindLigth"
+                }
+            ]
+        }
+    ],
 
+    "sevenSection": [
+        {
+            "h2":"TESTIMONIOS", 
+            "content":[
+                {   
+                    "pic"   :   "./asset/testimonials/carmen.jpg",
+                    "name"  :   "Carmen",
+                    "cargo" :   "Directora del colegio san Felipe",
+                    "quote" :   "Estamos muy agradecidos del KIND, que nos ha permitido ver situaciones que no podríamos haber visto sin esta función."
+                },
+                {
+                    "pic"   :   "./asset/testimonials/luisa.jpg",
+                    "name"  :   "Luisa",
+                    "cargo" :   "Directora del colegio san Felipe",
+                    "quote" :   "Es una aplicación muy positiva que como colegio nos permitió tener una acción pionera en el uso de plataformas de convivencia escolar. <br/> Pudimos introducirnos en el mundo digital y en ese sentido ha sido muy favorable empezar a trabajar con KIND!"
+                },
+                {
+                    "pic"   :   "./asset/testimonials/maria.jpg",
+                    "name"  :   "Maria",
+                    "cargo" :   "Directora del colegio san Felipe",
+                    "quote" :   "Es una aplicación muy positiva que como colegio nos permitió tener una acción pionera en el uso de plataformas de convivencia escolar. <br/> Pudimos introducirnos en el mundo digital y en ese sentido ha sido muy favorable empezar a trabajar con KIND!"
+                },
+                {
+                    "pic"   :   "./asset/testimonials/juan.jpg",
+                    "name"  :   "Juan",
+                    "cargo" :   "Director del colegio san Felipe",
+                    "quote" :   "Es una aplicación muy positiva que como colegio nos permitió tener una acción pionera en el uso de plataformas de convivencia escolar. <br/> Pudimos introducirnos en el mundo digital y en ese sentido ha sido muy favorable empezar a trabajar con KIND!"
+                }
+            ]
+        
+        }
+    ],
+
+
+    "eightSection": [
+        {
+            "h2":"NOTICIAS",
+            "n1": "El acoso escolar en Perú sigue presente en las aulas. De enero a mayo 2023 se han reportado 2022 casos en la palataforma del MINEDU (La República, junio 2023)",
+            "n2": "Las habilidades socioemocionales son importantes para gestionar los estados afectivos, establecer vinculos positivos y  desarrollar la capacidad de adaptarse al entorno (MINEDU 2023)."
+        }
+    ],
 
     "nineSection": [
         {
-            "title":"NOTICIAS",
-            "n1": "El acoso escolar en Perú sigue presente en las aulas. De enero a mayo 2023 se han reportado 2022 casos en la palataforma del MINEDU (La República, junio 2023)",
-            "n2": "Las habilidades socioemocionales son importantes para gestionar los estados afectivos, establecer vinculos positivos y  desarrollar la capacidad de adaptarse al entorno (MINEDU 2023)."
+            "title" :   "¡Déjanos tus datos para que pruebes KIND!",
+            "i1"    :   "Nombre completo",
+            "i2"    :   "Email",
+            "i3"    :   "Cargo",
+            "i4"    :   "Colegio",
+            "i5"    :   "Teléfono / Celular",
+            "i6"    :   "País",
+            "b"     :   "Solicitar Kind"
         }
     ],
 
