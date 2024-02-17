@@ -635,76 +635,6 @@ nav {
     justify-content: center;
 }
 .fourSection{
-    padding-bottom: 100px; 
-    max-height: 800px;
-    display: grid;
-    gap: 30px;
-    align-items: center;
-
-   /*  grid-template-columns: 55% 40%; */
-    grid-template-rows: 20% 80%;
-
-    grid-template-areas:
-    "cajaCero cajaCero"
-    "cajaOne cajaTwo"
-    ;
-    :nth-child(1){
-        grid-area: cajaCero;
-    }
-    :nth-child(2){
-        grid-area: cajaOne;
-        display: flex;
-    }
-    :nth-child(3){
-        grid-area: cajaTwo;
-    }
-
-    h2{
-        text-align: center;
-        padding-top: 50px ;
-    }
-    .imgPeople {
-        width: 90%;//80rem;
-        max-height: 500px;
-        position: relative;
-        border-radius: 20px;
-        left: 100px;
-    }
-        div{
-            .boxy{
-                display:flex;
-                flex-direction: row;
-                width: 570px;
-                height: 350px;
-                position: relative;
-                /* left: 25%; */
-                margin: 40px;
-                border-radius: 24px; 
-                align-items: center;
-                padding: 10px;
-                
-                .boxTitle{
-                    font-size: 18px;
-                    font-weight: bold;
-                    display: flex;
-                    place-content: center;
-                    align-items: center;
-                    width: 10rem;
-                    height: 10rem;
-                    
-                }
-                .boxText{
-                display: flex;
-                    place-content: center;
-                    align-items: center;
-                    width: 250px;
-                    position:relative;
-                    left: 20px;
-                    margin: 0 25px 0 0;
-                }
-            }
-        }
-
 }
 
 @media (max-width: 900px){
@@ -1076,7 +1006,7 @@ nav {
     .swiper-slide {
       border-radius: 5px;
       height: 180px !important;
-      background-color: #000;
+      background-color: #00000048;
       border: 1px solid #fff;
       transition: 0.2s;
       &.active {

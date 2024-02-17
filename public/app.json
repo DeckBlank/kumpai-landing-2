@@ -34,6 +34,28 @@
         }
     ],
 
+    "fourSection2": [
+                {
+                    "icon":"./asset/icons/icon5.png",
+                    "t":"Medición de Convivencia en el aula",
+                    "p":"Son cuestionarios que  ayudan a entender  y medir cómo se sienten los estudiantes en el aula",
+                    "bgColor" : "bg-yellowkindLigth"
+                },
+                {
+                    "icon":"./asset/icons/icon6.png",
+                    "t":"Retroalimentación y talentos",
+                    "p":"Espacio que fomenta la retroalimentación, comunicación asertiva y la redacción",
+                    "bgColor" : "bg-orangekindLigth"
+                },
+                {
+                    "icon":"./asset/icons/icon7.png",
+                    "t":"Herramientas psicopedagógicas",
+                    "p":"Material pedagógico para fortalecer las habilidades socioemocionales",
+                    "bgColor" : "bg-greenkindLigth"
+                }
+
+    ],
+
     "fourSection": [
 
         {

@@ -70,31 +70,62 @@ fetch('app.json')
             threeSection.innerHTML += `
                     <h2 class="t-48">${item.h2}</h2>
                     <img  src="${item.img}" alt=""/>
+                    <h2 class="t-48">HOLA HOLA</h2>
             `;
         });
 
-        //section four
-        const fourSection = document.querySelector('.fourSection');
-        data.fourSection.forEach(item => {
-        const cajaCero = document.createElement('div');
-        cajaCero.innerHTML =`
-                <h2 class="t-48">${item.h2}</h2>
-        `;    
-        const cajaOne = document.createElement('div');
-        cajaOne.classList.add('cajaDes');
-        item.itemBox.forEach(boxItem => {
-            cajaOne.innerHTML += `
-                <div class= "boxy ${boxItem.bgColor} efectsBoxy">
-                    <img  src="${boxItem.icon}" alt=""/>
-                    <p class = "boxTitle" >${boxItem.t}</p>
-                    <p class="boxText t-18">${boxItem.p}</p>
-                </div>
-            `;
-        
-        });
-        fourSection.appendChild(cajaCero);
-        fourSection.appendChild(cajaOne);
-        });
+        //section four funciones
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+// Seleccionar el contenedor principal de la sección desde el HTML
+const sectionContainer = document.querySelector('.fourSection');
+
+// Crear el contenedor de las diapositivas para esta sección
+const sectionSwiperWrapper = document.createElement('div');
+sectionSwiperWrapper.classList.add('swiper-wrapper');
+
+// Agregar cada diapositiva al contenedor de esta sección
+data.fourSection[0].itemBox.forEach(boxItem => {
+    const swiperSlide = document.createElement('div');
+    swiperSlide.classList.add('swiper-slide');
+    swiperSlide.innerHTML = `
+        <div class="boxy ${boxItem.bgColor} efectsBoxy">
+            <img src="${boxItem.icon}" alt=""/>
+            <p class="boxTitle">${boxItem.t}</p>
+            <p class="boxText t-18">${boxItem.p}</p>
+        </div>
+    `;
+    sectionSwiperWrapper.appendChild(swiperSlide);
+});
+
+// Agregar el contenedor de diapositivas al contenedor principal de la sección
+sectionContainer.appendChild(sectionSwiperWrapper);
+
+// Inicializar Swiper para esta sección
+new Swiper(sectionContainer, {
+    slidesPerView: 3,
+    spaceBetween: 50,
+    loop: true,
+    grabCursor: true,
+    centeredSlides: true,
+    slideActiveClass: "active",
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev"
+    },
+    pagination: {
+      el: ".pagination",
+      clickable: true
+    },
+    autoplay: {
+      enabled: true,
+      delay: 5000
+    },
+});
+
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
         //section five objetivos
         const fiveSection = document.querySelector('.fiveSection');
@@ -162,8 +193,3 @@ fetch('app.json')
             tenSection.appendChild(div);
         });
 })  
-
-
-
-
-
