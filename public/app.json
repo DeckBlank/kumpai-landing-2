@@ -65,19 +65,22 @@
                     "icon":"./asset/icons/icon5.png",
                     "t":"Medición de Convivencia en el aula",
                     "p":"Son cuestionarios que  ayudan a entender  y medir cómo se sienten los estudiantes en el aula",
-                    "bgColor" : "bg-yellowkindLigth"
+                    "bgColor" : "bg-yellowkindLigth",
+                    "img":"./asset/imgs/6-six.png"
                 },
                 {
                     "icon":"./asset/icons/icon6.png",
                     "t":"Retroalimentación y talentos",
                     "p":"Espacio que fomenta la retroalimentación, comunicación asertiva y la redacción",
-                    "bgColor" : "bg-orangekindLigth"
+                    "bgColor" : "bg-orangekindLigth",
+                    "img":"./asset/imgs/7-seven.png"
                 },
                 {
                     "icon":"./asset/icons/icon7.png",
                     "t":"Herramientas psicopedagógicas",
                     "p":"Material pedagógico para fortalecer las habilidades socioemocionales",
-                    "bgColor" : "bg-greenkindLigth"
+                    "bgColor" : "bg-greenkindLigth",
+                    "img":"./asset/imgs/8-eight.png"
                 }
             ]
         }
@@ -147,30 +150,36 @@
     "sevenSection": [
         {
             "h2":"TESTIMONIOS", 
-            "content":[
+            "itemBox":[
                 {   
                     "pic"   :   "./asset/testimonials/carmen.jpg",
-                    "name"  :   "Carmen",
-                    "cargo" :   "Directora del colegio san Felipe",
-                    "quote" :   "Estamos muy agradecidos del KIND, que nos ha permitido ver situaciones que no podríamos haber visto sin esta función."
+                    "name"  :   "Jana Maria Aquije Muñoz",
+                    "cargo" :   "Subdirectora del colegio Rosa Perez Liendo",
+                    "quote" :   "Esta plataforma es fácil de acceder, permite recibir información de las situaciones de la convivencia. Debería estar en todas las escuelas. Ayudaría mucho a disminuir la violencia escolar."
                 },
                 {
                     "pic"   :   "./asset/testimonials/luisa.jpg",
-                    "name"  :   "Luisa",
-                    "cargo" :   "Directora del colegio san Felipe",
-                    "quote" :   "Es una aplicación muy positiva que como colegio nos permitió tener una acción pionera en el uso de plataformas de convivencia escolar. <br/> Pudimos introducirnos en el mundo digital y en ese sentido ha sido muy favorable empezar a trabajar con KIND!"
+                    "name"  :   "Gelmer Alexander Diaz Saldaña",
+                    "cargo" :   "Docente del colegio Rosa Perez Liendo",
+                    "quote" :   "Es una buena iniciativa y poyo para poder trabajar en las tutorías."
                 },
                 {
                     "pic"   :   "./asset/testimonials/maria.jpg",
-                    "name"  :   "Maria",
-                    "cargo" :   "Directora del colegio san Felipe",
-                    "quote" :   "Es una aplicación muy positiva que como colegio nos permitió tener una acción pionera en el uso de plataformas de convivencia escolar. <br/> Pudimos introducirnos en el mundo digital y en ese sentido ha sido muy favorable empezar a trabajar con KIND!"
+                    "name"  :   "Wilson Aguilar Barrantes ",
+                    "cargo" :   "Docente del colegio Rosa Perez Liendo",
+                    "quote" :   "Es un sistema que te permite ayudar amablemente a los estudiantes."
                 },
                 {
                     "pic"   :   "./asset/testimonials/juan.jpg",
-                    "name"  :   "Juan",
-                    "cargo" :   "Director del colegio san Felipe",
-                    "quote" :   "Es una aplicación muy positiva que como colegio nos permitió tener una acción pionera en el uso de plataformas de convivencia escolar. <br/> Pudimos introducirnos en el mundo digital y en ese sentido ha sido muy favorable empezar a trabajar con KIND!"
+                    "name"  :   "Leonardo",
+                    "cargo" :   "Director del colegio Rosa Perez Liendo",
+                    "quote" :   "Yo me sentí feliz de ver una plataforma amigable, útil y bien práctica. <br> Lo que más me gustó de KIND fue el cuestionario y las herramientas psicopedagógicas."
+                },
+                {
+                    "pic"   :   "./asset/testimonials/juan.jpg",
+                    "name"  :   "Víctor",
+                    "cargo" :   "Coordinador de psicología del colegio Víctor Andrés Belaunde",
+                    "quote" :   "La plataforma puede contribuir porque trabaja desde un enfoque de la prevención. Me gusta la plataforma porque es dinámica y tiene muchos recursos complementarios."
                 }
             ]
         

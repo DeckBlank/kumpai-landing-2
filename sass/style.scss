@@ -49,42 +49,62 @@ $bluekindLigth     : #95DCDE;
 
 .bg-white{
     background-color: white;
+    height: 100%;
+    width: 100%;
 }
 
 .bg-whitekind{
     background-color: $whitekind;
+    height: 100%;
+    width: 100%;
 }
 
 .bg-yellowkind{
     background-color: $yellowkind;
+    height: 100%;
+    width: 100%;
 }
 
 .bg-orangekind {
     background-color: $orangekind;
+    height: 100%;
+    width: 100%;
 }
 
 .bg-greenkind {
     background-color: $greenkind;
+    height: 100%;
+    width: 100%;
 }
 
 .bg-bluekind {
     background-color: $bluekind;
+    height: 100%;
+    width: 100%;
 }
 
 .bg-yellowkindLigth{
     background-color:$yellowkindLigth;
+    height: 100%;
+    width: 100%;
 }
 
 .bg-orangekindLigth{
     background-color:$orangekindLigth;
+    height: 100%;
+    width: 100%;
 }
 
 .bg-greenkindLigth{
     background-color:$greenkindLigth;
+    height: 100%;
+    width: 100%;
 }
 
 .bg-bluekindLigth{
     background-color:$bluekindLigth;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -113,9 +133,19 @@ $bluekindLigth     : #95DCDE;
     font-size: $font-size;
     color:$color;
 }
+
+.t-16{
+    @include t-p(16px,$blackkind )
+}
+
 .t-18{
     @include t-p(18px,$blackkind )
 }
+
+.t-b{
+    font-weight: bold;
+}
+
 
 @mixin t-h2($font-size,$color){
     text-align: center;
@@ -151,11 +181,30 @@ $bluekindLigth     : #95DCDE;
 
 .flex-row{
     justify-content: center;
-    @include flex-di(flex,row)
+    @include flex-di(flex,row);
 }
 
-.flex-rox
 
+/* Margin */
+@mixin margin($margin){
+    margin:$margin;
+}
+
+
+
+.mr10 {
+    @include  margin(10px);
+};
+
+.mr20 {
+    @include  margin(20px);
+};
+
+.mr40 {
+    @include  margin(40px);
+};
+
+/* :::::::::::::: */
 body{
     display: flex;
     flex-direction: column;
@@ -460,6 +509,7 @@ nav {
 
 }  */
 
+
 .twoSection {
     /* margin:18%; */
     padding: 10%;
@@ -634,7 +684,11 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
+/* ::::::::::::::::::::Section 4::::::::::: */
+
 .fourSection{
+
 }
 
 @media (max-width: 900px){
@@ -742,6 +796,9 @@ nav {
     }
 }
 
+
+/* ::::::::::::::::::::end 4::::::::::: */
+
 .fiveSection{
     margin-top: 40px;
     margin-bottom: 100px;
@@ -767,15 +824,6 @@ nav {
         :nth-child(3) {
             grid-area: trheeCard;
         };
-       /*  :nth-child(4) {
-            grid-area: fourCard;
-        };
-        :nth-child(5) {
-            grid-area: fiveCard;
-        };
-        :nth-child(6) {
-            grid-area: sixCard;
-        }; */
         .imgCrad{
             width: 50%;
             min-width: 150px;
@@ -857,9 +905,6 @@ nav {
 @media (max-width:400px) {
     .fiveSection{
         div{
-/*             .imgCrad{
-                max-width: 150px;
-            } */
             .boxCard{
                 border-radius: 20px;
                 margin: 10px;
@@ -999,14 +1044,16 @@ nav {
 
 .swiper {
     padding-bottom: 60px !important;
-    height: 250px;
+    height: 750px; //250px
+    max-width: 100%;//width: 1200px;
     .swiper-wrapper {
       align-items: center;
+      height: 80px;
     }
     .swiper-slide {
-      border-radius: 5px;
-      height: 180px !important;
-      background-color: #00000048;
+      border-radius: 10px;
+      height: 200px !important; //aqui quitar coemtario
+      //background-color: #00000048;
       border: 1px solid #fff;
       transition: 0.2s;
       &.active {
@@ -1030,7 +1077,7 @@ nav {
         height: 20px;
       }
       svg path {
-        fill: #fff;
+        fill: #27C5CD;
       }
     }
     .prev {
@@ -1042,17 +1089,18 @@ nav {
     .pagination {
       margin-left: 8px !important;
       display: flex;
-      align-items: center;
+      //align-items: center;
       justify-content: center;
       margin-top: 40px;
       z-index: 100;
+      height: 120px;//80px
       span {
         font-size: 0;
         opacity: 1;
         margin: 0px 6px !important;
         border: 1px solid #fff;
         &.swiper-pagination-bullet-active {
-          background-color: transparent;
+          background-color: #27C5CD;//transparent;
           transform: scale(1.5);
         }
       }

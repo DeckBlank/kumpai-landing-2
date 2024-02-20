@@ -70,7 +70,7 @@ fetch('app.json')
             threeSection.innerHTML += `
                     <h2 class="t-48">${item.h2}</h2>
                     <img  src="${item.img}" alt=""/>
-                    <h2 class="t-48">HOLA HOLA</h2>
+                    <h2 class="t-48">FUNCIONES</h2>
             `;
         });
 
@@ -79,7 +79,6 @@ fetch('app.json')
 
 // Seleccionar el contenedor principal de la sección desde el HTML
 const sectionContainer = document.querySelector('.fourSection');
-
 // Crear el contenedor de las diapositivas para esta sección
 const sectionSwiperWrapper = document.createElement('div');
 sectionSwiperWrapper.classList.add('swiper-wrapper');
@@ -88,11 +87,19 @@ sectionSwiperWrapper.classList.add('swiper-wrapper');
 data.fourSection[0].itemBox.forEach(boxItem => {
     const swiperSlide = document.createElement('div');
     swiperSlide.classList.add('swiper-slide');
+    swiperSlide.classList.add(`${boxItem.bgColor}`);
     swiperSlide.innerHTML = `
-        <div class="boxy ${boxItem.bgColor} efectsBoxy">
-            <img src="${boxItem.icon}" alt=""/>
-            <p class="boxTitle">${boxItem.t}</p>
-            <p class="boxText t-18">${boxItem.p}</p>
+        <div class="boxTotal ">
+            <div class="boxText flex-row boxy mr10 ">
+                <img style="height: 80px"  src="${boxItem.icon}" alt=""/>
+                <div class="flex-col mr10">
+                    <h3 class="boxTitle t-16 t-b mr10" >${boxItem.t}</h3>
+                    <p class="boxText t-16 mr10">${boxItem.p}</p>
+                </div>
+            </div>
+            <div class="boxCel flex-row">
+                <img style="height: 400px;" src="${boxItem.img}" alt=""/>
+            </div>
         </div>
     `;
     sectionSwiperWrapper.appendChild(swiperSlide);
@@ -103,8 +110,8 @@ sectionContainer.appendChild(sectionSwiperWrapper);
 
 // Inicializar Swiper para esta sección
 new Swiper(sectionContainer, {
-    slidesPerView: 3,
-    spaceBetween: 50,
+    slidesPerView: 2.5,//3,
+    spaceBetween: 80,//50,
     loop: true,
     grabCursor: true,
     centeredSlides: true,
@@ -116,6 +123,7 @@ new Swiper(sectionContainer, {
     pagination: {
       el: ".pagination",
       clickable: true
+      
     },
     autoplay: {
       enabled: true,
@@ -173,6 +181,27 @@ new Swiper(sectionContainer, {
         sixSection.appendChild(cajaOne);
         });
 
+        //Sextion seven testimonios
+         const sevenSection = document.querySelector('.sevenSection');
+         data.sevenSection.forEach(item => {
+         const cajaCero = document.createElement('div');
+         cajaCero.classList.add('flex-col');
+         cajaCero.innerHTML =`
+                 <h2 class=" t-48">${item.h2}</h2>
+         `;    
+         const cajaOne = document.createElement('div');
+         cajaOne.classList.add('flex-row');
+         item.itemBox.forEach(boxItem => {
+             cajaOne.innerHTML += `
+                 <div class= "box-services efectsBoxy">
+                     <p class="boxText t-18">${boxItem.name}</p>
+                 </div>
+             `;
+         
+         });
+         sevenSection.appendChild(cajaCero);
+         sevenSection.appendChild(cajaOne);
+         });
 
         //section eleven
         const tenSection = document.querySelector('.tenSection');

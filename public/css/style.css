@@ -28,42 +28,62 @@ html h2 {
 
 .bg-white {
   background-color: white;
+  height: 100%;
+  width: 100%;
 }
 
 .bg-whitekind {
   background-color: #F9F6F2;
+  height: 100%;
+  width: 100%;
 }
 
 .bg-yellowkind {
   background-color: #FFD600;
+  height: 100%;
+  width: 100%;
 }
 
 .bg-orangekind {
   background-color: #FF6700;
+  height: 100%;
+  width: 100%;
 }
 
 .bg-greenkind {
   background-color: #45B64A;
+  height: 100%;
+  width: 100%;
 }
 
 .bg-bluekind {
   background-color: #27C5CD;
+  height: 100%;
+  width: 100%;
 }
 
 .bg-yellowkindLigth {
   background-color: #FFF0A3;
+  height: 100%;
+  width: 100%;
 }
 
 .bg-orangekindLigth {
   background-color: #F9AC80;
+  height: 100%;
+  width: 100%;
 }
 
 .bg-greenkindLigth {
   background-color: #A6D399;
+  height: 100%;
+  width: 100%;
 }
 
 .bg-bluekindLigth {
   background-color: #95DCDE;
+  height: 100%;
+  width: 100%;
 }
 
 /* Color texts */
@@ -84,10 +104,20 @@ html h2 {
 }
 
 /* Text size */
+.t-16 {
+  text-align: left;
+  font-size: 16px;
+  color: #000000;
+}
+
 .t-18 {
   text-align: left;
   font-size: 18px;
   color: #000000;
+}
+
+.t-b {
+  font-weight: bold;
 }
 
 .t-48 {
@@ -118,7 +148,21 @@ html h2 {
   flex-direction: row;
 }
 
-.flex-rox body {
+/* Margin */
+.mr10 {
+  margin: 10px;
+}
+
+.mr20 {
+  margin: 20px;
+}
+
+.mr40 {
+  margin: 40px;
+}
+
+/* :::::::::::::: */
+body {
   display: flex;
   flex-direction: column;
   background-color: #F9F6F2;
@@ -533,6 +577,7 @@ nav ul .logo {
   justify-content: center;
 }
 
+/* ::::::::::::::::::::Section 4::::::::::: */
 @media (max-width: 900px) {
   .fourSection h2 {
     font-size: 25px;
@@ -613,6 +658,7 @@ nav ul .logo {
     height: 6rem;
   }
 }
+/* ::::::::::::::::::::end 4::::::::::: */
 .fiveSection {
   margin-top: 40px;
   margin-bottom: 100px;
@@ -626,15 +672,6 @@ nav ul .logo {
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 1fr;
   grid-template-areas: "oneCard twoCard trheeCard";
-  /*  :nth-child(4) {
-       grid-area: fourCard;
-   };
-   :nth-child(5) {
-       grid-area: fiveCard;
-   };
-   :nth-child(6) {
-       grid-area: sixCard;
-   }; */
 }
 .fiveSection .box-five :nth-child(1) {
   grid-area: oneCard;
@@ -703,11 +740,6 @@ nav ul .logo {
   }
 }
 @media (max-width: 400px) {
-  .fiveSection div {
-    /*             .imgCrad{
-                    max-width: 150px;
-                } */
-  }
   .fiveSection div .boxCard {
     border-radius: 20px;
     margin: 10px;
@@ -816,15 +848,16 @@ nav ul .logo {
 
 .swiper {
   padding-bottom: 60px !important;
-  height: 250px;
+  height: 750px;
+  max-width: 100%;
 }
 .swiper .swiper-wrapper {
   align-items: center;
+  height: 80px;
 }
 .swiper .swiper-slide {
-  border-radius: 5px;
-  height: 180px !important;
-  background-color: rgba(0, 0, 0, 0.2823529412);
+  border-radius: 10px;
+  height: 200px !important;
   border: 1px solid #fff;
   transition: 0.2s;
 }
@@ -852,7 +885,7 @@ nav ul .logo {
 }
 .swiper .prev svg path,
 .swiper .next svg path {
-  fill: #fff;
+  fill: #27C5CD;
 }
 .swiper .prev {
   left: 25px;
@@ -863,10 +896,10 @@ nav ul .logo {
 .swiper .pagination {
   margin-left: 8px !important;
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-top: 40px;
   z-index: 100;
+  height: 120px;
 }
 .swiper .pagination span {
   font-size: 0;
@@ -875,7 +908,7 @@ nav ul .logo {
   border: 1px solid #fff;
 }
 .swiper .pagination span.swiper-pagination-bullet-active {
-  background-color: transparent;
+  background-color: #27C5CD;
   transform: scale(1.5);
 }
 
