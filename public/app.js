@@ -148,7 +148,7 @@ new Swiper(sectionContainer, {
         cajaOne.classList.add('flex-col');
         item.itemBox.forEach(boxItem => {
             cajaOne.innerHTML += `
-                <div class= "efectsBoxy boxCard">
+                <div class= "boxCard">
                     <img  src="${boxItem.img}" alt=""/>
                     <p>${boxItem.p}</p>
                 </div>
@@ -168,7 +168,7 @@ new Swiper(sectionContainer, {
                 <h2 class=" t-48">${item.h2}</h2>
         `;    
         const cajaOne = document.createElement('div');
-        cajaOne.classList.add('flex-row');
+        cajaOne.classList.add('flex-row', 'sixSectionBox');
         item.itemBox.forEach(boxItem => {
             cajaOne.innerHTML += `
                 <div class= "box-services efectsBoxy ${boxItem.bgColor}">
@@ -181,7 +181,7 @@ new Swiper(sectionContainer, {
         sixSection.appendChild(cajaOne);
         });
 
-        //Sextion seven testimonios
+        //Section seven testimonios
          const sevenSection = document.querySelector('.sevenSection');
          data.sevenSection.forEach(item => {
          const cajaCero = document.createElement('div');
@@ -194,7 +194,11 @@ new Swiper(sectionContainer, {
          item.itemBox.forEach(boxItem => {
              cajaOne.innerHTML += `
                  <div class= "box-services efectsBoxy">
-                     <p class="boxText t-18">${boxItem.name}</p>
+                        <div class="globo">
+                            <p class="boxText t-18">${boxItem.quote}</p>
+                        </div>
+                        <p class="boxText t-18">${boxItem.name}</p>
+                        <p class="boxText t-18">${boxItem.cargo}</p>
                  </div>
              `;
          

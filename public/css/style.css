@@ -87,6 +87,10 @@ html h2 {
 }
 
 /* Color texts */
+.t-whitekind {
+  color: #F9F6F2;
+}
+
 .t-bluekind {
   color: #27C5CD;
 }
@@ -669,18 +673,9 @@ nav ul .logo {
 }
 .fiveSection .box-five {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 1fr;
-  grid-template-areas: "oneCard twoCard trheeCard";
-}
-.fiveSection .box-five :nth-child(1) {
-  grid-area: oneCard;
-}
-.fiveSection .box-five :nth-child(2) {
-  grid-area: twoCard;
-}
-.fiveSection .box-five :nth-child(3) {
-  grid-area: trheeCard;
+  gap: 1rem;
+  grid-auto-rows: 10rem;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 }
 .fiveSection .box-five .imgCrad {
   width: 50%;
@@ -749,14 +744,56 @@ nav ul .logo {
     width: 120%;
   }
 }
-.sixSection .flex-row .box-services {
-  height: 255px;
+.sixSection {
+  padding: 100px;
+  height: 100%;
+}
+.sixSection .sixSectionBox {
+  padding-top: 50px;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 25rem;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 0.5fr));
+  align-items: center;
+}
+.sixSection .sixSectionBox .box-services {
+  height: 250px;
   width: 250px;
   border-radius: 20px;
   text-align: center;
   display: flex;
   align-items: center;
   margin: 10px;
+}
+.sixSection .sixSectionBox .box-services .boxText {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sevenSection {
+  padding: 150px;
+  width: 100%;
+  height: 750px;
+  background-color: #27C5CD;
+  clip-path: polygon(0 0, 20% 10%, 100% 0, 100% 100%, 100% 100%, 80% 90%, 0 100%);
+}
+.sevenSection h2 {
+  color: #F9F6F2;
+  padding-bottom: 20px;
+}
+.sevenSection .flex-row .box-services .globo {
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  background-image: url("/asset/globo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 9999 !important;
 }
 
 .tenSection {
