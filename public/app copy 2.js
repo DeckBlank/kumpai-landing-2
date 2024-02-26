@@ -182,47 +182,52 @@ new Swiper(sectionContainer, {
         });
 
         // Section seven testimonios
-        const sevenSection = document.querySelector('.sevenSection');
-        sevenSection.classList.add('owl-carousel', 'owl-theme');
-        data.sevenSection.forEach(item => {
-            item.itemBox.forEach(boxItem => {
-                const boxServices = document.createElement('div');
-                boxServices.classList.add('box-services', 'item');
-                boxServices.innerHTML = `
-                    <div class="globo">
-                        <p class="boxText t-18">${boxItem.quote}</p>
-                    </div>
-                    <p class="boxText t-18">${boxItem.name}</p>
-                    <p class="boxText t-18">${boxItem.cargo}</p>
-                `;
-                /* sevenSection.appendChild(cajaCero); */
-                sevenSection.appendChild(boxServices);
-            });
-        });
+const sevenSection = document.querySelector('.sevenSection');
+data.sevenSection.forEach(item => {
+    const cajaCero = document.createElement('div');
+    cajaCero.classList.add('flex-col');
+    cajaCero.innerHTML = `
+        <h2 class="t-48">${item.h2}</h2>
+    `;
 
-        // Inicializar el carrusel después de agregar todos los elementos
-        $('.sevenSection').owlCarousel({
-            items: 3,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true
-        });
+    const cajaOne = document.createElement('div');
+    cajaOne.classList.add('flex-row', 'owl-carousel', 'owl-theme');
+    item.itemBox.forEach(boxItem => {
+        cajaOne.innerHTML += `
+            <div class="item box-services efectsBoxy">
+                <div class="globo">
+                    <p class="boxText t-18">${boxItem.quote}</p>
+                </div>
+                <p class="boxText t-18">${boxItem.name}</p>
+                <p class="boxText t-18">${boxItem.cargo}</p>
+            </div>
+        `;
+    });
 
-        //section eight
-        const eightSection = document.querySelector('.eightSection');
-        eightSection.classList.add('flex-col','bg-bluekindUltraLigth')
-        data.eightSection.forEach(item => {
-            eightSection.innerHTML += `
-                    
-                    <h2 class="title t-48b">${item.h2}</h2>
-                    <div class="gridMovil">
-                        <p class="boxText boxNews t-18">${item.n1}</p>
-                        <p class="boxText  boxNews t-18">${item.n2}</p>
-                    </div>
-            `;
-        });
+    sevenSection.appendChild(cajaCero);
+    sevenSection.appendChild(cajaOne);
+});
+
+// Inicialización de Owl Carousel
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+});
+
         
         //::::::::::::::::::::::::::::::::::::::::::::::://
         //section eleven

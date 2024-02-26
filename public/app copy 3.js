@@ -185,7 +185,17 @@ new Swiper(sectionContainer, {
         const sevenSection = document.querySelector('.sevenSection');
         sevenSection.classList.add('owl-carousel', 'owl-theme');
         data.sevenSection.forEach(item => {
+
+            /* const cajaCero = document.createElement('div');
+            cajaCero.classList.add('flex-col');
+            cajaCero.innerHTML = `
+                <h2 class="t-48">${item.h2}</h2>
+            `; */
+
             item.itemBox.forEach(boxItem => {
+                
+
+
                 const boxServices = document.createElement('div');
                 boxServices.classList.add('box-services', 'item');
                 boxServices.innerHTML = `
@@ -201,28 +211,29 @@ new Swiper(sectionContainer, {
         });
 
         // Inicializar el carrusel después de agregar todos los elementos
-        $('.sevenSection').owlCarousel({
-            items: 3,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true
+        $(document).ready(function(){
+                    $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:100,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                },
+                1200:{
+                    items:5
+                }
+            }
         });
+        })
 
-        //section eight
-        const eightSection = document.querySelector('.eightSection');
-        eightSection.classList.add('flex-col','bg-bluekindUltraLigth')
-        data.eightSection.forEach(item => {
-            eightSection.innerHTML += `
-                    
-                    <h2 class="title t-48b">${item.h2}</h2>
-                    <div class="gridMovil">
-                        <p class="boxText boxNews t-18">${item.n1}</p>
-                        <p class="boxText  boxNews t-18">${item.n2}</p>
-                    </div>
-            `;
-        });
+
         
         //::::::::::::::::::::::::::::::::::::::::::::::://
         //section eleven

@@ -86,6 +86,12 @@ html h2 {
   width: 100%;
 }
 
+.bg-bluekindUltraLigth {
+  background-color: #A6E5E9;
+  height: 100%;
+  width: 100%;
+}
+
 /* Color texts */
 .t-whitekind {
   color: #F9F6F2;
@@ -128,6 +134,12 @@ html h2 {
   text-align: center;
   font-size: 48px;
   color: #27C5CD;
+}
+
+.t-48b {
+  text-align: center;
+  font-size: 48px;
+  color: #000000;
 }
 
 /* center rigth left */
@@ -753,7 +765,7 @@ nav ul .logo {
   display: grid;
   gap: 1rem;
   grid-auto-rows: 25rem;
-  grid-template-columns: repeat(auto-fill, minmax(25rem, 0.5fr));
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 0.5fr));
   align-items: center;
 }
 .sixSection .sixSectionBox .box-services {
@@ -774,9 +786,9 @@ nav ul .logo {
 }
 
 .sevenSection {
-  padding: 150px;
+  padding-top: 200px;
   width: 100%;
-  height: 750px;
+  height: 850px;
   background-color: #27C5CD;
   clip-path: polygon(0 0, 20% 10%, 100% 0, 100% 100%, 100% 100%, 80% 90%, 0 100%);
 }
@@ -784,18 +796,53 @@ nav ul .logo {
   color: #F9F6F2;
   padding-bottom: 20px;
 }
-.sevenSection .flex-row .box-services .globo {
-  margin: 20px;
+
+.owl-item {
+  padding-left: 50px;
+}
+
+.globo {
+  margin: 10px;
   padding: 20px;
   width: 300px;
-  height: 300px;
+  height: 350px;
   background-image: url("/asset/globo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   z-index: 9999 !important;
 }
+.globo p {
+  padding: 40px 0 0 20px;
+  width: 200px;
+}
 
+/* :::::::owl::::::::::::: */
+.owl-item {
+  width: 350px !important;
+}
+
+.owl-controls {
+  display: initial !important;
+}
+
+/* ::::::Eigth section::::::::: */
+.eightSection .title {
+  margin-top: 100px;
+}
+.eightSection .gridMovil {
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 20rem;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  padding: 10% 6% 10% 10%;
+}
+.eightSection .boxNews {
+  width: 90%;
+  height: 100%;
+}
+
+/* ::::::::::::::::::::::: */
 .tenSection {
   background-color: #95DCDE;
   display: flex;
@@ -886,7 +933,7 @@ nav ul .logo {
 .swiper {
   padding-bottom: 60px !important;
   height: 750px;
-  max-width: 100%;
+  max-width: 98%;
 }
 .swiper .swiper-wrapper {
   align-items: center;
@@ -894,19 +941,26 @@ nav ul .logo {
 }
 .swiper .swiper-slide {
   border-radius: 10px;
-  height: 200px !important;
-  border: 1px solid #fff;
+  height: 250px !important;
   transition: 0.2s;
 }
 .swiper .swiper-slide.active {
-  height: 230px !important;
+  height: 300px !important;
+  width: 450px !important;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+.swiper .swiper-slide.active h3 {
+  font-size: 20px;
+}
+.swiper .swiper-slide.active p {
+  font-size: 20px !important;
 }
 .swiper .prev,
 .swiper .next {
   cursor: pointer;
   z-index: 100;
   position: absolute;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
   opacity: 0.65;
   transition: 0.2s;
@@ -935,6 +989,7 @@ nav ul .logo {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  margin-bottom: 40px;
   z-index: 100;
   height: 120px;
 }

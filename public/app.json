@@ -195,18 +195,54 @@
         }
     ],
 
-    "nineSection": [
-        {
-            "title" :   "¡Déjanos tus datos para que pruebes KIND!",
-            "i1"    :   "Nombre completo",
-            "i2"    :   "Email",
-            "i3"    :   "Cargo",
-            "i4"    :   "Colegio",
-            "i5"    :   "Teléfono / Celular",
-            "i6"    :   "País",
-            "b"     :   "Solicitar Kind"
-        }
-    ],
+    "nineSectionform": {
+        "title": "¡Déjanos tus datos para que pruebes KIND!",
+        "fields": [
+          {
+            "label": "Nombre Completo",
+            "id": "nombreCompleto",
+            "type": "text",
+            "placeholder": "Ingrese su nombre completo",
+            "required": true
+          },
+          {
+            "label": "Email",
+            "id": "email",
+            "type": "email",
+            "placeholder": "Ingrese su correo electrónico",
+            "required": true
+          },
+          {
+            "label": "Cargo",
+            "id": "cargo",
+            "type": "text",
+            "placeholder": "Cargo",
+            "required": true
+          },
+          {
+            "label": "Colegio",
+            "id": "colegio",
+            "type": "text",
+            "placeholder": "Colegio",
+            "required": true
+          },
+          {
+            "label": "Teléfono / Celular",
+            "id": "telefono",
+            "type": "tel",
+            "placeholder": "Ingrese su número de teléfono / Celular",
+            "required": true
+          },
+          {
+            "label": "País",
+            "id": "pais",
+            "type": "text",
+            "placeholder": "País",
+            "required": true
+          }
+        ],
+        "submitButton": "Solicitar Kind"
+      },
 
     "tenSection":[
         {
