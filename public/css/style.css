@@ -509,6 +509,10 @@ nav ul .logo {
   position: absolute;
   height: 100%;
 }
+.twoSection div div .material {
+  z-index: 99;
+  position: absolute;
+}
 .twoSection div div .desktopCircle {
   z-index: 99;
   position: absolute;
@@ -594,7 +598,9 @@ nav ul .logo {
     width: 70%;
   }
   .twoSection .childTwoSection .twoBoxs .sTBoxOne .material {
-    width: 100%;
+    width: 90%;
+    z-index: 99;
+    position: absolute;
   }
   .twoSection .childTwoSection .twoBoxs .sTBoxtwo {
     height: 500px;
@@ -605,8 +611,14 @@ nav ul .logo {
   .twoSection .childTwoSection .twoBoxs .border-box {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 100%;
     height: 250px;
+  }
+}
+@media (max-width: 480px) {
+  .twoSection .childTwoSection .twoBoxs .border-box {
+    width: 350px;
+    height: 280px;
   }
 }
 .threeSection {
@@ -1073,6 +1085,9 @@ nav ul .logo {
   }
 }
 @media (max-width: 400px) {
+  p {
+    font-size: 14px !important;
+  }
   h1 {
     font-size: 35px !important;
   }
