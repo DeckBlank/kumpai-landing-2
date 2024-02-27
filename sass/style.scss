@@ -1040,13 +1040,27 @@ justify-content: center;
 }
 }
 
+
+
+@media (max-width:1100px){
+    .nineSection{
+        .boxForm{
+            form{
+                width: 100%;
+                .boxInput{
+                    width: 50%;//400px;
+                }
+            }
+        }
+    }
+}
 @media (max-width:790px){
     .nineSection{
         .boxForm{
             form{
                 width: 100%;
                 .boxInput{
-                    width: 360px;//400px;
+                    width: 80%;//400px;
                 }
                 button{
                     border: none;

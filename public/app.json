@@ -234,7 +234,7 @@
             "label": "Teléfono / Celular",
             "id": "telefono",
             "type": "number",
-            "placeholder": "Ingrese su número de teléfono / Celular",
+            "placeholder": "Teléfono / Celular",
             "required": true,
             "regex": "^\\d{3}-\\d{3}-\\d{4}$"
           },

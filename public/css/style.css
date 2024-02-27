@@ -859,12 +859,20 @@ nav ul .logo {
   height: 55px;
 }
 
+@media (max-width: 1100px) {
+  .nineSection .boxForm form {
+    width: 100%;
+  }
+  .nineSection .boxForm form .boxInput {
+    width: 50%;
+  }
+}
 @media (max-width: 790px) {
   .nineSection .boxForm form {
     width: 100%;
   }
   .nineSection .boxForm form .boxInput {
-    width: 360px;
+    width: 80%;
   }
   .nineSection .boxForm form button {
     border: none;
