@@ -19,8 +19,9 @@ fetch('app.json')
         const twoSection = document.querySelector('.twoSection');
         data.twoSection.forEach(item => {
         const div = document.createElement('div');
+        div.classList.add("childTwoSection")
         div.innerHTML = `
-        <h2 class="t-bluekind t-48 t-center">${item.title}</h2>
+            <h2 class="t-bluekind t-48 t-center">${item.title}</h2>
             <div class="twoBoxs  efects">
                 <div class="sTBoxOne bg-white border-box card">
                     <img  src="${item.icon1}" alt=""/>
@@ -52,7 +53,7 @@ fetch('app.json')
             </div>
             <div class="twoBoxs efects">
                 <div class="sTBoxOne">
-                    <img class= "desktopCircle" src="${item.imgSrc4}" alt=""/>
+                    <img class= "material" src="${item.imgSrc4}" alt=""/>
 
                 </div>
                 <div class="sTBoxtwo bg-white border-box">
@@ -225,6 +226,85 @@ new Swiper(sectionContainer, {
         });
         
         //::::::::::::::::::::::::::::::::::::::::::::::://
+
+        //section nine
+        const formSection = data.nineSectionform;
+
+        const formContainer = document.getElementById("formContainer");
+        const formTitle = document.createElement("h2");
+        formTitle.classList.add("t-48")
+        formTitle.textContent = formSection.title;
+        formContainer.appendChild(formTitle);
+
+        const form = document.createElement("form");
+
+        formSection.fields.forEach(field => {
+            const div = document.createElement("div");
+            div.classList.add("boxInput")
+           /*  const label = document.createElement("label");
+            label.classList.add("t-18");
+            label.textContent = field.label;
+            div.appendChild(label); */
+            const input = document.createElement("input");
+            input.classList.add("t-18")
+            input.type = field.type;
+            input.id = field.id;
+            input.name = field.id;
+            input.placeholder = field.placeholder;
+            if (field.required) {
+                input.required = true;
+            }
+            div.appendChild(input);
+            form.appendChild(div);
+        });
+
+        const submitButton = document.createElement("button");
+        submitButton.type = "submit";
+        submitButton.textContent = formSection.submitButton;
+        form.appendChild(submitButton);
+
+        formContainer.appendChild(form);
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            validateFormData(formSection);
+        });
+
+        function validateFormData(formData) {
+            let isValid = true;
+
+            for (const field of formData.fields) {
+                const input = document.getElementById(field.id);
+                const regex = new RegExp(field.regex);
+
+                if (!regex.test(input.value)) {
+                    isValid = false;
+                    break;
+                }
+            }
+
+            if (isValid) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Éxito',
+                    text: 'Datos válidos, formulario enviado correctamente',
+                    confirmButtonText: 'Aceptar'
+                });
+                console.log("Formulario válido, enviando datos...");
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Por favor, ingrese datos válidos',
+                    confirmButtonText: 'Aceptar'
+                });
+                console.log("Formulario inválido");
+            }
+        }
+
+    
+
+        //::::::::::::::::::::::::::::::::::::::::::::::
         //section eleven
         const tenSection = document.querySelector('.tenSection');
         data.tenSection.forEach(item => {
@@ -244,3 +324,7 @@ new Swiper(sectionContainer, {
             tenSection.appendChild(div);
         });
 })  
+
+/* .catch(error => {
+    console.error('Error al cargar el archivo JSON:', error);
+}) */

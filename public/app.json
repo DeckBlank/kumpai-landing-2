@@ -203,42 +203,48 @@
             "id": "nombreCompleto",
             "type": "text",
             "placeholder": "Ingrese su nombre completo",
-            "required": true
+            "required": true,
+            "regex": "^[a-zA-Z\\s]+$"
           },
           {
             "label": "Email",
             "id": "email",
             "type": "email",
             "placeholder": "Ingrese su correo electrónico",
-            "required": true
+            "required": true,
+            "regex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
           },
           {
             "label": "Cargo",
             "id": "cargo",
             "type": "text",
             "placeholder": "Cargo",
-            "required": true
+            "required": true,
+            "regex": "^[a-zA-Z\\s]+$"
           },
           {
             "label": "Colegio",
             "id": "colegio",
             "type": "text",
             "placeholder": "Colegio",
-            "required": true
+            "required": true,
+            "regex": "^[a-zA-Z\\s]+$"
           },
           {
             "label": "Teléfono / Celular",
             "id": "telefono",
-            "type": "tel",
+            "type": "number",
             "placeholder": "Ingrese su número de teléfono / Celular",
-            "required": true
+            "required": true,
+            "regex": "^\\d{3}-\\d{3}-\\d{4}$"
           },
           {
             "label": "País",
             "id": "pais",
             "type": "text",
             "placeholder": "País",
-            "required": true
+            "required": true,
+            "regex": "^[a-zA-Z\\s]+$"
           }
         ],
         "submitButton": "Solicitar Kind"
