@@ -223,6 +223,8 @@ new Swiper(sectionContainer, {
                     <div class="gridMovil">
                         <p class="boxText boxNews t-18">${item.n1}</p>
                         <p class="boxText  boxNews t-18">${item.n2}</p>
+                        <p class="boxText  boxNews t-18">${item.n3}</p>
+                        <p class="boxText  boxNews t-18">${item.n4}</p>
                     </div>
             `;
         });
