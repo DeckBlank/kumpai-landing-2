@@ -960,8 +960,8 @@ body{
 .globo{
     margin: 10px;
     padding: 20px;
-    width: 300px;
-    height: 350px;
+    width: 420px;
+    height: 450px;
     background-image: url("/asset/globo.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -973,17 +973,27 @@ body{
     //clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 10% 100%, 0% 85%);
     //border-radius: 20px;
     p{
-        padding: 20px 0 0 20px ;
-        width: 240px;
+        padding: 40px 10px 10px 20px ;
+        width: 340px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        place-content: center;
     }
 }
 
 
 /* :::::::owl::::::::::::: */
 .owl-item{
-    width: 350px !important;
+    width: 530px !important;
 }
 
+
+@media (max-width: 1376px){
+    .owl-item{
+        width: 420px !important;
+    }
+}
 .owl-controls{
     display: initial !important;
 }
