@@ -24,7 +24,7 @@ fetch('app.json')
         div.classList.add("childTwoSection")
         div.innerHTML = `
             <h2 class="t-bluekind t-48 t-center">${item.title}</h2>
-            <div class="twoBoxs  efects">
+            <div class="twoBoxs  ">
                 <div class="sTBoxOne bg-white border-box">
                     <img  src="${item.icon1}" alt=""/>
                     <p>${item.p1}</p>
@@ -34,7 +34,7 @@ fetch('app.json')
 
                 </div>
             </div>
-            <div class="twoBoxs efects">
+            <div class="twoBoxs ">
                 <div class="sTBoxOne">
                     <img class= "desktopCircle" src="${item.imgSrc2}" alt=""/>
                     <div class="orangeCircle"></div>
@@ -44,7 +44,7 @@ fetch('app.json')
                     <p>${item.p2}</p>
                 </div>
             </div>
-            <div class="twoBoxs  efects">
+            <div class="twoBoxs  ">
                 <div class="sTBoxOne bg-white border-box ">
                     <img  src="${item.icon3}" alt=""/>
                     <p>${item.p3}</p>
@@ -53,7 +53,7 @@ fetch('app.json')
                     <img class="phoneCircle" src="${item.imgSrc3}" alt="">
                 </div>
             </div>
-            <div class="twoBoxs efects">
+            <div class="twoBoxs ">
                 <div class="sTBoxOne">
                     <img class= "material" src="${item.imgSrc4}" alt=""/>
 
@@ -174,7 +174,7 @@ new Swiper(sectionContainer, {
         cajaOne.classList.add('flex-row', 'sixSectionBox');
         item.itemBox.forEach(boxItem => {
             cajaOne.innerHTML += `
-                <div class= "box-services efectsBoxy ${boxItem.bgColor}">
+                <div class= "box-services Boxy ${boxItem.bgColor}">
                     <p class="boxText t-18">${boxItem.p}</p>
                 </div>
             `;

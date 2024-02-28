@@ -364,8 +364,17 @@ body{
     }
 }
 
+
+@media (max-width:1930px) {
+    .oneSection{
+        min-height:900px;
+
+}}
+
+
 @media (max-width: 1326px) {
     .oneSection{   
+        min-width: 700px;
         .itemsOne {
             h1{
                 padding-top:  32%;
