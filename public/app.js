@@ -71,7 +71,7 @@ fetch('app.json')
             threeSection.innerHTML += `
                     <h2 class="t-48">${item.h2}</h2>
                     <img  src="${item.img}" alt=""/>
-                    <h2 class="t-48">FUNCIONES</h2>
+                    <h2 class="t-48" id="funciones">FUNCIONES</h2>
             `;
         });
 
