@@ -222,7 +222,7 @@ $bluekindUltraLigth     :#A6E5E9;
 body{
     display: flex;
     flex-direction: column;
-    background-color: $whitekind;
+    background-color: $whitekind !important;
 }
 
 

@@ -181,7 +181,7 @@ html h2 {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #F9F6F2;
+  background-color: #F9F6F2 !important;
 }
 
 /* ::::::nav::::: */
