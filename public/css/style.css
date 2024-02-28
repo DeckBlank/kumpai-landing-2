@@ -308,7 +308,7 @@ body {
   left: 60%;
 }
 
-@media (max-width: 1930px) {
+@media (max-width: 1950px) {
   .oneSection {
     min-height: 900px;
   }
