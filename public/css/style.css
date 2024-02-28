@@ -195,7 +195,7 @@ body {
 }
 
 .navbar {
-  height: 64px !important;
+  min-height: 64px !important;
 }
 
 .navbar-brand {
@@ -213,6 +213,12 @@ body {
   .navbar-brand {
     margin-left: 3% !important;
     margin-right: 8% !important;
+  }
+}
+@media (max-width: 999px) {
+  .navbar-brand {
+    margin-left: 2% !important;
+    margin-right: 5% !important;
   }
 }
 .navbar .container-fluid .logo {
@@ -269,8 +275,8 @@ body {
   top: 0px;
   background: linear-gradient(to left, rgba(255, 254, 254, 0) 20%, rgba(0, 0, 0, 0.353) 35%, rgba(0, 0, 5, 0.5) 50%);
   width: 70%;
-  height: 97%;
-  margin-top: 20px;
+  height: 100%;
+  /* margin-top: 20px; */
 }
 .oneSection .itemsOne h1 {
   padding-top: 30%;
@@ -775,8 +781,8 @@ body {
   z-index: 9999 !important;
 }
 .globo p {
-  padding: 40px 0 0 20px;
-  width: 200px;
+  padding: 20px 0 0 20px;
+  width: 240px;
 }
 
 /* :::::::owl::::::::::::: */
