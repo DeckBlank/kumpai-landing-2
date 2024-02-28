@@ -10,7 +10,9 @@ fetch('app.json')
             <div class="itemsOne">
                 <h1>${item.h1}</h1>
                 <p>${item.p}</p>
+                <a href="#solicitar" >
                 <button>${item.button}</button>
+                </a>
             </div>
         `;
         oneSection.appendChild(div);
@@ -19,19 +21,20 @@ fetch('app.json')
         const twoSection = document.querySelector('.twoSection');
         data.twoSection.forEach(item => {
         const div = document.createElement('div');
+        div.classList.add("childTwoSection")
         div.innerHTML = `
-        <h2 class="t-bluekind t-48 t-center">${item.title}</h2>
-            <div class="twoBoxs  efects">
-                <div class="sTBoxOne bg-white border-box card">
+            <h2 class="t-bluekind t-48 t-center">${item.title}</h2>
+            <div class="twoBoxs  ">
+                <div class="sTBoxOne bg-white border-box">
                     <img  src="${item.icon1}" alt=""/>
                     <p>${item.p1}</p>
                 </div>
                 <div class="sTBoxtwo">
-                    <img class="phoneCircle card" src="${item.imgSrc1}" alt=""/>
+                    <img class="phoneCircle" src="${item.imgSrc1}" alt=""/>
 
                 </div>
             </div>
-            <div class="twoBoxs efects">
+            <div class="twoBoxs ">
                 <div class="sTBoxOne">
                     <img class= "desktopCircle" src="${item.imgSrc2}" alt=""/>
                     <div class="orangeCircle"></div>
@@ -41,18 +44,18 @@ fetch('app.json')
                     <p>${item.p2}</p>
                 </div>
             </div>
-            <div class="twoBoxs  efects">
-                <div class="sTBoxOne bg-white border-box card">
+            <div class="twoBoxs  ">
+                <div class="sTBoxOne bg-white border-box ">
                     <img  src="${item.icon3}" alt=""/>
                     <p>${item.p3}</p>
                 </div>
                 <div class="sTBoxtwo">
-                    <img class="phoneCircle card" src="${item.imgSrc3}" alt="">
+                    <img class="phoneCircle" src="${item.imgSrc3}" alt="">
                 </div>
             </div>
-            <div class="twoBoxs efects">
+            <div class="twoBoxs ">
                 <div class="sTBoxOne">
-                    <img class= "desktopCircle" src="${item.imgSrc4}" alt=""/>
+                    <img class= "material" src="${item.imgSrc4}" alt=""/>
 
                 </div>
                 <div class="sTBoxtwo bg-white border-box">
@@ -70,7 +73,7 @@ fetch('app.json')
             threeSection.innerHTML += `
                     <h2 class="t-48">${item.h2}</h2>
                     <img  src="${item.img}" alt=""/>
-                    <h2 class="t-48">FUNCIONES</h2>
+                    <h2 class="t-48" id="funciones">FUNCIONES</h2>
             `;
         });
 
@@ -171,7 +174,7 @@ new Swiper(sectionContainer, {
         cajaOne.classList.add('flex-row', 'sixSectionBox');
         item.itemBox.forEach(boxItem => {
             cajaOne.innerHTML += `
-                <div class= "box-services efectsBoxy ${boxItem.bgColor}">
+                <div class= "box-services Boxy ${boxItem.bgColor}">
                     <p class="boxText t-18">${boxItem.p}</p>
                 </div>
             `;
@@ -228,65 +231,80 @@ new Swiper(sectionContainer, {
 
         //section nine
         const formSection = data.nineSectionform;
-        const form = document.querySelector('.form');
-        form.innerHTML = `
-        <h2 class="t-48">${formSection.title}</h2>
-        `;
+
+        const formContainer = document.getElementById("formContainer");
+        const formTitle = document.createElement("h2");
+        formTitle.classList.add("t-48")
+        formTitle.textContent = formSection.title;
+        formContainer.appendChild(formTitle);
+
+        const form = document.createElement("form");
+
         formSection.fields.forEach(field => {
-        const input = document.createElement('input');
-        input.setAttribute('type', field.type);
-        input.setAttribute('id', field.id);
-        input.setAttribute('placeholder', field.placeholder);
-        input.required = field.required;
-        form.appendChild(input);
-        });
-
-        const button = document.createElement('button');
-        button.setAttribute('type', 'submit');
-        button.textContent = formSection.submitButton;
-        form.appendChild(button);
-
-        // Añadir evento de envío al formulario
-        form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        // Validar los campos del formulario
-        let isValid = true;
-        const formData = {};
-        formSection.fields.forEach(field => {
-            const inputValue = document.getElementById(field.id).value;
-            const regex = new RegExp(field.regex); // Convertir la cadena de regex en objeto RegExp
-            if (!regex.test(inputValue)) {
-            isValid = false;
-            alert(`Por favor ingrese un valor válido para ${field.label}`);
-            return; // Salir del bucle forEach si hay un campo inválido
+            const div = document.createElement("div");
+            div.classList.add("boxInput")
+           /*  const label = document.createElement("label");
+            label.classList.add("t-18");
+            label.textContent = field.label;
+            div.appendChild(label); */
+            const input = document.createElement("input");
+            input.classList.add("t-18")
+            input.type = field.type;
+            input.id = field.id;
+            input.name = field.id;
+            input.placeholder = field.placeholder;
+            if (field.required) {
+                input.required = true;
             }
-            formData[field.id] = inputValue;
+            div.appendChild(input);
+            form.appendChild(div);
         });
 
-        // Si todos los campos son válidos, almacenar los datos en localStorage y crear un nuevo JSON
-        if (isValid) {
-            localStorage.setItem('dataForm', JSON.stringify(formData));
+        const submitButton = document.createElement("button");
+        submitButton.type = "submit";
+        submitButton.textContent = formSection.submitButton;
+        form.appendChild(submitButton);
 
-            // Crear nuevo JSON con la información ingresada
-            const newDataJSON = {
-            "formData": formData
-            };
+        formContainer.appendChild(form);
 
-            // Convertir el nuevo JSON a una cadena de texto
-            const newDataString = JSON.stringify(newDataJSON);
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            validateFormData(formSection);
+        });
 
-            // Descargar el nuevo JSON como un archivo dataForm.json
-            const downloadLink = document.createElement('a');
-            downloadLink.href = 'data:text/json;charset=utf-8,' + encodeURIComponent(newDataString);
-            downloadLink.download = 'dataForm.json';
-            downloadLink.click();
+        function validateFormData(formData) {
+            let isValid = true;
 
-            // Mostrar un mensaje de éxito
-            alert('Formulario enviado correctamente');
+            for (const field of formData.fields) {
+                const input = document.getElementById(field.id);
+                const regex = new RegExp(field.regex);
+
+                if (!regex.test(input.value)) {
+                    isValid = false;
+                    break;
+                }
+            }
+
+            if (isValid) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Éxito',
+                    text: 'Datos válidos, formulario enviado correctamente',
+                    confirmButtonText: 'Aceptar'
+                });
+                console.log("Formulario válido, enviando datos...");
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Por favor, ingrese datos válidos',
+                    confirmButtonText: 'Aceptar'
+                });
+                console.log("Formulario inválido");
+            }
         }
-    });
-  
+
+    
 
         //::::::::::::::::::::::::::::::::::::::::::::::
         //section eleven
@@ -309,6 +327,6 @@ new Swiper(sectionContainer, {
         });
 })  
 
-.catch(error => {
+/* .catch(error => {
     console.error('Error al cargar el archivo JSON:', error);
-})
+}) */

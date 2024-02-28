@@ -3,7 +3,7 @@
         {
             "imgSrc": "./asset/LogoKind-04.svg",
             "h1": "¡CREEMOS EN UNA SANA CONVIVENCIA ESCOLAR!",
-            "p": "Con KIND medimos cómo se sienten los estudiantes en el aula para poder prevenir y combatir al acoso escolar a través de múltiples recursos tecnológicos como encuestas, espacios de retroalimentación, juego de talentos y otros recursos psicopedagógicos.",
+            "p": "Con KIND medimos cómo se sienten los estudiantes en el aula para poder prevenir y combatir el acoso escolar a través de múltiples recursos tecnológicos como encuestas, espacios de retroalimentación, juego de talentos y otros recursos psicopedagógicos.",
             "button": "Contáctanos"
         }
     ],
@@ -17,7 +17,7 @@
             "imgSrc1": "./asset/imgs/1-one.png",
             "imgSrc2": "./asset/imgs/2-two.png",
             "icon2":"./asset/icons/icon2.png",
-            "p2": "Nuestro instrumento ha sido validado tanto por el análisis del piloto como por el criterio de jueves. Es confiable a partir del análisis estadístico y además está basado en el modelo de la teoría sustentada.",
+            "p2": "Nuestro instrumento ha sido validado tanto por el análisis del piloto como por el criterio del jueves. Es confiable a partir del análisis estadístico y además está basado en el modelo de la teoría sustentada.",
             "icon3":"./asset/icons/icon3.png",
             "p3":"Nuestros resultados son arrojados a través de gráficos interactivos y de semáforos que nos acompañan a entender, de forma simple y dinámica, qué aulas están en mayor riesgo y qué aulas están fomentando la mejor convivencia en sus entornos. Se generan reportes que resumen nuestros 8 factores principales de intervención.",
             "imgSrc3":"./asset/imgs/3-trhee.png",
@@ -124,7 +124,7 @@
             "h2":"SERVICIOS ADICIONALES",
             "itemBox" : [
                 {
-                    "p"    :    "Diseño del plan de intervención pedagogico para fomentar la buena convivencia escolar",
+                    "p"    :    "Diseño del plan de intervención pedagógico para fomentar la buena convivencia escolar",
                     "bgColor" : "bg-yellowkindLigth"
                 },
                 {                    
@@ -161,7 +161,7 @@
                     "pic"   :   "./asset/testimonials/luisa.jpg",
                     "name"  :   "Gelmer Alexander Diaz Saldaña",
                     "cargo" :   "Docente del colegio Rosa Perez Liendo",
-                    "quote" :   "Es una buena iniciativa y poyo para poder trabajar en las tutorías."
+                    "quote" :   "Es una buena iniciativa y apoyo para poder trabajar en las tutorías."
                 },
                 {
                     "pic"   :   "./asset/testimonials/maria.jpg",
@@ -190,8 +190,8 @@
     "eightSection": [
         {
             "h2":"NOTICIAS",
-            "n1": "El acoso escolar en Perú sigue presente en las aulas. De enero a mayo 2023 se han reportado 2022 casos en la palataforma del MINEDU (La República, junio 2023)",
-            "n2": "Las habilidades socioemocionales son importantes para gestionar los estados afectivos, establecer vinculos positivos y  desarrollar la capacidad de adaptarse al entorno (MINEDU 2023)."
+            "n1": "El acoso escolar en Perú sigue presente en las aulas. De enero a mayo 2023 se han reportado 2022 casos en la plataforma del MINEDU (La República, junio 2023)",
+            "n2": "Las habilidades socioemocionales son importantes para gestionar los estados afectivos, establecer vínculos positivos y  desarrollar la capacidad de adaptarse al entorno (MINEDU 2023)."
         }
     ],
 
@@ -232,7 +232,7 @@
           },
           {
             "label": "Teléfono / Celular",
-            "id": "telefono",
+            "id": "teléfono",
             "type": "number",
             "placeholder": "Teléfono / Celular",
             "required": true,
@@ -252,7 +252,7 @@
 
     "tenSection":[
         {
-            "p"     : "Copyrigth © KIND 2024 Todos los derechos reservados <br/> ASOCIACION CIVIL EDUCACION CON PROPOSITO <br/>  RUC 20606294850",
+            "p"     : "Copyright © KIND 2024 Todos los derechos reservados <br/> ASOCIACION CIVIL EDUCACION CON PROPOSITO <br/>  RUC 20606294850",
             "imgSrc": "./asset/LogoKind-05.svg",
             "fbSvg"    : "./asset/redes/facebook.svg",
             "twSvg"    : "./asset/redes/twitter.svg",
