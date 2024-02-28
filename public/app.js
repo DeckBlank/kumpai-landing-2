@@ -10,7 +10,9 @@ fetch('app.json')
             <div class="itemsOne">
                 <h1>${item.h1}</h1>
                 <p>${item.p}</p>
+                <a href="#solicitar" >
                 <button>${item.button}</button>
+                </a>
             </div>
         `;
         oneSection.appendChild(div);
