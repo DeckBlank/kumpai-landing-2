@@ -513,7 +513,7 @@ body {
 .twoSection div div .phoneCircle {
   z-index: 99;
   position: absolute;
-  height: 100%;
+  /* height: 100%; */
 }
 .twoSection div div .material {
   z-index: 99;
@@ -522,7 +522,7 @@ body {
 .twoSection div div .desktopCircle {
   z-index: 99;
   position: absolute;
-  width: 50%;
+  /* width: 50%; */
 }
 
 @media (max-width: 900px) {
