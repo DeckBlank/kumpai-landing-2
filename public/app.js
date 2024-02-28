@@ -23,12 +23,12 @@ fetch('app.json')
         div.innerHTML = `
             <h2 class="t-bluekind t-48 t-center">${item.title}</h2>
             <div class="twoBoxs  efects">
-                <div class="sTBoxOne bg-white border-box card">
+                <div class="sTBoxOne bg-white border-box">
                     <img  src="${item.icon1}" alt=""/>
                     <p>${item.p1}</p>
                 </div>
                 <div class="sTBoxtwo">
-                    <img class="phoneCircle card" src="${item.imgSrc1}" alt=""/>
+                    <img class="phoneCircle" src="${item.imgSrc1}" alt=""/>
 
                 </div>
             </div>
@@ -43,12 +43,12 @@ fetch('app.json')
                 </div>
             </div>
             <div class="twoBoxs  efects">
-                <div class="sTBoxOne bg-white border-box card">
+                <div class="sTBoxOne bg-white border-box ">
                     <img  src="${item.icon3}" alt=""/>
                     <p>${item.p3}</p>
                 </div>
                 <div class="sTBoxtwo">
-                    <img class="phoneCircle card" src="${item.imgSrc3}" alt="">
+                    <img class="phoneCircle" src="${item.imgSrc3}" alt="">
                 </div>
             </div>
             <div class="twoBoxs efects">
