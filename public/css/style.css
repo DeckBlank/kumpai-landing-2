@@ -7,6 +7,20 @@
   font-family: DinRoundPro;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3366CC;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #9ac2ec;
+}
+
 @font-face {
   font-family: DinRoundPro;
   src: url("../fonts/DINRoundPro/DINRoundPro.ttf");
