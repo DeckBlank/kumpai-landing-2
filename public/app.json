@@ -195,7 +195,7 @@
             "label": "Nombre Completo",
             "id": "nombreCompleto",
             "type": "text",
-            "placeholder": "Ingrese tu nombre completo",
+            "placeholder": "Ingresa tu nombre completo",
             "required": true,
             "regex": "^[a-zA-Z\\s]+$"
           },
@@ -203,7 +203,7 @@
             "label": "Email",
             "id": "email",
             "type": "email",
-            "placeholder": "Ingrese tu correo electrónico",
+            "placeholder": "Ingresa tu correo electrónico",
             "required": true,
             "regex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
           },
