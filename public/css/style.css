@@ -814,6 +814,24 @@ body {
     height: 350px;
   }
 }
+@media (max-width: 900px) {
+  .fourSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fourSection .boxTotal {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .fourSection .boxTotal .boxCard {
+    width: 100%;
+  }
+  .fourSection .boxTotal img {
+    height: 350px;
+    padding-top: 10px;
+  }
+}
 @media (max-width: 425px) {
   .fourSection {
     display: flex;
