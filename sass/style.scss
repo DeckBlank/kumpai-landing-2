@@ -789,7 +789,7 @@ body{
         padding-right: 20px;
         .boxCard{
             width: 400px;
-            height: 680px;
+            height: 780px;
             border-radius: 20px;
         }
         img {
@@ -828,15 +828,15 @@ body{
 .fiveSection{
     margin-top: 40px;
     margin-bottom: 100px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 12%;
+    margin-right: 12%;
     gap:20px;
     place-content: center;
 
     .box-five{
         display: grid;
-        gap: 1rem;
-        grid-auto-rows: 10rem;
+        gap: 10%;//1rem;
+        //grid-auto-rows: 10rem;
         grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
         .imgCrad{
             width: 50%;
@@ -855,12 +855,15 @@ body{
             max-width: 350px;
             gap: 20px;
             p{
-                font-size: 14px;
+                font-size: 18px;
                 display: flex;
                 place-content: center;
-                max-width: 60%;
+                /* max-width: 60%; */
                 margin-top: 20px;
 
+            }
+            img{
+                height: 90px;
             }
         }
     }
