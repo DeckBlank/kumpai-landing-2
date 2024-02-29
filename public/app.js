@@ -191,10 +191,10 @@ fourSection.appendChild(cajaOne)
                 boxServices.classList.add('box-services', 'item');
                 boxServices.innerHTML = `
                     <div class="globo">
-                        <p class="boxText t-18">${boxItem.quote}</p>
+                        <p class="boxText t-16">${boxItem.quote}</p>
                     </div>
-                    <p class="boxText t-18">${boxItem.name}</p>
-                    <p class="boxText t-18">${boxItem.cargo}</p>
+                    <p class="boxText t-16">${boxItem.name}</p>
+                    <p class="boxText t-16">${boxItem.cargo}</p>
                 `;
                 /* sevenSection.appendChild(cajaCero); */
                 sevenSection.appendChild(boxServices);

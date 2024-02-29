@@ -38,7 +38,7 @@
     "fourSection": [
 
         {
-            "h2":"FUNCIONES ok",
+            "h2":"FUNCIONES",
             "itemBox":[
                 {
                     "icon":"./asset/icons/icon5.png",
@@ -152,7 +152,7 @@
                     "pic"   :   "./asset/testimonials/juan.jpg",
                     "name"  :   "Leonardo",
                     "cargo" :   "Director del colegio Rosa Perez Liendo",
-                    "quote" :   "Yo me sentí feliz de ver una plataforma amigable, útil y bien práctica. <br> Lo que más me gustó de KIND fue el cuestionario y las herramientas psicopedagógicas."
+                    "quote" :   "Yo me sentí feliz de ver una plataforma amigable, útil y bien práctica. <br>  <br> Lo que más me gustó de KIND fue el cuestionario y las herramientas psicopedagógicas."
                 },
                 {
                     "pic"   :   "./asset/testimonials/juan.jpg",
@@ -164,13 +164,13 @@
                     "pic"   :   "./asset/testimonials/juana.jpg",
                     "name"  :   "Juana",
                     "cargo" :   "Directiva del colegio Rosa Perez Liendo",
-                    "quote" :   "La plataforma KIND es útil porque es versátil, el manejo  no es complicado y ha sido aceptada de una buena forma por los docentes y estudiantes. Poder ver las estadísticas, sobre todo para los directivos, es de mucha ayuda"
+                    "quote" :   "La plataforma KIND es útil porque es versátil, el manejo  no es complicado y ha sido aceptada de una buena forma por los docentes y estudiantes. Poder ver las estadísticas, sobre todo para los directivos, es de mucha ayuda."
                 },
                 {
                     "pic"   :   "./asset/testimonials/juana.jpg",
                     "name"  :   "Alondra",
                     "cargo" :   "Directiva de psicología del colegio Rosa Perez Liendo",
-                    "quote" :   "Las capacitaciones que se nos brindaron fueron útiles y personalizadas tanto para los tutores como para el director y la sub-directora.  <br/>  <br/>Su equipo fue muy amable a la hora de tratar con los docentes y con los estudiantes mostrando siempre una buena disposición frente a cualquier duda. "
+                    "quote" :   "Las capacitaciones que se nos brindaron fueron útiles y personalizadas tanto para los tutores como para el director y la <br/> sub-directora.  <br/>  <br/>Su equipo fue muy amable a la hora de tratar con los docentes y con los estudiantes mostrando siempre una buena disposición frente a cualquier duda. "
                 }
             ]
         
