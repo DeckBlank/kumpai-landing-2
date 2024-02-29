@@ -24,27 +24,27 @@ fetch('app.json')
         div.classList.add("container")
         div.innerHTML = `
             <h2 class="boxTitle t-bluekind t-48 t-center">${item.title}</h2>
-            <div class="row pb-8">
-                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 p-4">
+            <div class="row ">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 p-5-5 div-center">
                     <div class="sTBoxText bg-white">
                         <img  src="${item.icon1}" alt=""/>
                         <p>${item.p1}</p>
                     </div>
                 </div>
-                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex aligin-items-center justify-content-center ">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 p-5-5 div-center">
                     <div class="sTBoxImg">
-                        <img class="phoneCircle" src="${item.imgSrc1}" alt=""/>
+                        <img class="image1" src="${item.imgSrc1}" alt=""/>
                     </div>
                 </div>
             </div>
             
-            <div class="row pb-8">
-                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex aligin-items-center justify-content-center">
+            <div class="row ">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-sm-2 order-2 p-5-5 div-center">
                     <div class="sTBoxImg">
-                        <img class="phoneCircle" src="${item.imgSrc2}" alt=""/>
+                        <img class="image2" src="${item.imgSrc2}" alt=""/>
                     </div>
                 </div>
-                <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-sm-1 order-1 p-5-5 div-center">
                     <div class="sTBoxText bg-white">
                         <img  src="${item.icon2}" alt=""/>
                         <p>${item.p2}</p>
@@ -52,27 +52,27 @@ fetch('app.json')
                 </div>
             </div> 
 
-            <div class="row pb-8">
-                <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="row ">
+                <div class="col col-lg-6 col-md-12 col-sm-12 p-5-5 col-12 div-center">
                     <div class="sTBoxText bg-white">
                         <img  src="${item.icon3}" alt=""/>
                         <p>${item.p3}</p>
                     </div>
                 </div>
-                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex aligin-items-center justify-content-center">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 p-5-5 div-center">
                     <div class="sTBoxImg">
-                        <img class="phoneCircle" src="${item.imgSrc3}" alt=""/>
+                        <img class="image3" src="${item.imgSrc3}" alt=""/>
                     </div>
                 </div>
             </div>
         
             <div class="row pb-8">
-                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex aligin-items-center justify-content-center">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 order-lg-1 order-sm-2 order-2 p-5-5 div-center">
                     <div class="sTBoxImg">
-                        <img class="phoneCircle" src="${item.imgSrc4}" alt=""/>
+                        <img class="image4" src="${item.imgSrc4}" alt=""/>
                     </div>
                 </div>
-                <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 order-lg-2 order-sm-1 order-1 p-5-5 div-center">
                     <div class="sTBoxText bg-white">
                         <img  src="${item.icon4}" alt=""/>
                         <p>${item.p4}</p>
@@ -110,11 +110,13 @@ data.fourSection[0].itemBox.forEach(boxItem => {
     swiperSlide.classList.add(`${boxItem.bgColor}`,`boxCard`);
     swiperSlide.innerHTML = `
         <div>
-            <div class=" flex-row boxy mr10 ">
-                <img style="height: 80px"  src="${boxItem.icon}" alt=""/>
+            <div class=" boxy mr40 ">
+                <div class="flex-row">
+                    <img style="height: 80px"  src="${boxItem.icon}" alt=""/>
+                    <h3 class=" t-18 t-b mr10" >${boxItem.t}</h3>
+                </div>
                 <div class="flex-col mr10">
-                    <h3 class=" t-16 t-b mr10" >${boxItem.t}</h3>
-                    <p class=" t-16 mr10">${boxItem.p}</p>
+                    <p class=" t-18">${boxItem.p}</p>
                 </div>
             </div>
             <div class="boxCel flex-row">

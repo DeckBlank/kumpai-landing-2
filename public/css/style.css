@@ -509,6 +509,27 @@ body {
 
 }  */
 /* ::::::: two section:::::: */
+.image1 {
+  height: 450px;
+}
+
+.image2 {
+  width: 550px;
+}
+
+.image3 {
+  height: 400px;
+}
+
+.image4 {
+  height: 450px;
+}
+
+.div-center {
+  display: grid;
+  place-items: center;
+}
+
 .p-4 {
   padding: 4rem !important;
 }
@@ -517,12 +538,16 @@ body {
   padding-bottom: 8rem;
 }
 
+.p-5-5 {
+  padding: 5.5rem;
+}
+
 .boxTitle {
   padding: 50px !important;
 }
 
 .sTBoxText {
-  height: 350px;
+  height: auto;
   font-size: 16px;
   text-align: justify;
   padding: 4rem;
@@ -548,17 +573,22 @@ body {
 
 @media (max-width: 500px) {
   .sTBoxText {
-    height: 400px !important;
+    height: 420px !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
   }
   .sTBoxText img {
     height: 60px;
     width: 60px;
   }
 }
-.sTBoxImg img {
-  height: 350px;
-}
+/* .sTBoxImg{
+    img{
+        height: 350px;
+    }
 
+} */
 /* .twoSection {
 
     div{
@@ -754,6 +784,7 @@ body {
 }
 .fourSection .boxTotal img {
   height: 500px;
+  /*  padding-top: 20px; */
 }
 
 @media (max-width: 1366px) {
@@ -773,6 +804,23 @@ body {
   }
   .fourSection .boxTotal img {
     height: 350px;
+  }
+}
+@media (max-width: 425px) {
+  .fourSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fourSection .boxTotal {
+    display: flex;
+  }
+  .fourSection .boxTotal .boxCard {
+    width: 100%;
+  }
+  .fourSection .boxTotal img {
+    height: 350px;
+    padding-top: 10px;
   }
 }
 /* ::::::::::::::::::::Section 5::::::::::: */
