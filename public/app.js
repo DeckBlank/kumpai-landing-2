@@ -72,6 +72,7 @@ fetch('app.json')
         data.threeSection.forEach(item => {
             threeSection.innerHTML += `
                     <h2 class="t-48">${item.h2}</h2>
+                    <p class="t-23-o t-b">${item.p}</p>
                     <img  src="${item.img}" alt=""/>
                     <h2 class="t-48" id="funciones">FUNCIONES</h2>
             `;

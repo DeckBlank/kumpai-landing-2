@@ -151,6 +151,10 @@ $bluekindUltraLigth     :#A6E5E9;
     @include t-p(18px,$blackkind )
 }
 
+.t-23-o{
+    @include t-p(23px,$orangekind )
+}
+
 .t-b{
     font-weight: bold;
 }
