@@ -82,26 +82,24 @@ fetch('app.json')
 
 // Seleccionar el contenedor principal de la sección desde el HTML
 const sectionContainer = document.querySelector('.fourSection');
-// Crear el contenedor de las diapositivas para esta sección
 const sectionSwiperWrapper = document.createElement('div');
-sectionSwiperWrapper.classList.add('swiper-wrapper');
-
+sectionSwiperWrapper.classList.add("boxTotal");
 // Agregar cada diapositiva al contenedor de esta sección
 data.fourSection[0].itemBox.forEach(boxItem => {
     const swiperSlide = document.createElement('div');
-    swiperSlide.classList.add('swiper-slide');
-    swiperSlide.classList.add(`${boxItem.bgColor}`);
+    /* swiperSlide.classList.add('swiper-slide'); */
+    swiperSlide.classList.add(`${boxItem.bgColor}`,`boxCard`);
     swiperSlide.innerHTML = `
-        <div class="boxTotal ">
-            <div class="boxText flex-row boxy mr10 ">
+        <div>
+            <div class=" flex-row boxy mr10 ">
                 <img style="height: 80px"  src="${boxItem.icon}" alt=""/>
                 <div class="flex-col mr10">
-                    <h3 class="boxTitle t-16 t-b mr10" >${boxItem.t}</h3>
-                    <p class="boxText t-16 mr10">${boxItem.p}</p>
+                    <h3 class=" t-16 t-b mr10" >${boxItem.t}</h3>
+                    <p class=" t-16 mr10">${boxItem.p}</p>
                 </div>
             </div>
             <div class="boxCel flex-row">
-                <img  style="height: 300px;" src="${boxItem.img}" alt=""/>
+                <img   src="${boxItem.img}" alt=""/>
             </div>
         </div>
     `;
@@ -110,30 +108,6 @@ data.fourSection[0].itemBox.forEach(boxItem => {
 
 // Agregar el contenedor de diapositivas al contenedor principal de la sección
 sectionContainer.appendChild(sectionSwiperWrapper);
-
-// Inicializar Swiper para esta sección
-new Swiper(sectionContainer, {
-    slidesPerView: 2.5,//3,
-    spaceBetween: 80,//50,
-    loop: true,
-    grabCursor: true,
-    centeredSlides: true,
-    slideActiveClass: "active",
-    navigation: {
-      nextEl: ".next",
-      prevEl: ".prev"
-    },
-    pagination: {
-      el: ".pagination",
-      clickable: true
-      
-    },
-    autoplay: {
-      enabled: true,
-      delay: 5000
-    },
-});
-
 
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
