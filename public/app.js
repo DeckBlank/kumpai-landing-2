@@ -133,7 +133,7 @@ sectionContainer.appendChild(sectionSwiperWrapper);
 
         //section five objetivos
         const fiveSection = document.querySelector('.fiveSection');
-        fiveSection.classList.add('flex-col');
+        fiveSection.classList.add('flex-col','container');
         data.fiveSection.forEach(item => {
         const cajaCero = document.createElement('div');
         cajaCero.innerHTML = `
