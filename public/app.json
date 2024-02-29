@@ -38,7 +38,7 @@
     "fourSection": [
 
         {
-            "h2":"FUNCIONES",
+            "h2":"FUNCIONES ok",
             "itemBox":[
                 {
                     "icon":"./asset/icons/icon5.png",
@@ -195,7 +195,7 @@
             "label": "Nombre Completo",
             "id": "nombreCompleto",
             "type": "text",
-            "placeholder": "Ingrese su nombre completo",
+            "placeholder": "Ingrese tu nombre completo",
             "required": true,
             "regex": "^[a-zA-Z\\s]+$"
           },
@@ -203,15 +203,15 @@
             "label": "Email",
             "id": "email",
             "type": "email",
-            "placeholder": "Ingrese su correo electrónico",
+            "placeholder": "Ingrese tu correo electrónico",
             "required": true,
             "regex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
           },
           {
-            "label": "Cargo",
-            "id": "cargo",
+            "label": "Ocupación",
+            "id": "Ocupación",
             "type": "text",
-            "placeholder": "Cargo",
+            "placeholder": "Ocupación",
             "required": true,
             "regex": "^[a-zA-Z\\s]+$"
           },
