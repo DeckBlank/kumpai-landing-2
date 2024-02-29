@@ -91,7 +91,7 @@ fetch('app.json')
                         <h2 class="t-48">${item.h2}</h2>
                         <p class="t-23-o t-b">${item.p}</p>
                         <img  src="${item.img}" alt=""/>
-                        <h2 class="t-48" id="funciones">FUNCIONES</h2>
+                        
                     </div>
             `;
         });
@@ -103,6 +103,9 @@ fetch('app.json')
 const sectionContainer = document.querySelector('.fourSection');
 const sectionSwiperWrapper = document.createElement('div');
 sectionSwiperWrapper.classList.add("boxTotal","container");
+sectionSwiperWrapper.innerHTML = `
+    <h2 class="t-48" id="funciones">FUNCIONES</h2>
+`
 // Agregar cada diapositiva al contenedor de esta sección
 data.fourSection[0].itemBox.forEach(boxItem => {
     const swiperSlide = document.createElement('div');
@@ -135,7 +138,7 @@ sectionContainer.appendChild(sectionSwiperWrapper);
 
         //section five objetivos
         const fiveSection = document.querySelector('.fiveSection');
-        fiveSection.classList.add('flex-col','container');
+        fiveSection.classList.add('flex-col','container','mt-15');
         data.fiveSection.forEach(item => {
         const cajaCero = document.createElement('div');
         cajaCero.innerHTML = `
@@ -159,7 +162,7 @@ sectionContainer.appendChild(sectionSwiperWrapper);
         
          //section six servicios
         const sixSection = document.querySelector('.sixSection');
-        sixSection.classList.add('container')
+        sixSection.classList.add('container','mt-15')
         data.sixSection.forEach(item => {
         const cajaCero = document.createElement('div');
         cajaCero.classList.add('flex-col');

@@ -35,28 +35,6 @@
         }
     ],
 
-    "fourSection2": [
-                {
-                    "icon":"./asset/icons/icon5.png",
-                    "t":"Medición de Convivencia en el aula",
-                    "p":"Son cuestionarios que  ayudan a entender  y medir cómo se sienten los estudiantes en el aula",
-                    "bgColor" : "bg-yellowkindLigth"
-                },
-                {
-                    "icon":"./asset/icons/icon6.png",
-                    "t":"Retroalimentación y talentos",
-                    "p":"Espacio que fomenta la retroalimentación, comunicación asertiva y la redacción",
-                    "bgColor" : "bg-orangekindLigth"
-                },
-                {
-                    "icon":"./asset/icons/icon7.png",
-                    "t":"Herramientas psicopedagógicas",
-                    "p":"Material pedagógico para fortalecer las habilidades socioemocionales",
-                    "bgColor" : "bg-greenkindLigth"
-                }
-
-    ],
-
     "fourSection": [
 
         {
@@ -125,19 +103,19 @@
             "h2":"SERVICIOS ADICIONALES",
             "itemBox" : [
                 {
-                    "p"    :    "Diseño del plan de intervención pedagógico para fomentar la buena convivencia escolar",
+                    "p"    :    "Diseño del plan de intervención pedagógico para fomentar la buena convivencia escolar.",
                     "bgColor" : "bg-yellowkindLigth"
                 },
                 {                    
-                    "p"    :    "Implementación de talleres de habilidades emocionales y de prevención de la violencia",
+                    "p"    :    "Implementación de talleres de habilidades emocionales y de prevención de la violencia.",
                     "bgColor" : "bg-bluekindLigth"
                 },
                 {
-                    "p"    :    "Capacitación  docente en talleres  de habilidades socioemocionales y deprevención de la violencia",
+                    "p"    :    "Capacitación  docente en talleres  de habilidades socioemocionales y deprevención de la violencia.",
                     "bgColor" : "bg-orangekindLigth"
                 },
                 {
-                    "p"    :    "Creación de recursos digitales pedagógicos para docentes y para estudiantes",
+                    "p"    :    "Creación de recursos digitales pedagógicos para docentes y para estudiantes.",
                     "bgColor" : "bg-greenkindLigth"
                 },
                 {
