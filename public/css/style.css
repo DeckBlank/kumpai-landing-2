@@ -768,9 +768,9 @@ body {
 .sixSection .sixSectionBox {
   padding-top: 50px;
   display: grid;
-  gap: 1rem;
-  grid-auto-rows: 25rem;
-  grid-template-columns: repeat(auto-fill, minmax(19rem, 0.5fr));
+  gap: 5rem;
+  grid-auto-rows: 30rem;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   align-items: center;
 }
 .sixSection .sixSectionBox .box-services {
@@ -790,6 +790,14 @@ body {
   align-items: center;
 }
 
+@media (max-width: 860px) {
+  .sixSection {
+    padding: 400px 100px 100px 100px;
+  }
+  .sixSection .sixSectionBox {
+    grid-template-columns: none;
+  }
+}
 @media (max-width: 650px) {
   .sixSection .sixSectionBox .box-services {
     height: 200px;

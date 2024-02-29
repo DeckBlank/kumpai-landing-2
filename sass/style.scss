@@ -870,6 +870,8 @@ body{
     
 }
 
+
+
 @media (max-width:900px) {
     .fiveSection{
         div{
@@ -891,6 +893,9 @@ body{
         }
     }
 }
+
+
+
 
 @media (max-width:768px) {
     .fiveSection{
@@ -942,11 +947,10 @@ body{
 
     .sixSectionBox{
         padding-top: 50px;
-
         display: grid;
-        gap: 1rem;
-        grid-auto-rows: 25rem;
-        grid-template-columns: repeat(auto-fill, minmax(19rem, 0.5fr));//repeat(auto-fill, minmax(25rem, 0.5fr));
+        gap: 5rem;
+        grid-auto-rows: 30rem;
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));//repeat(auto-fill, minmax(25rem, 0.5fr));
         align-items: center;
 
 
@@ -969,6 +973,16 @@ body{
     }
 }
 
+
+
+@media (max-width:860px) {
+    .sixSection {
+    padding: 400px 100px 100px 100px;
+    .sixSectionBox {
+        grid-template-columns: none;
+    }
+}
+}
 @media (max-width: 650px){
     .sixSection{
         .sixSectionBox{
