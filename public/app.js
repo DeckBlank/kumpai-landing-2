@@ -119,7 +119,7 @@ item.itemBox.forEach(boxItem => {
                     <h3 class=" t-18 t-b mr10" >${boxItem.t}</h3>
                 </div>
                 <div class="flex-col mr10">
-                    <p class=" t-18">${boxItem.p}</p>
+                    <p class=" t-16">${boxItem.p}</p>
                 </div>
             </div>
             <div class="boxCel flex-row">
