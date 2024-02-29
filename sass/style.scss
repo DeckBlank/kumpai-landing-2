@@ -624,7 +624,7 @@ body{
 
 
 
-/* ::::::: secsion dos:::::: */
+/* ::::::: two section:::::: */
 .p-4{
     padding: 4rem!important;
 }
@@ -659,6 +659,17 @@ body{
         z-index: 99;
         position: absolute;
     }
+}
+
+@media (max-width:500px) {
+    .sTBoxText{
+        height: 400px !important;// para 1920px
+        img{
+            height: 60px;
+            width: 60px;
+        }
+    }
+
 }
 
 

@@ -507,7 +507,7 @@ body {
     background-color: red;
 
 }  */
-/* ::::::: secsion dos:::::: */
+/* ::::::: two section:::::: */
 .p-4 {
   padding: 4rem !important;
 }
@@ -545,6 +545,15 @@ body {
   position: absolute;
 }
 
+@media (max-width: 500px) {
+  .sTBoxText {
+    height: 400px !important;
+  }
+  .sTBoxText img {
+    height: 60px;
+    width: 60px;
+  }
+}
 .sTBoxImg img {
   height: 350px;
 }
