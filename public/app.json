@@ -14,14 +14,14 @@
             "title":"¿Qué es KIND Education?",
             "icon1":"./asset/icons/icon1.png",
             "p1": "La plataforma KIND cuenta con cuestionarios validados que permiten entender cómo se sienten los estudiantes en sus aulas en tiempo real. A través de nuestro sistema de levantamiento de datos, arrojamos información cualitativa y cuantitativa que nos ayuda a entender cómo está la convivencia en el aula y así poder prevenir y evitar posibles casos de violencia escolar.",
-            "imgSrc1": "./asset/imgs/celular1.svg",
-            "imgSrc2": "./asset/imgs/2-two.png",
+            "imgSrc1": "./asset/imgs/one.svg",
+            "imgSrc2": "./asset/imgs/two.svg",
             "icon2":"./asset/icons/icon2.png",
             "p2": "Nuestro instrumento ha sido validado tanto por el análisis del piloto como por el criterio del jueves. Es confiable a partir del análisis estadístico y además está basado en el modelo de la teoría sustentada.",
             "icon3":"./asset/icons/icon3.png",
             "p3":"Nuestros resultados son arrojados a través de gráficos interactivos y de semáforos que nos acompañan a entender, de forma simple y dinámica, qué aulas están en mayor riesgo y qué aulas están fomentando la mejor convivencia en sus entornos. Se generan reportes que resumen nuestros 8 factores principales de intervención.",
-            "imgSrc3":"./asset/imgs/3-trhee.png",
-            "imgSrc4":"./asset/imgs/4-fourt.png",
+            "imgSrc3":"./asset/imgs/three.svg",
+            "imgSrc4":"./asset/imgs/four.svg",
             "icon4":"./asset/icons/icon4.png",
             "p4":"Una vez que los tutores y directores reciben esta valiosa información, KIND los acompaña en la creación de planes pedagógicos de intervención potentes a través de recursos digitales con herramientas que fomentan el desarrollo de habilidades socioemocionales y de prevención de la violencia escolar, así como planes personalizados para cada institución."
         }
@@ -31,7 +31,7 @@
         {
             "h2":"KIND SE ADAPTA A TI",
             "p": " Responsive, simple y siempre amigable",
-            "img":"./asset/imgs/5-five.png"
+            "img":"./asset/imgs/five.svg"
         }
     ],
 
@@ -67,21 +67,21 @@
                     "t":"Medición de Convivencia en el aula",
                     "p":"Son cuestionarios que  ayudan a entender  y medir cómo se sienten los estudiantes en el aula",
                     "bgColor" : "bg-yellowkindLigth",
-                    "img":"./asset/imgs/6-six.png"
+                    "img":"./asset/imgs/six.svg"
                 },
                 {
                     "icon":"./asset/icons/icon6.png",
                     "t":"Retroalimentación y talentos",
                     "p":"Espacio que fomenta la retroalimentación, comunicación asertiva y la redacción",
                     "bgColor" : "bg-orangekindLigth",
-                    "img":"./asset/imgs/7-seven.png"
+                    "img":"./asset/imgs/seven.svg"
                 },
                 {
                     "icon":"./asset/icons/icon7.png",
                     "t":"Herramientas psicopedagógicas",
                     "p":"Material pedagógico para fortalecer las habilidades socioemocionales",
                     "bgColor" : "bg-greenkindLigth",
-                    "img":"./asset/imgs/8-eight.png"
+                    "img":"./asset/imgs/eight.svg"
                 }
             ]
         }
