@@ -102,7 +102,7 @@ fetch('app.json')
 // Seleccionar el contenedor principal de la sección desde el HTML
 const sectionContainer = document.querySelector('.fourSection');
 const sectionSwiperWrapper = document.createElement('div');
-sectionSwiperWrapper.classList.add("boxTotal");
+sectionSwiperWrapper.classList.add("boxTotal","container");
 // Agregar cada diapositiva al contenedor de esta sección
 data.fourSection[0].itemBox.forEach(boxItem => {
     const swiperSlide = document.createElement('div');
