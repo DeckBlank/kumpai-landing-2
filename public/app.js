@@ -99,21 +99,21 @@ fetch('app.json')
         //section four funciones
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-// Seleccionar el contenedor principal de la sección desde el HTML
-const sectionContainer = document.querySelector('.fourSection');
-const sectionSwiperWrapper = document.createElement('div');
-sectionSwiperWrapper.classList.add("boxTotal","container");
-sectionSwiperWrapper.innerHTML = `
-    <h2 class="t-48" id="funciones">FUNCIONES</h2>
-`
-// Agregar cada diapositiva al contenedor de esta sección
-data.fourSection[0].itemBox.forEach(boxItem => {
-    const swiperSlide = document.createElement('div');
-    /* swiperSlide.classList.add('swiper-slide'); */
-    swiperSlide.classList.add(`${boxItem.bgColor}`,`boxCard`);
-    swiperSlide.innerHTML = `
-        <div>
-            <div class=" boxy mr40 ">
+
+//:::::::::::::::::::
+const fourSection = document.querySelector('.fourSection');
+fourSection.classList.add('flex-col','container','mt-15',);
+data.fourSection.forEach(item => {
+const cajaCero = document.createElement('div');
+cajaCero.innerHTML = `
+            <h2 class="t-48">${item.h2}</h2>
+`;
+const cajaOne = document.createElement('div');
+cajaOne.classList.add(`boxTotal`);
+item.itemBox.forEach(boxItem => {
+    cajaOne.innerHTML += `
+        <div class="${boxItem.bgColor} boxCard ">
+            <div class=" boxy mr40  flex-row">
                 <div class="flex-row">
                     <img style="height: 80px"  src="${boxItem.icon}" alt=""/>
                     <h3 class=" t-18 t-b mr10" >${boxItem.t}</h3>
@@ -127,12 +127,11 @@ data.fourSection[0].itemBox.forEach(boxItem => {
             </div>
         </div>
     `;
-    sectionSwiperWrapper.appendChild(swiperSlide);
+
 });
-
-// Agregar el contenedor de diapositivas al contenedor principal de la sección
-sectionContainer.appendChild(sectionSwiperWrapper);
-
+fourSection.appendChild(cajaCero);
+fourSection.appendChild(cajaOne)
+});
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
