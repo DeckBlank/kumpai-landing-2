@@ -786,6 +786,9 @@ body {
   height: 840px;
   border-radius: 20px;
 }
+.fourSection .boxTotal .boxCard .boxy div p {
+  text-align: justify;
+}
 .fourSection .boxTotal img {
   height: 500px;
   /*  padding-top: 20px; */
