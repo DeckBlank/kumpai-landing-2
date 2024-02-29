@@ -280,7 +280,7 @@ body{
         .logo{
             background-image: url("/asset/LogoKind-00.svg") !important;
             background-repeat: no-repeat !important;
-            width: 20% !important;
+            width: 120px !important;
             height: 40px !important;
             z-index: 99 !important;
         }
@@ -291,7 +291,8 @@ body{
     gap:2rem;
 }
 .navbar-collapse{
-    margin-right: 5% !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
 }
 
 /* .btn{
