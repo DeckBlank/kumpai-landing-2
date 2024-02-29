@@ -113,7 +113,7 @@ cajaOne.classList.add(`boxTotal`);
 item.itemBox.forEach(boxItem => {
     cajaOne.innerHTML += `
         <div class="${boxItem.bgColor} boxCard ">
-            <div class=" boxy mr40  flex-row">
+            <div class=" boxy mr40  flex-col">
                 <div class="flex-row">
                     <img style="height: 80px"  src="${boxItem.icon}" alt=""/>
                     <h3 class=" t-18 t-b mr10" >${boxItem.t}</h3>
