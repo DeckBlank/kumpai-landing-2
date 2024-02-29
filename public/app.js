@@ -87,10 +87,12 @@ fetch('app.json')
         const threeSection = document.querySelector('.threeSection');
         data.threeSection.forEach(item => {
             threeSection.innerHTML += `
-                    <h2 class="t-48">${item.h2}</h2>
-                    <p class="t-23-o t-b">${item.p}</p>
-                    <img  src="${item.img}" alt=""/>
-                    <h2 class="t-48" id="funciones">FUNCIONES</h2>
+                    <div class="container">
+                        <h2 class="t-48">${item.h2}</h2>
+                        <p class="t-23-o t-b">${item.p}</p>
+                        <img  src="${item.img}" alt=""/>
+                        <h2 class="t-48" id="funciones">FUNCIONES</h2>
+                    </div>
             `;
         });
 
@@ -155,6 +157,7 @@ sectionContainer.appendChild(sectionSwiperWrapper);
         
          //section six servicios
         const sixSection = document.querySelector('.sixSection');
+        sixSection.classList.add('container')
         data.sixSection.forEach(item => {
         const cajaCero = document.createElement('div');
         cajaCero.classList.add('flex-col');
@@ -165,9 +168,9 @@ sectionContainer.appendChild(sectionSwiperWrapper);
         cajaOne.classList.add('flex-row', 'sixSectionBox');
         item.itemBox.forEach(boxItem => {
             cajaOne.innerHTML += `
-                <div class= "box-services Boxy ${boxItem.bgColor}">
-                    <p class="boxText t-18">${boxItem.p}</p>
-                </div>
+                    <div class= "box-services Boxy ${boxItem.bgColor}">
+                        <p class="boxText t-16">${boxItem.p}</p>
+                    </div>
             `;
         
         });
@@ -210,12 +213,14 @@ sectionContainer.appendChild(sectionSwiperWrapper);
         data.eightSection.forEach(item => {
             eightSection.innerHTML += `
                     
-                    <h2 class="title t-48b">${item.h2}</h2>
-                    <div class="gridMovil">
-                        <p class="boxText boxNews t-18">${item.n1}</p>
-                        <p class="boxText  boxNews t-18">${item.n2}</p>
-                        <p class="boxText  boxNews t-18">${item.n3}</p>
-                        <p class="boxText  boxNews t-18">${item.n4}</p>
+                    <div class="container">
+                        <h2 class="title t-48b">${item.h2}</h2>
+                        <div class="gridMovil">
+                            <p class="boxText boxNews t-18">${item.n1}</p>
+                            <p class="boxText  boxNews t-18">${item.n2}</p>
+                            <p class="boxText  boxNews t-18">${item.n3}</p>
+                            <p class="boxText  boxNews t-18">${item.n4}</p>
+                        </div>
                     </div>
             `;
         });
@@ -226,6 +231,7 @@ sectionContainer.appendChild(sectionSwiperWrapper);
         const formSection = data.nineSectionform;
 
         const formContainer = document.getElementById("formContainer");
+        formContainer.classList.add('container');
         const formTitle = document.createElement("h2");
         formTitle.classList.add("t-48")
         formTitle.textContent = formSection.title;

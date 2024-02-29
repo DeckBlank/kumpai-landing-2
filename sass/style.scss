@@ -855,10 +855,12 @@ body{
 
 /* ::::::::::::::section 2:::::::::::: */
 .threeSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     img{
         margin: 5%;
         width: 70%;
@@ -1037,9 +1039,9 @@ body{
     .sixSectionBox{
         padding-top: 50px;
         display: grid;
-        gap: 5rem;
+        gap: 3rem;
         grid-auto-rows: 30rem;
-        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));//repeat(auto-fill, minmax(25rem, 0.5fr));
+        grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));//repeat(auto-fill, minmax(25rem, 0.5fr));
         align-items: center;
 
 

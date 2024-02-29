@@ -725,7 +725,7 @@ body {
     }
 } */
 /* ::::::::::::::section 2:::::::::::: */
-.threeSection {
+.threeSection .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -866,9 +866,9 @@ body {
 .sixSection .sixSectionBox {
   padding-top: 50px;
   display: grid;
-  gap: 5rem;
+  gap: 3rem;
   grid-auto-rows: 30rem;
-  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
   align-items: center;
 }
 .sixSection .sixSectionBox .box-services {
