@@ -21,46 +21,62 @@ fetch('app.json')
         const twoSection = document.querySelector('.twoSection');
         data.twoSection.forEach(item => {
         const div = document.createElement('div');
-        div.classList.add("childTwoSection")
+        div.classList.add("container")
         div.innerHTML = `
-            <h2 class="t-bluekind t-48 t-center">${item.title}</h2>
-            <div class="twoBoxs  ">
-                <div class="sTBoxOne bg-white border-box">
-                    <img  src="${item.icon1}" alt=""/>
-                    <p>${item.p1}</p>
+            <h2 class="boxTitle t-bluekind t-48 t-center">${item.title}</h2>
+            <div class="row pb-8">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 p-4">
+                    <div class="sTBoxText bg-white">
+                        <img  src="${item.icon1}" alt=""/>
+                        <p>${item.p1}</p>
+                    </div>
                 </div>
-                <div class="sTBoxtwo">
-                    <img class="phoneCircle" src="${item.imgSrc1}" alt=""/>
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex aligin-items-center justify-content-center ">
+                    <div class="sTBoxImg">
+                        <img class="phoneCircle" src="${item.imgSrc1}" alt=""/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row pb-8">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex aligin-items-center justify-content-center">
+                    <div class="sTBoxImg">
+                        <img class="phoneCircle" src="${item.imgSrc2}" alt=""/>
+                    </div>
+                </div>
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="sTBoxText bg-white">
+                        <img  src="${item.icon2}" alt=""/>
+                        <p>${item.p2}</p>
+                    </div>
+                </div>
+            </div> 
 
+            <div class="row pb-8">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="sTBoxText bg-white">
+                        <img  src="${item.icon3}" alt=""/>
+                        <p>${item.p3}</p>
+                    </div>
+                </div>
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex aligin-items-center justify-content-center">
+                    <div class="sTBoxImg">
+                        <img class="phoneCircle" src="${item.imgSrc3}" alt=""/>
+                    </div>
                 </div>
             </div>
-            <div class="twoBoxs ">
-                <div class="sTBoxOne">
-                    <img class= "desktopCircle" src="${item.imgSrc2}" alt=""/>
-                    <div class="orangeCircle"></div>
+        
+            <div class="row pb-8">
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex aligin-items-center justify-content-center">
+                    <div class="sTBoxImg">
+                        <img class="phoneCircle" src="${item.imgSrc4}" alt=""/>
+                    </div>
                 </div>
-                <div class="sTBoxtwo bg-white border-box">
-                    <img  src="${item.icon2}" alt=""/>
-                    <p>${item.p2}</p>
-                </div>
-            </div>
-            <div class="twoBoxs  ">
-                <div class="sTBoxOne bg-white border-box ">
-                    <img  src="${item.icon3}" alt=""/>
-                    <p>${item.p3}</p>
-                </div>
-                <div class="sTBoxtwo">
-                    <img class="phoneCircle" src="${item.imgSrc3}" alt="">
-                </div>
-            </div>
-            <div class="twoBoxs ">
-                <div class="sTBoxOne">
-                    <img class= "material" src="${item.imgSrc4}" alt=""/>
-
-                </div>
-                <div class="sTBoxtwo bg-white border-box">
-                    <img  src="${item.icon4}" alt="">
-                    <p>${item.p4}</p>
+                <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="sTBoxText bg-white">
+                        <img  src="${item.icon4}" alt=""/>
+                        <p>${item.p4}</p>
+                    </div>
                 </div>
             </div>
         `;

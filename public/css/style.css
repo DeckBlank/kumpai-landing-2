@@ -197,11 +197,15 @@ body {
   justify-content: center !important;
 }
 .nav-item a {
-  font-size: 22px !important;
+  font-size: 16px !important;
+}
+.nav-item :hover {
+  font-weight: 900;
 }
 
 .navbar {
-  min-height: 64px !important;
+  min-height: 90px !important;
+  gap: 5px !important;
 }
 
 .navbar-brand {
@@ -227,34 +231,60 @@ body {
     margin-right: 5% !important;
   }
 }
-.navbar .container-fluid .logo {
+.navbar .container .logo {
   background-image: url("/asset/LogoKind-00.svg") !important;
   background-repeat: no-repeat !important;
   width: 20% !important;
   height: 40px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: start !important;
   z-index: 99 !important;
+}
+
+.navbar-nav {
+  gap: 2rem;
 }
 
 .navbar-collapse {
   margin-right: 5% !important;
 }
 
-.btn-primary {
-  background: #FF6700 !important;
-  border: #FF6700 !important;
-  font-size: 22px !important;
-  border-radius: 10px !important;
+/* .btn{
+    padding: 1rem;
 }
 
-.btn-primary:hover {
+.btn-primary{
+    background: #27C5CD !important;
+    border: #27C5CD !important;
+    font-size: 18px !important;
+    font-weight: 900 !important;
+    border-radius: 10px !important;
+    color: white !important;    
+    letter-spacing: 1px;
+    :hover{
+        background: #FF6700 !important;
+        color: white !important;
+    }
+} */
+.btn {
+  padding: 1rem !important;
+}
+
+.btn-access {
   background: #27C5CD !important;
+  border: #27C5CD !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  border-radius: 10px !important;
+  color: white !important;
+  letter-spacing: 1px;
+}
+.btn-access:hover {
+  background: #FF6700 !important;
+  color: white !important;
 }
 
 /* ::::one section:::: */
 .oneSection {
+  width: 100%;
   /* background-image: url("/asset/imgs/portada.png"); */
   background-image: url("/asset/imgs/new-portada.webp");
   background-repeat: no-repeat;
@@ -320,9 +350,6 @@ body {
   }
 }
 @media (max-width: 1326px) {
-  .oneSection {
-    min-width: 700px;
-  }
   .oneSection .itemsOne h1 {
     padding-top: 32%;
   }
@@ -388,6 +415,7 @@ body {
   }
   .oneSection .itemsOne p {
     padding-top: 5%;
+    margin-top: none;
   }
 }
 @media (max-width: 750px) {
@@ -400,7 +428,6 @@ body {
     background: linear-gradient(to left, rgba(255, 254, 254, 0) 10%, rgba(0, 0, 0, 0.353) 25%, rgba(0, 0, 5, 0.5) 60%);
     width: 100%;
     height: 97.3%;
-    margin-top: 20px;
   }
   .oneSection .itemsOne h1 {
     left: 12%;
@@ -480,159 +507,215 @@ body {
     background-color: red;
 
 }  */
-.twoSection {
-  /* margin:18%; */
-  padding: 10%;
-  font-size: 18px;
-  font-weight: bold;
-}
-.twoSection div {
-  display: flex;
-  flex-direction: column;
-  place-content: center;
-  gap: 50px;
-}
-.twoSection div div {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  place-content: center;
-  flex-direction: row;
-  margin: 10px 0 10px 0;
-}
-.twoSection div div .border-box {
-  border-radius: 20px;
-  width: 120rem;
-  min-height: 400px;
-  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2509803922);
-  /* z-index: 99; */
-}
-.twoSection div div p {
-  max-width: 60%;
-  text-align: left;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  justify-content: center;
-  /* font-weight: bold; */
-}
-.twoSection div div .phoneCircle {
-  z-index: 99;
-  position: absolute;
-  /* height: 100%; */
-}
-.twoSection div div .material {
-  z-index: 99;
-  position: absolute;
-}
-.twoSection div div .desktopCircle {
-  z-index: 99;
-  position: absolute;
-  /* width: 50%; */
+/* ::::::: secsion dos:::::: */
+.p-4 {
+  padding: 4rem !important;
 }
 
-@media (max-width: 900px) {
-  .twoSection div {
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-    gap: 100px;
-  }
-  .twoSection div div {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-    margin: 10px 0 10px 0;
-  }
-  .twoSection div div .border-box {
-    border-radius: 20px;
-    /* min-width: 450px; */
-    min-height: 250px;
-  }
-  .twoSection div div p {
-    display: flex;
-    justify-content: center;
+.pb-8 {
+  padding-bottom: 8rem;
+}
+
+.boxTitle {
+  padding: 50px !important;
+}
+
+.sTBoxText {
+  height: 350px;
+  font-size: 16px;
+  text-align: justify;
+  padding: 4rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2509803922);
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  position: relative;
+}
+.sTBoxText img {
+  height: 100px;
+  width: 100px;
+}
+.sTBoxText .desktopCircle {
+  width: 70%;
+}
+.sTBoxText .material {
+  width: 90%;
+  z-index: 99;
+  position: absolute;
+}
+
+.sTBoxImg img {
+  height: 350px;
+}
+
+/* .twoSection {
+
+    div{
+        display: flex;
+        flex-direction:column;
+        place-content: center;
+        gap:50px;
+        div{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            place-content: center;
+            flex-direction:row;
+
+            margin: 10px 0 10px 0;
+            .border-box{
+                border-radius: 20px;
+                width: 120rem;
+                min-height: 400px;
+                box-shadow: 0 10px 10px -5px #00000040;
+            }
+            p{
+                max-width: 60%;
+                text-align: left;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                justify-content: center;
+            }
+            .phoneCircle{
+                z-index: 99;
+                position: absolute;
+            }
+
+            .material{
+                z-index: 99;
+                position: absolute;
+            }
+            .desktopCircle{
+                z-index: 99;
+                position: absolute;
+            }
+
+        }
+    }
+    font-size: 18px;
     font-weight: bold;
-    font-size: 14px;
-  }
-  .twoSection div div .phoneCircle {
-    z-index: 99;
-    position: absolute;
-    /* height: 80%; */
-  }
-  .twoSection div div .desktopCircle {
-    z-index: 99;
-    position: absolute;
-    /* width: 40%; */
-  }
-  .twoSection div div .blueCircle {
-    background-color: #27C5CD;
-    position: relative;
-    top: -150px;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-  }
-  .twoSection div div .litleCircle {
-    background-image: url("/asset/litleCircles.svg");
-    background-position: center;
-    background-size: cover;
-    width: 150px;
-    height: 150px;
-    position: relative;
-    right: 350px;
-    top: 350px;
-  }
-  .twoSection div div .orangeCircle {
-    background-color: #FF6700;
-    position: relative;
-    top: 150px;
-    right: 200px;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-  }
+} */
+/* @media (max-width: 900px) {
+    .twoSection{
+        div{
+            display: flex;
+            flex-direction:column;
+            place-content: center;
+            gap:100px;
+            div{
+                width: 100%;
+                display: flex;
+                flex-direction:row;
+                gap: 5%;
+                margin: 10px 0 10px 0;
+                .border-box{
+                    border-radius: 20px;
+                    min-height: 250px;
+                }
+                p{
+                    display: flex;
+                    justify-content: center;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+                .phoneCircle{
+                    z-index: 99;
+                    position: absolute;
+
+                }
+
+                .desktopCircle{
+                    z-index: 99;
+                    position: absolute;
+                }
+
+                .blueCircle{
+                    background-color: $bluekind;
+                    position: relative;
+                    top: -150px;
+                    border-radius: 50%;
+                    width: 300px;
+                    height: 300px;
+                }
+                .litleCircle{
+                    background-image: url("/asset/litleCircles.svg");
+                    background-position:center;
+                    background-size: cover;
+                    width: 150px;
+                    height: 150px;
+                    position: relative;
+                    right: 350px;
+                    top: 350px;
+                }
+                .orangeCircle{
+                    background-color: $orangekind;
+                    position: relative;
+                    top: 150px;
+                    right: 200px;
+                    border-radius: 50%;
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+} */
+/* :::::::::::::::::: */
+/* :::::::::::::::::: */
+/* :::::::::::::::::: */
+/* :::::::::::::::::: */
+/* @media (max-width: 768px){
+    .twoSection{
+        .childTwoSection{
+            gap:20px;
+            .twoBoxs{
+                display: flex;
+                flex-direction: column;
+                gap:30px;
+                .sTBoxOne{
+                    height: 500px;
+                    .desktopCircle{
+                        width: 70%;
+                    }
+                    .material{
+                        width: 90%;
+                        z-index: 99;
+                        position: absolute;
+                    }
+                }
+               .sTBoxtwo{
+                height: 500px;
+                .phoneCircle{
+                    height: 50%;
+                }
+               }
+               .border-box{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 250px;
+            }
+            }
+        }
+    }
 }
-@media (max-width: 768px) {
-  .twoSection .childTwoSection {
-    gap: 20px;
-  }
-  .twoSection .childTwoSection .twoBoxs {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .twoSection .childTwoSection .twoBoxs .sTBoxOne {
-    height: 500px;
-  }
-  .twoSection .childTwoSection .twoBoxs .sTBoxOne .desktopCircle {
-    width: 70%;
-  }
-  .twoSection .childTwoSection .twoBoxs .sTBoxOne .material {
-    width: 90%;
-    z-index: 99;
-    position: absolute;
-  }
-  .twoSection .childTwoSection .twoBoxs .sTBoxtwo {
-    height: 500px;
-  }
-  .twoSection .childTwoSection .twoBoxs .sTBoxtwo .phoneCircle {
-    height: 50%;
-  }
-  .twoSection .childTwoSection .twoBoxs .border-box {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 250px;
-  }
-}
-@media (max-width: 480px) {
-  .twoSection .childTwoSection .twoBoxs .border-box {
-    width: 350px;
-    height: 280px;
-  }
-}
+
+@media (max-width: 480px){
+    .twoSection{
+        .childTwoSection{
+
+            .twoBoxs{
+                .border-box{
+                    width: 350px;
+                    height: 280px;
+            }
+            }
+        }
+    }
+} */
+/* ::::::::::::::section 2:::::::::::: */
 .threeSection {
   display: flex;
   flex-direction: column;
