@@ -6,6 +6,9 @@
   list-style: none;
   font-family: DinRoundPro;
 }
+* a {
+  text-decoration: none !important;
+}
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -252,7 +255,7 @@ body {
 .navbar .container .logo {
   background-image: url("/asset/LogoKind-00.svg") !important;
   background-repeat: no-repeat !important;
-  width: 120px !important;
+  width: 150px !important;
   height: 40px !important;
   z-index: 99 !important;
 }
@@ -804,7 +807,6 @@ body {
 }
 .fourSection .boxTotal img {
   height: 500px;
-  /*  padding-top: 20px; */
 }
 
 @media (max-width: 1400px) {
@@ -816,15 +818,11 @@ body {
     padding-bottom: 100px;
     padding-left: 10px;
     padding-right: 10px;
-    /* height: 600px; */
   }
   .fourSection .boxTotal .boxCard {
     width: 350px;
     height: 700px;
     border-radius: 20px;
-  }
-  .fourSection .boxTotal .boxCard .boxy img {
-    height: 50% !important;
   }
   .fourSection .boxTotal img {
     height: 350px;

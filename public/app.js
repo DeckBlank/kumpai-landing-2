@@ -318,9 +318,10 @@ fourSection.appendChild(cajaOne)
                     <div class="itemsOne">
                             <img class="uno logoSlogan" src="${item.imgSrc}" alt="Espacio">
                             <div class="dos redes">
-                                <img src="${item.fbSvg}" alt=""></img>
-                                <img src="${item.twSvg}" alt=""></img>
-                                <img src="${item.intSvg}" alt=""></img>
+                                <a href="#" class="flex-row row d-flex align-items-center">
+                                    <img src="${item.intSvg}" alt="" class="col g-4"></img>
+                                    <p class="ml-2 col g-4"> ${item.inst}</p>
+                                </a>
                             </div>
                             <p class="tres">${item.p}</p>
                     </div>

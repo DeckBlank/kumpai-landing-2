@@ -41,21 +41,21 @@
             "h2":"FUNCIONES",
             "itemBox":[
                 {
-                    "icon":"./asset/icons/icon5.png",
+                    "icon":"./asset/icons/5.svg",
                     "t":"Medición de Convivencia en el aula",
                     "p":"Son cuestionarios que  ayudan a entender  y medir cómo se sienten los estudiantes en el aula",
                     "bgColor" : "bg-yellowkindLigth",
                     "img":"./asset/imgs/six.svg"
                 },
                 {
-                    "icon":"./asset/icons/icon6.png",
+                    "icon":"./asset/icons/6.svg",
                     "t":"Retroalimentación y talentos",
                     "p":"Espacio que fomenta la retroalimentación, comunicación asertiva y la redacción",
                     "bgColor" : "bg-orangekindLigth",
                     "img":"./asset/imgs/seven.svg"
                 },
                 {
-                    "icon":"./asset/icons/icon7.png",
+                    "icon":"./asset/icons/7.svg",
                     "t":"Herramientas psicopedagógicas",
                     "p":"Material pedagógico para fortalecer las habilidades socioemocionales",
                     "bgColor" : "bg-greenkindLigth",
@@ -70,27 +70,27 @@
             "h2":"OBJETIVOS",
             "itemBox":[
                 {
-                    "img"    : "./asset/icons/icon8.png",
+                    "img"    : "./asset/icons/8.svg",
                     "p"         : "Fomentar un ambiente de sana convivencia escolar"
                 },
                 {
-                    "img"    : "./asset/icons/icon9.png",
+                    "img"    : "./asset/icons/9.svg",
                     "p"         : "Detectar y prevenir posibles casos de violencia escolar."
                 },
                 {
-                    "img"    : "./asset/icons/icon10.png",
+                    "img"    : "./asset/icons/10.svg",
                     "p"         : "Aprender estrategias para tratar casos de violencia escolar."
                 },
                 {
-                    "img"    : "./asset/icons/icon11.png",
+                    "img"    : "./asset/icons/11.svg",
                     "p"         : "Brindar retroalimentación respetuosa y amable."
                 },
                 {
-                    "img"    : "./asset/icons/icon12.png",
+                    "img"    : "./asset/icons/12.svg",
                     "p"         : "Conocer nuestros talentos y los de nuestros compañeros."
                 },
                 {
-                    "img"    : "./asset/icons/icon13.png",
+                    "img"    : "./asset/icons/13.svg",
                     "p"         : "Lograr que los estudiantes se sientan escuchados, respetados y valorados en las escuelas."
                 }
 
@@ -247,9 +247,8 @@
         {
             "p"     : "Copyright © KIND 2024 Todos los derechos reservados <br/> ASOCIACION CIVIL EDUCACION CON PROPOSITO <br/>  RUC 20606294850",
             "imgSrc": "./asset/LogoKind-05.svg",
-            "fbSvg"    : "./asset/redes/facebook.svg",
-            "twSvg"    : "./asset/redes/twitter.svg",
-            "intSvg"    : "./asset/redes/instagram.svg"
+            "intSvg" : "./asset/redes/instagram.svg",
+            "inst" :"@kind_peru"
         }
     ]
 }
